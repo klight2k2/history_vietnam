@@ -20,7 +20,7 @@ public abstract class Crawler {
 
 	public void getHTML(String url) {
 		try {
-			doc = Jsoup.connect(url).userAgent("Mozilla/5.0").get();
+			doc = Jsoup.connect(url).userAgent("Mozilla").get();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

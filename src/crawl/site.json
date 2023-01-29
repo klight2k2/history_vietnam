@@ -1,0 +1,578 @@
+[
+  {
+    "location": "Hưng Yên, Tiên Lữ, An Viên",
+    "builtIn": "",
+    "objectWorship": ": Ngọc Hoàng, Tiên Thiên, Địa Thiên",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Quốc gia",
+    "name": "Đền Đậu An",
+    "otherNames": []
+  },
+  {
+    "location": "Hưng Yên, Tiên Lữ, Trung Dũng",
+    "builtIn": "",
+    "objectWorship": ": Phật",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "",
+    "name": "Chùa Hoàng Hà (Kim Sơn tự)",
+    "otherNames": []
+  },
+  {
+    "location": "Hưng Yên, Khoái Châu, Bình Kiều",
+    "builtIn": "",
+    "objectWorship": "",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "",
+    "name": "Chùa Phú Hoà",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Đại Đình",
+    "builtIn": "",
+    "objectWorship": ": thần",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Miếu Sơn Thần",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Đại Đình",
+    "builtIn": "",
+    "objectWorship": ": thần",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Đền Hạ Tụ Nghĩa",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Đại Đình",
+    "builtIn": "",
+    "objectWorship": ": Tam Tòa Thánh Mẫu",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Quốc gia",
+    "name": "Đền Tam Tòa Thánh Mẫu (nằm trong cụm Tây Thiên)",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Đại Đình",
+    "builtIn": "",
+    "objectWorship": ": Địa Mẫu",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Quốc gia",
+    "name": "Đền Địa Mẫu (nằm trong cụm Tây Thiên)",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Đại Đình",
+    "builtIn": "",
+    "objectWorship": ": Quốc Mẫu Tây Thiên",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Quốc gia",
+    "name": "Đền thờ Quốc Mẫu Tây Thiên (nằm trong cụm Tây Thiên)",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Đại Đình",
+    "builtIn": "",
+    "objectWorship": ": Cô",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Quốc gia",
+    "name": "Đền Cô Bé (nằm trong cụm Tây Thiên)",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Đại Đình",
+    "builtIn": "",
+    "objectWorship": ": Cậu",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Quốc gia",
+    "name": "Đền Cậu (nằm trong cụm Tây Thiên)",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Đại Đình",
+    "builtIn": "",
+    "objectWorship": ": Quốc Mẫu Tây Thiên",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Quốc gia",
+    "name": "Đền Thõng (nằm trong cụm Tây Thiên)",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Đại Đình",
+    "builtIn": "",
+    "objectWorship": ": Thờ Mẫu, Đức Thánh Trần, Phật",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đền Mẫu Hóa",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Đại Đình",
+    "builtIn": "",
+    "objectWorship": ": Mẫu, thân sinh ra Mẫu, Phật",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đền Mẫu Sinh",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Tam Đảo",
+    "builtIn": "",
+    "objectWorship": ": Trần Hưng Đạo",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đền Đức Thánh Trần",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Bồ Lý",
+    "builtIn": "",
+    "objectWorship": ": 7 anh em họ Lỗ",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đền Bồ Lý",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Tam Quan",
+    "builtIn": "",
+    "objectWorship": ": Quốc Mẫu Lăng Thị Tiêu, Phật; Tam phủ Công Đồng; ông hoàng Mười",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đền Trình (Tây Thiên)",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Hồ Sơn",
+    "builtIn": "",
+    "objectWorship": ": Quốc Mẫu Lăng Thị Tiêu",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đền Chân Suối",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Minh Quang",
+    "builtIn": "",
+    "objectWorship": ": Phật",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Chùa Cam Lâm",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Tam Quan",
+    "builtIn": "",
+    "objectWorship": ": Phật",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Chùa Chanh",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Minh Quang",
+    "builtIn": "",
+    "objectWorship": ": Phật",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Chùa Lưu Quang",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Bồ Lý",
+    "builtIn": "",
+    "objectWorship": ": Thất vị đại vị họ Lỗ",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đình Bồ Lý",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Hợp Châu",
+    "builtIn": "",
+    "objectWorship": "",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đình Cửu Yên",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Tam Quan",
+    "builtIn": "",
+    "objectWorship": ": Vọng Quốc mẫu Tây Thiên",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đình Làng Mạ",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Tam Quan",
+    "builtIn": "",
+    "objectWorship": ": Quốc Mẫu Lăng Thị Tiêu",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đình Xuân Mẫu",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Tam Quan",
+    "builtIn": "",
+    "objectWorship": ": Quốc Mẫu Tây Thiên (tên Hiệu Lăng Thị Tiêu)",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đình Làng Chanh",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Minh Quang",
+    "builtIn": "",
+    "objectWorship": ": Cao Sơn, Quý Minh",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đình Lưu Quang",
+    "otherNames": []
+  },
+  {
+    "location": "Vĩnh Phúc, Tam Đảo, Minh Quang",
+    "builtIn": "",
+    "objectWorship": ": Cao Sơn, Quý Minh, Trung Sơn",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đình Cam Lâm",
+    "otherNames": []
+  },
+  {
+    "location": "tỉnh Hưng Yên, huyện Văn Lâm, xã Lạc Đạo",
+    "builtIn": "",
+    "objectWorship": "",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "Di tích cấp Quốc gia",
+    "name": "Cầu Nôm",
+    "otherNames": []
+  },
+  {
+    "location": "tỉnh Hưng Yên, huyện Văn Lâm, xã Việt Hưng",
+    "builtIn": "",
+    "objectWorship": ": Phổ Cứu Đại vương",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "Di tích cấp Quốc gia",
+    "name": "Đình Sầm Khúc",
+    "otherNames": []
+  },
+  {
+    "location": "tỉnh Hưng Yên, huyện Văn Giang, xã Long Hưng",
+    "builtIn": "",
+    "objectWorship": ": Phật",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Chùa Như Lâm",
+    "otherNames": []
+  },
+  {
+    "location": "tỉnh Hưng Yên, huyện Văn Giang, xã Vĩnh Khúc",
+    "builtIn": "",
+    "objectWorship": ": Triệu Việt Vương, An Vực hiển khánh chi thần",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Đình Đông Khúc",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Tân",
+    "builtIn": "",
+    "objectWorship": "",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Chùa Vân Thị",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Phong",
+    "builtIn": "",
+    "objectWorship": "",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Chùa Lỗi Sơn",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Hưng",
+    "builtIn": "",
+    "objectWorship": "",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Chùa Hưng Quốc",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Hoà",
+    "builtIn": "",
+    "objectWorship": "",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Chùa Hoàng Quyển",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Hoà",
+    "builtIn": "",
+    "objectWorship": "",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Chùa Giá Thượng",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Lập",
+    "builtIn": "",
+    "objectWorship": "",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Chùa Xuân Đài",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Lập",
+    "builtIn": "",
+    "objectWorship": "",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Chùa Sào Long",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Liên Sơn",
+    "builtIn": "",
+    "objectWorship": ": Xía Lê Đại Vương, ( thành hoàng), Quý Minh Đại Vương, Phối thờ: Minh Đạo Hoàng thái Hậu , Sơn Tinh Ngọc Dung Công Chúa, Thuỷ Tinh Ngọc Nương Công Chúa",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đình Bình Khang",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Xuân",
+    "builtIn": "",
+    "objectWorship": "",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Đình Vũ Đại",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Xuân",
+    "builtIn": "",
+    "objectWorship": ": Phùng Hưng, Bản Thổ Chi Thần, Giám Sát Đại Tướng Quân",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đình Đông Xuân",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Vượng",
+    "builtIn": "",
+    "objectWorship": ": Dương Cảnh Thành Hoàng",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Đình Bồ Đình",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Vân",
+    "builtIn": "",
+    "objectWorship": ": Đức Thánh Ngọ, Hưng Đạo Vương",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đình Tập Ninh",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Vân",
+    "builtIn": "",
+    "objectWorship": ": Ngọ Sơn Đại Vương",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Đình Mai Trung",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Sinh",
+    "builtIn": "",
+    "objectWorship": ": Nguyễn Minh Không, Quý Minh",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Đình Trung",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, , Gia Trung",
+    "builtIn": "",
+    "objectWorship": ": Đức thánh Quý, Bản Cảnh Thành Hoàng, Công chúa Nguyệt Anh, Ngọc Hoa",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Đình Đức Hậu",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Trung",
+    "builtIn": "",
+    "objectWorship": ": Phương Vy phu nhân, Trương Đức Vũ, Bân Cảnh Thành Hoàng",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đình Đông Khê",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Trấn",
+    "builtIn": "",
+    "objectWorship": ": Triệu Việt Vương",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Đình Vũ Nhì",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Trấn",
+    "builtIn": "",
+    "objectWorship": ": Triệu Việt Vương",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "đình Cung Quế",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Thịnh",
+    "builtIn": "",
+    "objectWorship": ": Thành hoàng làng",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Đình Trinh Phú",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Thịnh",
+    "builtIn": "",
+    "objectWorship": ": Bản thổ thành hoàng làng Nhạc Uyển Thạch Tình Ngọc Nương công chúa",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "Di tích cấp Quốc gia",
+    "name": "Đình Liên Huy",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Thanh",
+    "builtIn": "",
+    "objectWorship": "",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Đình Địch Lộng",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Thanh",
+    "builtIn": "",
+    "objectWorship": ": Phùng Hưng – Bố cái đại vương nhất vị",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Đình Cổ Hạc",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Tân",
+    "builtIn": "",
+    "objectWorship": ": Tô Hiến Thành",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Đình Vân Thị",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Tân",
+    "builtIn": "",
+    "objectWorship": ": Đông Hải Đại Vương – Nguyễn Thục",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Quốc gia",
+    "name": "Đình Trùng Thượng",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Tân",
+    "builtIn": "",
+    "objectWorship": ": Triệu Việt Vương, Tô Hiến Thành",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Đình Trùng Hạ",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Tân",
+    "builtIn": "",
+    "objectWorship": ": Thành hoàng làng",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Quốc gia",
+    "name": "Đình Thần Thiệu",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Tân",
+    "builtIn": "",
+    "objectWorship": ": Tô Hiến Thành",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đình Núi Thiệu",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Phương",
+    "builtIn": "",
+    "objectWorship": ": Đinh Tiên Hoàng",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Đình Văn Bồng",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Phú",
+    "builtIn": "",
+    "objectWorship": ": Đinh Tiên Hoàng",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đình thôn Thượng",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Phú",
+    "builtIn": "",
+    "objectWorship": ": Đức Thánh Nguyễn ( Thánh Điền Điềm Giang)",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đình Ngô Đồng",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Phú",
+    "builtIn": "",
+    "objectWorship": ": Đinh Bộ Lĩnh và Thân Mẫu",
+    "loaiHinhXepHang": "Di tích kiến trúc nghệ thuật",
+    "loaiXepHang": "Di tích cấp Tỉnh",
+    "name": "Đình Kính Chúc",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Phong",
+    "builtIn": "",
+    "objectWorship": "",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Đình Gia Phong",
+    "otherNames": []
+  },
+  {
+    "location": "Ninh Bình, Gia Viễn, Gia Hưng",
+    "builtIn": "",
+    "objectWorship": "",
+    "loaiHinhXepHang": "",
+    "loaiXepHang": "",
+    "name": "Đình Hạ",
+    "otherNames": []
+  }
+]

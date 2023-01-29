@@ -40,7 +40,7 @@ public class CrawlEra extends Crawler implements Crawling {
 			String toYear="";
 			if (context.length > 1) {
 				fromYear = context[1].split("[-–]")[0];
-				toYear = context[1].split("[-–]")[1];
+				toYear = context[1].split("[-–]")[1].replace(")", "");
 				System.out.println(eraName + " " + fromYear);
 				
 			}
