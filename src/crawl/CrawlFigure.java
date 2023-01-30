@@ -20,7 +20,7 @@ import com.google.gson.GsonBuilder;
 
 import history.HistoricalFigure;
 
-public class CrawlFigure extends Crawler implements Crawling {
+public class CrawlFigure extends Crawler<HistoricalFigure> implements Crawling {
 	private ArrayList<HistoricalFigure> listFigure = new ArrayList<>();
 
 	public CrawlFigure() {
@@ -56,7 +56,7 @@ public class CrawlFigure extends Crawler implements Crawling {
 //	System.out.println(otherName+" "+bornIn);
 
 		this.get(url);
-		String content = response.body();
+		String content = (String) response.body();
 		System.out.println(content);
 		String data = content.substring(content.indexOf("\"events\":") + 9, content.indexOf("},{\"script_path\""));
 		try {
@@ -97,14 +97,14 @@ public class CrawlFigure extends Crawler implements Crawling {
 				HistoricalFigure figure = new HistoricalFigure(nameFigure, died, born, bornIn);
 				figure.addOtherName(otherName);
 				System.out.println(bornIn);
-				listFigure.add(figure);
+				this.addDataCrawl(figure);
 
 			}
 			String filePath = "D:\\oop2\\OOP\\vietnamHistory\\src\\crawl\\figure.json";
 			Gson gson = new GsonBuilder().setPrettyPrinting().create();
 			try {
 				FileWriter writer = new FileWriter(new File(filePath));
-				gson.toJson(listFigure, writer);
+				gson.toJson(this.listDataCrawl, writer);
 				writer.close();
 			} catch (IOException e) {
 				e.printStackTrace();

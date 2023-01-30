@@ -14,8 +14,7 @@ import com.google.gson.GsonBuilder;
 
 import history.Era;
 
-public class CrawlEra extends Crawler implements Crawling {
-	private ArrayList<Era> listEra= new ArrayList<>();
+public class CrawlEra extends Crawler<Era> implements Crawling {
 	public CrawlEra() {
 		// TODO Auto-generated constructor stub
 	}
@@ -45,7 +44,7 @@ public class CrawlEra extends Crawler implements Crawling {
 				
 			}
 			Era era= new Era(eraName, fromYear, toYear);
-			listEra.add(era);
+			this.addDataCrawl(era);
 			
 
 		}
@@ -53,7 +52,7 @@ public class CrawlEra extends Crawler implements Crawling {
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		try {
 			FileWriter writer = new FileWriter(new File(filePath));
-			gson.toJson(listEra, writer);
+			gson.toJson(this.listDataCrawl, writer);
 			writer.close();
 		} catch (IOException e) {
 			e.printStackTrace();

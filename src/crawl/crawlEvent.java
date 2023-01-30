@@ -14,9 +14,7 @@ import com.google.gson.GsonBuilder;
 import history.Era;
 import history.HistoricalEvent;
 
-public class crawlEvent extends Crawler implements Crawling {
-	private ArrayList<HistoricalEvent> listEvent = new ArrayList<>();
-
+public class crawlEvent extends Crawler<HistoricalEvent> implements Crawling {
 	public crawlEvent() {
 		// TODO Auto-generated constructor stub
 	}
@@ -56,13 +54,13 @@ public class crawlEvent extends Crawler implements Crawling {
 				break;
 			}
 			HistoricalEvent event=new HistoricalEvent(desc, startDate, endDate);
-			listEvent.add(event);
+			this.addDataCrawl(event);
 		}
 		String filePath = "D:\\oop2\\OOP\\vietnamHistory\\src\\crawl\\event.json";
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		try {
 			FileWriter writer = new FileWriter(new File(filePath));
-			gson.toJson(listEvent, writer);
+			gson.toJson(this.listDataCrawl, writer);
 			writer.close();
 		} catch (IOException e) {
 			e.printStackTrace();

@@ -18,9 +18,9 @@ import com.google.gson.GsonBuilder;
 import history.HistoricalFigure;
 import history.HistoricalSite;
 
-public class CrawlSite extends Crawler implements Crawling {
+public class CrawlSite extends Crawler<HistoricalSite> implements Crawling {
 	private ArrayList<String> listDetailUrl = new ArrayList<>();
-	private ArrayList<HistoricalSite> listSite= new ArrayList<>();
+
 	public CrawlSite() {
 		// TODO Auto-generated constructor stub
 	}
@@ -47,12 +47,12 @@ public class CrawlSite extends Crawler implements Crawling {
 			String objectWorship = "";
 			String loaiHinhXepHang = "";
 			String loaiXepHang = "";
-			String builtIn="";
+			String builtIn = "";
 //			String doiTuongTho="Đối tượng thờ";
 			Elements moreInfo = this.doc.select("div.hl__illustrated-list__list-item");
 			for (Element data : moreInfo) {
 				if (data.text().contains("Đối tượng thờ")) {
-					
+
 					objectWorship = data.text().substring(("Đối tượng thờ").length());
 					System.out.println(objectWorship);
 				}
@@ -65,8 +65,8 @@ public class CrawlSite extends Crawler implements Crawling {
 				String id = input.id();
 
 				String value = input.attr("value");
-				if(value.equals("--- Lựa chọn ---")) {
-					value="";
+				if (value.equals("--- Lựa chọn ---")) {
+					value = "";
 				}
 				switch (id) {
 				case "tenId":
@@ -86,24 +86,55 @@ public class CrawlSite extends Crawler implements Crawling {
 					break;
 				}
 			}
-			HistoricalSite site= new HistoricalSite(nameSite,builtIn, location, objectWorship, loaiXepHang, loaiHinhXepHang);
-			listSite.add(site);
-			
+			HistoricalSite site = new HistoricalSite(nameSite, builtIn, location, objectWorship, loaiXepHang,
+					loaiHinhXepHang);
+			this.addDataCrawl(site);
 
 		}
 		String filePath = "D:\\oop2\\OOP\\vietnamHistory\\src\\crawl\\site.json";
-		  BufferedImage image = ImageIO.read(new URL("http://ditich.vn/upload/images/ditich/Ch-L0009.jpg"));
-		  ImageIO.write(image , "png", new File("D:\\oop2\\OOP\\vietnamHistory\\data\\image.png"));
+		BufferedImage image = ImageIO.read(new URL("http://ditich.vn/upload/images/ditich/Ch-L0009.jpg"));
+		ImageIO.write(image, "png", new File("D:\\oop2\\OOP\\vietnamHistory\\data\\image.png"));
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		try {
 			FileWriter writer = new FileWriter(new File(filePath));
-			gson.toJson(listSite, writer);
+			gson.toJson(this.listDataCrawl, writer);
 			writer.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 //		System.out.println(listDetailUrl);
 
+	}
+
+	public void crawlWiki() {
+		String url = "https://wiki.edu.vn/wiki/index.php?title=Di_t%C3%ADch_l%E1%BB%8Bch_s%E1%BB%AD_v%C4%83n_h%C3%B3a_qu%E1%BB%91c_gia";
+		this.getHTML(url);
+		Elements listTableSite = this.doc.select("table ");
+		int sizeListTable = listTableSite.size();
+		for (int i = 0; i < sizeListTable; i++) {
+			Elements listData = listTableSite.get(i).select("tbody > tr");
+			listData.remove(0);
+			for (Element data : listData) {
+				if (data.select("td").size() > 5) {
+
+					String nameSite = data.select("td").get(0).text().trim();
+					String location = data.select("td").get(1).text().trim();
+					String objectWorship = "";
+					String loaiHinhXepHang = data.select("td").get(2).text().trim();
+					String loaiXepHang = "di tích cấp quốc gia";
+					String builtIn = "";
+				} else {
+					String nameSite = data.select("td").get(1).text().trim();
+					String location = data.select("td").get(2).text().trim();
+					String objectWorship = "";
+					String loaiHinhXepHang = data.select("td").get(3).text().trim();
+					String loaiXepHang = "di tích cấp quốc gia";
+					String builtIn = "";
+				}
+
+			}
+
+		}
 	}
 
 	public static void main(String[] args) {

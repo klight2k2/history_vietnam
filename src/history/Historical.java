@@ -18,4 +18,11 @@ public abstract class Historical {
 			return true;
 		}
 	}
+	@Override
+	public boolean equals(Object obj) {
+		Historical historical= (Historical) obj;
+		if(historical.name.equals(this.name)) return true;
+		return false;
+		
+	}
 }
