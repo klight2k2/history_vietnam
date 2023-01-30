@@ -27,9 +27,27 @@ public class CrawlSite extends Crawler<HistoricalSite> implements Crawling {
 
 	@Override
 	public void start() throws IOException {
+		this.crawlFromDitich();
+		this.crawlWiki();
+		String filePath = "D:\\learnHtml\\history_vietnam\\src\\crawl\\site.json";
+//		BufferedImage image = ImageIO.read(new URL("http://ditich.vn/upload/images/ditich/Ch-L0009.jpg"));
+//		ImageIO.write(image, "png", new File("D:\\oop2\\OOP\\vietnamHistory\\data\\image.png"));
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		try {
+			FileWriter writer = new FileWriter(new File(filePath));
+			gson.toJson(this.listDataCrawl, writer);
+			writer.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+//		System.out.println(listDetailUrl);
+
+	}
+
+	public void crawlFromDitich() {
 		// TODO Auto-generated method stub
 		String baseUrl = "http://ditich.vn";
-		for (int i = 1; i < 2; i++) {
+		for (int i = 1; i < 64; i++) {
 			this.getHTML(baseUrl + "/FrontEnd/DiTich?cpage=" + i + "&rpage=64");
 			Elements listSite = this.doc.getElementsByClass("ih-item square colored effect4");
 			for (Element site : listSite) {
@@ -91,21 +109,8 @@ public class CrawlSite extends Crawler<HistoricalSite> implements Crawling {
 			this.addDataCrawl(site);
 
 		}
-		String filePath = "D:\\oop2\\OOP\\vietnamHistory\\src\\crawl\\site.json";
-		BufferedImage image = ImageIO.read(new URL("http://ditich.vn/upload/images/ditich/Ch-L0009.jpg"));
-		ImageIO.write(image, "png", new File("D:\\oop2\\OOP\\vietnamHistory\\data\\image.png"));
-		Gson gson = new GsonBuilder().setPrettyPrinting().create();
-		try {
-			FileWriter writer = new FileWriter(new File(filePath));
-			gson.toJson(this.listDataCrawl, writer);
-			writer.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-//		System.out.println(listDetailUrl);
-
 	}
-
+	
 	public void crawlWiki() {
 		String url = "https://wiki.edu.vn/wiki/index.php?title=Di_t%C3%ADch_l%E1%BB%8Bch_s%E1%BB%AD_v%C4%83n_h%C3%B3a_qu%E1%BB%91c_gia";
 		this.getHTML(url);
@@ -115,23 +120,28 @@ public class CrawlSite extends Crawler<HistoricalSite> implements Crawling {
 			Elements listData = listTableSite.get(i).select("tbody > tr");
 			listData.remove(0);
 			for (Element data : listData) {
+				String builtIn = "";
+				String loaiXepHang = "";
+				String loaiHinhXepHang = "";
+				String objectWorship = "";
+				String location = "";
+				String nameSite = "";
 				if (data.select("td").size() > 5) {
 
-					String nameSite = data.select("td").get(0).text().trim();
-					String location = data.select("td").get(1).text().trim();
-					String objectWorship = "";
-					String loaiHinhXepHang = data.select("td").get(2).text().trim();
-					String loaiXepHang = "di tích cấp quốc gia";
-					String builtIn = "";
-				} else {
-					String nameSite = data.select("td").get(1).text().trim();
-					String location = data.select("td").get(2).text().trim();
-					String objectWorship = "";
-					String loaiHinhXepHang = data.select("td").get(3).text().trim();
-					String loaiXepHang = "di tích cấp quốc gia";
-					String builtIn = "";
-				}
+					nameSite = data.select("td").get(0).text().trim();
+					location = data.select("td").get(1).text().trim();
+					objectWorship = "";
+					loaiHinhXepHang = data.select("td").get(2).text().trim();
+					loaiXepHang = "di tích cấp quốc gia";
 
+				} else {
+					nameSite = data.select("td").get(1).text().trim();
+					location = data.select("td").get(2).text().trim();
+					loaiHinhXepHang = data.select("td").get(3).text().trim();
+					loaiXepHang = "di tích cấp quốc gia";
+				}
+				HistoricalSite site= new HistoricalSite(nameSite, builtIn, location, objectWorship, loaiXepHang, loaiHinhXepHang);
+				this.addDataCrawl(site);
 			}
 
 		}

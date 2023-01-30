@@ -1,12 +1,17 @@
 package history;
 
 public class Festival extends Historical {
-	protected String localDate;
 	protected String location;
-	public Festival(String name, String localDate,String location) {
+	protected String doiTuongSuyTon;
+	protected String desc;
+	protected String holdTime;
+
+	public Festival(String name, String holdTime, String location, String doiTuongSuyTon, String desc) {
 		super(name);
-		this.localDate=localDate;
-		this.location=location;
+		this.holdTime = holdTime;
+		this.location = location;
+		this.desc = desc;
+		this.doiTuongSuyTon = doiTuongSuyTon;
 	}
 
 }

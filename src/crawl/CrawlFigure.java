@@ -64,13 +64,12 @@ public class CrawlFigure extends Crawler<HistoricalFigure> implements Crawling {
 			for (int i = 0; i < list.length(); i++) {
 				JSONObject obj = list.getJSONObject(i);
 				obj.getJSONObject("start_date");
-				String nameFigure;
+				String nameFigure=obj.getJSONObject("text").getString("headline");
+				String desc=obj.getJSONObject("text").getString("text");
 				String born = "";
 				String died = "";
 				String bornIn = "";
-				nameFigure = obj.getJSONObject("text").getString("headline");
 				if (obj.has("start_date")) {
-
 					born = obj.getJSONObject("start_date").getString("year");
 				}
 				if (obj.has("end_date")) {
@@ -94,7 +93,7 @@ public class CrawlFigure extends Crawler<HistoricalFigure> implements Crawling {
 				};
 				System.out.println(otherName + " " + bornIn);
 
-				HistoricalFigure figure = new HistoricalFigure(nameFigure, died, born, bornIn);
+				HistoricalFigure figure = new HistoricalFigure(nameFigure, died, born, bornIn,desc);
 				figure.addOtherName(otherName);
 				System.out.println(bornIn);
 				this.addDataCrawl(figure);
