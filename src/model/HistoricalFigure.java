@@ -14,4 +14,10 @@ public class HistoricalFigure extends Historical {
 		this.bornIn = bornIn;
 	}
 
+	@Override
+	public String toString()
+	{
+		return this.name + " " + this.born + " " + this.died + " " + this.bornIn;
+	}
+
 }

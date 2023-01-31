@@ -16,4 +16,7 @@ module vietnamHistory {
 	requires json.simple;
 	requires org.jsoup;
 	requires javafx.controls;
+	requires java.sql;
+
+	opens model;
 }

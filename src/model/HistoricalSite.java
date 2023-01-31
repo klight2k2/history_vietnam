@@ -16,4 +16,10 @@ public class HistoricalSite extends Historical {
 		this.loaiXepHang=loaiXepHang;
 	}
 
+	@Override
+	public String toString()
+	{
+		return this.name + " " + this.location + " " + this.builtIn + " " + this.objectWorship + " " + this.loaiHinhXepHang + " " + this.loaiXepHang;
+	}
+
 }

@@ -11,5 +11,10 @@ public class HistoricalEvent extends Historical {
 		this.endDate = endDate;
 		// TODO Auto-generated constructor stub
 	}
+	@Override
+	public String toString()
+	{
+		return this.name + " " + this.startDate + " " + this.endDate;
+	}
 
 }
