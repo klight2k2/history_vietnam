@@ -29,16 +29,4 @@ public class Era extends Historical {
 	{
 		return this.name + " " + this.fromYear + " " + this.toYear;
 	}
-
-	public static void main(String[] args) throws FileNotFoundException{
-		Gson gson = new Gson();
-		FileReader reader = new FileReader("/home/tienviper/Desktop/oop/history_vietnam/src/data/era.json");
-		Era erass[] = null;
-		erass = gson.fromJson(reader, Era[].class);
-		System.out.println(erass);
-		for (Era p : erass){
-			System.out.println(p);
-		}
-		// System.out.println(erass[0]);
-	}
 }
