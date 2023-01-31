@@ -1,4 +1,4 @@
-package crawl;
+package crawl.crawlera;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -12,6 +12,8 @@ import org.jsoup.select.Elements;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import crawl.Crawler;
+import crawl.Crawling;
 import model.Era;
 
 public class CrawlEra extends Crawler<Era> implements Crawling {
@@ -48,7 +50,7 @@ public class CrawlEra extends Crawler<Era> implements Crawling {
 			
 
 		}
-		String filePath = "D:\\oop2\\OOP\\vietnamHistory\\src\\crawl\\era.json";
+		String filePath = "D:\\learnHtml\\history_vietnam\\src\\data\\era.json";
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		try {
 			FileWriter writer = new FileWriter(new File(filePath));

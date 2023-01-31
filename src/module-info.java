@@ -16,4 +16,8 @@ module vietnamHistory {
 	requires json.simple;
 	requires org.jsoup;
 	requires javafx.controls;
+	requires java.sql;
+	opens crawl.crawlera to gson;
+	opens model to gson;
+	
 }

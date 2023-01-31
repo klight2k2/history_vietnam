@@ -1,4 +1,5 @@
-package crawl;
+package crawl.crawlfigure;
+
 
 import java.io.File;
 import java.io.FileWriter;
@@ -18,6 +19,8 @@ import org.jsoup.select.Elements;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import crawl.Crawler;
+import crawl.Crawling;
 import model.HistoricalFigure;
 
 public class CrawlFigure extends Crawler<HistoricalFigure> implements Crawling {
@@ -99,7 +102,7 @@ public class CrawlFigure extends Crawler<HistoricalFigure> implements Crawling {
 				this.addDataCrawl(figure);
 
 			}
-			String filePath = "D:\\oop2\\OOP\\vietnamHistory\\src\\crawl\\figure.json";
+			String filePath = "D:\\learnHtml\\history_vietnam\\src\\data\\figure.json";
 			Gson gson = new GsonBuilder().setPrettyPrinting().create();
 			try {
 				FileWriter writer = new FileWriter(new File(filePath));

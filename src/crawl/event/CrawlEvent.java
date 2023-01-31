@@ -1,4 +1,4 @@
-package crawl;
+package crawl.event;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -11,11 +11,13 @@ import org.jsoup.select.Elements;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import crawl.Crawler;
+import crawl.Crawling;
 import model.Era;
 import model.HistoricalEvent;
 
-public class crawlEvent extends Crawler<HistoricalEvent> implements Crawling {
-	public crawlEvent() {
+public class CrawlEvent extends Crawler<HistoricalEvent> implements Crawling {
+	public CrawlEvent() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -69,7 +71,7 @@ public class crawlEvent extends Crawler<HistoricalEvent> implements Crawling {
 	}
 
 	public static void main(String[] args) {
-		crawlEvent des = new crawlEvent();
+		CrawlEvent des = new CrawlEvent();
 		try {
 			des.start();
 		} catch (IOException e) {

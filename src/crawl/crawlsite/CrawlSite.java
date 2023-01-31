@@ -1,4 +1,4 @@
-package crawl;
+package crawl.crawlsite;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -15,6 +15,8 @@ import org.jsoup.select.Elements;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import crawl.Crawler;
+import crawl.Crawling;
 import model.HistoricalFigure;
 import model.HistoricalSite;
 
