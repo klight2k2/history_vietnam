@@ -15,8 +15,8 @@ import org.jsoup.select.Elements;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import history.HistoricalFigure;
-import history.HistoricalSite;
+import model.HistoricalFigure;
+import model.HistoricalSite;
 
 public class CrawlSite extends Crawler<HistoricalSite> implements Crawling {
 	private ArrayList<String> listDetailUrl = new ArrayList<>();

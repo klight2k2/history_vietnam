@@ -1,4 +1,4 @@
-package history;
+package model;
 
 public class Era extends Historical {
 	protected String fromYear;

@@ -11,8 +11,8 @@ import org.jsoup.select.Elements;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import history.Era;
-import history.HistoricalEvent;
+import model.Era;
+import model.HistoricalEvent;
 
 public class crawlEvent extends Crawler<HistoricalEvent> implements Crawling {
 	public crawlEvent() {

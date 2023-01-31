@@ -1,4 +1,4 @@
-package history;
+package model;
 
 public class HistoricalFigure extends Historical {
 	protected String born;

@@ -13,7 +13,7 @@ import com.google.gson.GsonBuilder;
 
 import crawl.Crawler;
 import crawl.Crawling;
-import history.Festival;
+import model.Festival;
 
 public class CrawlFestival extends Crawler<Festival> implements Crawling {
 

@@ -1,4 +1,4 @@
-package history;
+package model;
 
 public class HistoricalEvent extends Historical {
 	protected String startDate;

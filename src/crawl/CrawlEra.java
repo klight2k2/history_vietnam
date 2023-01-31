@@ -12,7 +12,7 @@ import org.jsoup.select.Elements;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import history.Era;
+import model.Era;
 
 public class CrawlEra extends Crawler<Era> implements Crawling {
 	public CrawlEra() {

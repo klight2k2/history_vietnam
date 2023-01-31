@@ -1,4 +1,4 @@
-package history;
+package model;
 
 public class Festival extends Historical {
 	protected String location;
