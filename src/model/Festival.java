@@ -13,5 +13,4 @@ public class Festival extends Historical {
 		this.desc = desc;
 		this.doiTuongSuyTon = doiTuongSuyTon;
 	}
-
 }

@@ -1,5 +1,8 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Era extends Historical {
 	protected String fromYear;
 	protected String toYear;
@@ -16,6 +19,5 @@ public class Era extends Historical {
 		super(name);
 		this.fromYear=fromYear;
 		this.toYear=toYear;
-	
 	}
 }
