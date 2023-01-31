@@ -1,10 +1,11 @@
 package main;
 
 import javafx.application.Application;
+
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 //import sample.mvc.controller.MainController;
-import model.MainModel;
+//import model.MainModel;
 //import sample.mvc.view.MainView;
 
 public class App extends Application{

@@ -1,0 +1,19 @@
+module vietnamHistory {
+	exports controller;
+	exports view;
+	exports crawl.crawlfestival;
+	exports main;
+	exports model;
+	exports crawl;
+
+	requires gson;
+	requires java.desktop;
+	requires java.net.http;
+	requires javafx.base;
+	requires javafx.fxml;
+	requires javafx.graphics;
+	requires json;
+	requires json.simple;
+	requires org.jsoup;
+	requires javafx.controls;
+}
