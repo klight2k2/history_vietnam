@@ -19,5 +19,6 @@ module vietnamHistory {
 	requires java.sql;
 	opens crawl.crawlera to gson;
 	opens model to gson;
+	opens view to javafx.fxml;
 	
 }

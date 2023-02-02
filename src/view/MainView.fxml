@@ -14,88 +14,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
-   <left>
-      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="250.0" spacing="10.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
-         <children>
-            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="223.0" spacing="20.0" style="-fx-background-color: #ccc;">
-               <children>
-                  <ImageView fitHeight="49.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../resource/nhanvatlichsu.png" />
-                     </image>
-                  </ImageView>
-                  <Label prefHeight="38.0" prefWidth="505.0" text="Nhân vật lịch sử">
-                     <font>
-                        <Font name="System Bold" size="18.0" />
-                     </font>
-                  </Label>
-               </children>
-            </HBox>
-            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
-               <children>
-                  <ImageView fitHeight="49.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../resource/trieudai.png" />
-                     </image>
-                  </ImageView>
-                  <Label prefHeight="38.0" prefWidth="204.0" text="Triều đại lịch sử">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </Label>
-               </children>
-            </HBox>
-            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
-               <children>
-                  <ImageView fitHeight="49.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../resource/sukien.png" />
-                     </image>
-                  </ImageView>
-                  <Label prefHeight="38.0" prefWidth="204.0" text="Sự kiện lịch sử">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </Label>
-               </children>
-            </HBox>
-            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
-               <children>
-                  <ImageView fitHeight="49.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../resource/ditich.png" />
-                     </image>
-                  </ImageView>
-                  <Label prefHeight="38.0" prefWidth="204.0" text="Di tích lịch sử">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </Label>
-               </children>
-            </HBox>
-            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
-               <children>
-                  <ImageView fitHeight="49.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../resource/lehoi.png" />
-                     </image>
-                  </ImageView>
-                  <Label prefHeight="38.0" prefWidth="204.0" text="Lễ hội văn hóa">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </Label>
-               </children>
-            </HBox>
-         </children>
-         <padding>
-            <Insets left="20.0" top="60.0" />
-         </padding>
-      </VBox>
-   </left>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ViewController">
    <center>
-      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #ccc;" BorderPane.alignment="CENTER">
          <children>
             <Label text="Tìm kiếm">
                <font>
@@ -148,7 +69,7 @@
             </Label>
             <VBox alignment="TOP_CENTER" prefHeight="472.0" prefWidth="774.0">
                <children>
-                  <TableView maxWidth="750.0" prefHeight="459.0" prefWidth="845.0" stylesheets="@style.css">
+                  <TableView fx:id="tableData" maxWidth="750.0" prefHeight="459.0" prefWidth="845.0" stylesheets="@style.css">
                     <columns>
                       <TableColumn prefWidth="75.0" text="STT" />
                       <TableColumn prefWidth="148.0" text="Tên" />
@@ -165,4 +86,83 @@
          </children>
       </VBox>
    </center>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="250.0" spacing="10.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="historicalFigureItem" alignment="CENTER_LEFT" onMouseClicked="#handleItemClicked" prefHeight="60.0" prefWidth="223.0" spacing="20.0" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="49.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/nhanvatlichsu.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="38.0" prefWidth="505.0" text="Nhân vật lịch sử">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="eraItem" alignment="CENTER_LEFT" onMouseClicked="#handleItemClicked" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="49.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/trieudai.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="38.0" prefWidth="204.0" text="Triều đại lịch sử">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="eventItem" alignment="CENTER_LEFT" onMouseClicked="#handleItemClicked" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="49.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/sukien.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="38.0" prefWidth="204.0" text="Sự kiện lịch sử">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="historicSiteItem" alignment="CENTER_LEFT" onMouseClicked="#handleItemClicked" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="49.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/ditich.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="38.0" prefWidth="204.0" text="Di tích lịch sử">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="festivalItem" alignment="CENTER_LEFT" onMouseClicked="#handleItemClicked" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="49.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/lehoi.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="38.0" prefWidth="204.0" text="Lễ hội văn hóa">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="20.0" top="60.0" />
+         </padding>
+      </VBox>
+   </left>
 </BorderPane>

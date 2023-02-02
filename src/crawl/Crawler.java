@@ -15,8 +15,7 @@ public abstract class Crawler<T>{
 	protected Document doc;
 	protected HttpResponse<String> response;
 	protected ArrayList<T> listDataCrawl;
-	public Crawler( ArrayList listDataCrawl) {
-		this.listDataCrawl =listDataCrawl;
+	public Crawler() {
 		// TODO Auto-generated constructor stub
 	}
 	
