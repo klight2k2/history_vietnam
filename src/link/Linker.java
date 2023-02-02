@@ -2,10 +2,22 @@ package link;
 
 import java.util.ArrayList;
 
-public class Linker<T> {
-	protected ArrayList<T> listData = new ArrayList<>();
+import model.Era;
+import model.Festival;
+import model.HistoricalEvent;
+import model.HistoricalFigure;
+import model.HistoricalSite;
 
-	public Linker(ArrayList arrayListData) {
-		this.listData = arrayListData;
+public class Linker {
+	protected ArrayList<Era> listEraData = new ArrayList<>();
+	protected ArrayList<Festival> listFestivalData = new ArrayList<>();
+	protected ArrayList<HistoricalFigure> listFigureData = new ArrayList<>();
+	protected ArrayList<HistoricalSite> listSiteData = new ArrayList<>();
+	protected ArrayList<HistoricalEvent> listEventData = new ArrayList<>();
+
+	public Linker() {
+
 	}
+
+	
 }
