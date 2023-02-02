@@ -1,24 +1,21 @@
 package crawl.crawlsite;
 
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 
 import crawl.Crawling;
 import model.HistoricalSite;
 
 public class CrawlSite implements Runnable {
 	private List<Crawling> listWebCrawl = new ArrayList<>();
-	private ArrayList<HistoricalSite> listDataCrawl = new ArrayList<>();
+	private ArrayList<HistoricalSite> listDataCrawl;
 
-	public CrawlSite() {
+	public CrawlSite(ArrayList<HistoricalSite> listDataCrawl) {
 		// TODO Auto-generated constructor stub
-		listWebCrawl.add( new  CrawlFromDitich(this.listDataCrawl));
+		this.listDataCrawl = listDataCrawl;
+
+		listWebCrawl.add(new CrawlFromDitich(this.listDataCrawl));
 		listWebCrawl.add(new CrawlFromWiki(this.listDataCrawl));
 
 	}
@@ -33,19 +30,6 @@ public class CrawlSite implements Runnable {
 				e.printStackTrace();
 			}
 		}
-		System.out.println("Crawl completed...");
-		String filePath = "src\\data\\site.json";
-//		BufferedImage image = ImageIO.read(new URL("http://ditich.vn/upload/images/ditich/Ch-L0009.jpg"));
-//		ImageIO.write(image, "png", new File("D:\\oop2\\OOP\\vietnamHistory\\data\\image.png"));
-		Gson gson = new GsonBuilder().setPrettyPrinting().create();
-		try {
-			FileWriter writer = new FileWriter(new File(filePath));
-			gson.toJson(this.listDataCrawl, writer);
-			writer.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-//		System.out.println(listDetailUrl);
 
 	}
 

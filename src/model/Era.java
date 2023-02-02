@@ -28,16 +28,8 @@ public class Era extends Historical {
 		this.toYear = toYear;
 	}
 
-	public Era getRawEra(String name) {
-		Era era = new Era(name);
-		era.id = this.id;
-		era.fromYear = this.fromYear;
-		era.toYear = this.toYear;
-		return era;
-	}
-
-	public void fillEra(Era era) {
-		this.isPrecededBy = era.isPrecededBy;
-		this.isSuccessedBy = era.isSuccessedBy;
+	public void fillEra(int isPrecededBy, int isSuccessedBy) {
+		this.isPrecededBy = isPrecededBy;
+		this.isSuccessedBy = isSuccessedBy;
 	}
 }
