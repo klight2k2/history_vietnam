@@ -63,12 +63,17 @@ public class CrawlFigureNguoiKeSu extends Crawler<HistoricalFigure> implements C
 				String born = "";
 				String died = "";
 				String bornIn = "";
+				String imageLink="";
 				if (obj.has("start_date")) {
 					born = obj.getJSONObject("start_date").getString("year");
 				}
 				if (obj.has("end_date")) {
 
 					died = obj.getJSONObject("end_date").getString("year");
+				}
+				if (obj.has("media")) {
+
+					imageLink = obj.getJSONObject("media").getString("thumbnail");
 				}
 				String detailUrl = "https://vansu.vn/viet-nam/viet-nam-nhan-vat?keyword=" + encodeValue(nameFigure);
 				this.getHTML(detailUrl);
@@ -88,7 +93,7 @@ public class CrawlFigureNguoiKeSu extends Crawler<HistoricalFigure> implements C
 				;
 				System.out.println(otherName + " " + bornIn);
 
-				HistoricalFigure figure = new HistoricalFigure(nameFigure, died, born, bornIn, desc);
+				HistoricalFigure figure = new HistoricalFigure(nameFigure, died, born, bornIn, desc,imageLink);
 				figure.addOtherName(otherName);
 				System.out.println(bornIn);
 				this.addDataCrawl(figure);
