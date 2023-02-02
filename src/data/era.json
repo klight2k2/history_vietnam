@@ -1,145 +1,217 @@
 [
   {
+    "id": 1,
     "fromYear": "",
     "toYear": "",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Việt Nam Thời tiền sử",
     "otherNames": []
   },
   {
+    "id": 2,
     "fromYear": "2000 ",
     "toYear": " 258 trCN",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Thời kỳ dựng nước ",
     "otherNames": []
   },
   {
+    "id": 3,
     "fromYear": "257",
     "toYear": " 208 trCN",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Nhà Thục ",
     "otherNames": []
   },
   {
+    "id": 4,
     "fromYear": "207 trCN ",
     "toYear": " 39",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Thời kỳ phong kiến phương Bắc đô hộ lần thứ nhất ",
     "otherNames": []
   },
   {
+    "id": 5,
     "fromYear": "40",
     "toYear": "43",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Trưng Nữ Vương ",
     "otherNames": []
   },
   {
+    "id": 6,
     "fromYear": "43",
     "toYear": "542",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Thời kỳ phong kiến phương Bắc đô hộ lần thứ hai ",
     "otherNames": []
   },
   {
+    "id": 7,
     "fromYear": "544",
     "toYear": "602",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Nhà tiền Lý và nhà Triệu ",
     "otherNames": []
   },
   {
+    "id": 8,
     "fromYear": "603",
     "toYear": "939",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Thời kỳ phong kiến phương Bắc đô hộ lần thứ ba ",
     "otherNames": []
   },
   {
+    "id": 9,
     "fromYear": "905 ",
     "toYear": " 938",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Thời kỳ xây nền tự chủ ",
     "otherNames": []
   },
   {
+    "id": 10,
     "fromYear": "939",
     "toYear": "965",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Nhà Ngô ",
     "otherNames": []
   },
   {
+    "id": 11,
     "fromYear": "968",
     "toYear": "980",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Nhà Đinh ",
     "otherNames": []
   },
   {
+    "id": 12,
     "fromYear": "980",
     "toYear": "1009",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Nhà Tiền Lê ",
     "otherNames": []
   },
   {
+    "id": 13,
     "fromYear": "1010",
     "toYear": "1225",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Nhà Lý ",
     "otherNames": []
   },
   {
+    "id": 14,
     "fromYear": "1225",
     "toYear": "1400",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Nhà Trần ",
     "otherNames": []
   },
   {
+    "id": 15,
     "fromYear": "1400",
     "toYear": "1407",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Nhà Hồ ",
     "otherNames": []
   },
   {
+    "id": 16,
     "fromYear": "1407",
     "toYear": "1413",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Hậu Trần ",
     "otherNames": []
   },
   {
+    "id": 17,
     "fromYear": "1414",
     "toYear": "1427",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Thời kỳ thuộc Minh ",
     "otherNames": []
   },
   {
+    "id": 18,
     "fromYear": "1428",
     "toYear": "1527",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Triều Lê Sơ ",
     "otherNames": []
   },
   {
+    "id": 19,
     "fromYear": "1527",
     "toYear": "1592",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Bắc Triều - Nam Triều ",
     "otherNames": []
   },
   {
+    "id": 20,
     "fromYear": "1533",
     "toYear": "1788",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Thời Trịnh - Nguyễn phân tranh ",
     "otherNames": []
   },
   {
+    "id": 21,
     "fromYear": "1778",
     "toYear": "1802",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Nhà Tây Sơn ",
     "otherNames": []
   },
   {
+    "id": 22,
     "fromYear": "1802",
     "toYear": "1883",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Nhà Nguyễn thời kỳ độc lập ",
     "otherNames": []
   },
   {
+    "id": 23,
     "fromYear": "1883",
     "toYear": "1945",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Thời kì Pháp đô hộ ",
     "otherNames": []
   },
   {
+    "id": 24,
     "fromYear": "1945 ",
     "toYear": " đến nay",
+    "isPrecededBy": 0,
+    "isSuccessedBy": 0,
     "name": "  Nước Việt Nam mới ",
     "otherNames": []
   }

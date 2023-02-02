@@ -13,8 +13,10 @@ import model.Festival;
 
 public class CrawlFestival implements Runnable {
 	private List<Crawling> listWebCrawl= new ArrayList<>();
+	private List<Festival> lisData= new ArrayList<>();
 	public CrawlFestival() {
-		
+		CrawlAnGiangFestival angiang = new CrawlAnGiangFestival(this.lisData);
+		this.listWebCrawl.add(angiang);
 	}
 
 	public void run() {
