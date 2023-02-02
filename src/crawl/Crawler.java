@@ -14,7 +14,7 @@ import org.jsoup.nodes.Document;
 public abstract class Crawler<T>{
 	protected Document doc;
 	protected HttpResponse<String> response;
-	protected ArrayList<T> listDataCrawl;
+	protected ArrayList<T> listDataCrawl =new ArrayList<>();
 	public Crawler() {
 		// TODO Auto-generated constructor stub
 	}
