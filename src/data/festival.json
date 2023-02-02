@@ -1,0 +1,58 @@
+[
+  {
+    "location": "Xã Long Phú, thị xã Tân Châu, tỉnh An Giang.",
+    "doiTuongSuyTon": "Thành Hoàng bổn cảnh.",
+    "desc": "Lễ khai hạ, cầu mùa.",
+    "holdTime": "7/1 âm lịch.",
+    "name": "Hội đình Long Phú",
+    "otherNames": []
+  },
+  {
+    "location": "Xã Long Sơn, huyện Phú Tân, tỉnh An Giang.",
+    "doiTuongSuyTon": "Lão Gia (danh y cổ Trung Quốc).",
+    "desc": "Lễ hội cầu sự việc tốt lành.",
+    "holdTime": "15/1 âm lịch.",
+    "name": "Hội đền Bảo Sanh",
+    "otherNames": []
+  },
+  {
+    "location": "Xã Long Kiên, huyện Chợ Mới, tỉnh An Giang.",
+    "doiTuongSuyTon": "Nguyễn Trung Trực",
+    "desc": "Lễ dâng hương, lễ cúng tưởng niệm.",
+    "holdTime": "18 – 19/ 10 âm lịch.",
+    "name": "Hội đền Nguyễn Trung Trực",
+    "otherNames": []
+  },
+  {
+    "location": "Xã Phú Lâm, huyện Phú Tân, tỉnh An Giang.",
+    "doiTuongSuyTon": "Bà Thượng Đồng Cổ Hỷ.",
+    "desc": "Dâng lễ vía Bà, hát bội.",
+    "holdTime": "15 – 16/3 âm lịch.",
+    "name": "Hội miếu Bằng Lang",
+    "otherNames": []
+  },
+  {
+    "location": "Tại chùa, từng gia đình cộng đồng người Kh’mer thuộc huyện Tri Tôn hoặc Tịnh Biên, tỉnh An Giang.",
+    "doiTuongSuyTon": "",
+    "desc": "Cầu phước cho các linh hồn thân nhân đã khuất được đầu thai sang kiếp khác, để người quá cố được sung sướng hơn. Trong dịp lễ Đôlta có hội đua bò theo thể thức truyền thống của người Kh’mer.",
+    "holdTime": "Từ ngày 29 tháng 8 đến ngày 1 tháng 9 âm lịch (nếu tháng thiếu sẽ kéo dài sang ngày 2 tháng 9 âm lịch).",
+    "name": "Lễ Đôlta và hội đua bò",
+    "otherNames": []
+  },
+  {
+    "location": "Phường Châu Phú A, thị xã Châu Đốc, tỉnh An Giang.",
+    "doiTuongSuyTon": "Nguyễn Hữu Cảnh",
+    "desc": "Dâng hương, lễ kỳ yên, hát bội đêm.",
+    "holdTime": "9 – 11/5 âm lịch.",
+    "name": "Lễ hội đình Châu Phú",
+    "otherNames": []
+  },
+  {
+    "location": "miếu Bà Chúa Xứ, núi Sam, cách thị xã Châu Đốc 7km",
+    "doiTuongSuyTon": "Bà Chúa Xứ",
+    "desc": "lễ tắm Bà.",
+    "holdTime": "từ đêm 23/4 đến 27/4 âm lịch",
+    "name": "Lễ hội miếu Bà Chúa Xứ",
+    "otherNames": []
+  }
+]

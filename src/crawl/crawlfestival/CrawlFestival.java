@@ -1,26 +1,27 @@
 package crawl.crawlfestival;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
-import crawl.Crawler;
 import crawl.Crawling;
 import model.Festival;
 
 public class CrawlFestival implements Runnable {
-	private List<Crawling> listWebCrawl= new ArrayList<>();
-	private List<Festival> lisData= new ArrayList<>();
+	private ArrayList<Crawling> listWebCrawl = new ArrayList<>();
+	private ArrayList<Festival> listDataCrawl = new ArrayList<>();
+
 	public CrawlFestival() {
-		CrawlAnGiangFestival angiang = new CrawlAnGiangFestival(this.lisData);
+		CrawlAnGiangFestival angiang = new CrawlAnGiangFestival(this.listDataCrawl);
 		this.listWebCrawl.add(angiang);
 	}
 
 	public void run() {
-		for( Crawling webCrawl: listWebCrawl) {
+		for (Crawling webCrawl : listWebCrawl) {
 			try {
 				webCrawl.start();
 			} catch (IOException e) {
@@ -28,6 +29,17 @@ public class CrawlFestival implements Runnable {
 				e.printStackTrace();
 			}
 		}
+		System.out.println("Crawl completed...");
+		String filePath = "src\\data\\festival.json";
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		try {
+			FileWriter writer = new FileWriter(new File(filePath));
+			gson.toJson(this.listDataCrawl, writer);
+			writer.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 	}
 
 	public static void main(String[] args) {

@@ -1,6 +1,7 @@
 package crawl.crawlfestival;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -11,8 +12,9 @@ import model.Festival;
 
 public class CrawlBacBinhFestival extends Crawler<Festival> implements Crawling {
 
-	public CrawlBacBinhFestival() {
+	public CrawlBacBinhFestival(ArrayList<Festival> listDataCrawl) {
 		// TODO Auto-generated constructor stub
+		this.listDataCrawl = listDataCrawl;
 	}
 
 	@Override

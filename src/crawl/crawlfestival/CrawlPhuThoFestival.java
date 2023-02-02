@@ -1,19 +1,20 @@
 package crawl.crawlfestival;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import crawl.Crawler;
 import crawl.Crawling;
-import crawl.crawlera.CrawlEra;
 import model.Festival;
 
 public class CrawlPhuThoFestival extends Crawler<Festival> implements Crawling {
 
-	public CrawlPhuThoFestival() {
+	public CrawlPhuThoFestival(ArrayList<Festival> listDataCrawl) {
 		// TODO Auto-generated constructor stub
+		this.listDataCrawl = listDataCrawl;
 	}
 
 	@Override
@@ -31,14 +32,14 @@ public class CrawlPhuThoFestival extends Crawler<Festival> implements Crawling {
 
 	}
 
-	public static void main(String[] args) {
-		CrawlPhuThoFestival des = new CrawlPhuThoFestival();
-		try {
-			des.start();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+//	public static void main(String[] args) {
+//		CrawlPhuThoFestival des = new CrawlPhuThoFestival();
+//		try {
+//			des.start();
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//	}
 
 }

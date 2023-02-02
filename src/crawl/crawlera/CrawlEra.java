@@ -4,25 +4,19 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
-
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import crawl.Crawler;
 import crawl.Crawling;
 import model.Era;
 
 public class CrawlEra implements Runnable {
-	private List<Crawling> listWebCrawl = new ArrayList<>();
-	private ArrayList<Era> listData = new ArrayList<>();
+	private ArrayList<Crawling> listWebCrawl = new ArrayList<>();
+	private ArrayList<Era> listDataCrawl = new ArrayList<>();
 
 	public CrawlEra() {
-		CrawlVNDoc vndoc = new CrawlVNDoc(listData);
+		CrawlVNDoc vndoc = new CrawlVNDoc(this.listDataCrawl);
 		this.listWebCrawl.add(vndoc);
 		// TODO Auto-generated constructor stub
 	}
@@ -36,8 +30,17 @@ public class CrawlEra implements Runnable {
 				e.printStackTrace();
 			}
 		}
+		System.out.println("Crawl completed...");
+		String filePath = "src\\data\\era.json";
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		try {
+			FileWriter writer = new FileWriter(new File(filePath));
+			gson.toJson(this.listDataCrawl, writer);
+			writer.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
-
 
 	public static void main(String[] args) {
 		CrawlEra des = new CrawlEra();

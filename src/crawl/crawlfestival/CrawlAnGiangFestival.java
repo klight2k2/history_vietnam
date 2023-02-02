@@ -1,6 +1,7 @@
 package crawl.crawlfestival;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -11,8 +12,9 @@ import model.Festival;
 
 public class CrawlAnGiangFestival extends Crawler<Festival> implements Crawling {
 
-	public CrawlAnGiangFestival() {
+	public CrawlAnGiangFestival(ArrayList<Festival> listDataCrawl) {
 		// TODO Auto-generated constructor stub
+		this.listDataCrawl = listDataCrawl;
 	}
 
 	@Override
@@ -83,19 +85,7 @@ public class CrawlAnGiangFestival extends Crawler<Festival> implements Crawling 
 			}
 
 		}
-//		this.crawlBacNinhFestival();
-		String filePath = "D:\\learnHtml\\history_vietnam\\src\\crawl\\festival.json";
-		Gson gson = new GsonBuilder().setPrettyPrinting().create();
-		try {
-			FileWriter writer = new FileWriter(new File(filePath));
-			gson.toJson(this.listDataCrawl, writer);
-			writer.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		;
-		
+
 	}
-	
 
 }

@@ -1,26 +1,22 @@
 package crawl.crawlera;
 
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
 import crawl.Crawler;
 import crawl.Crawling;
 import model.Era;
 
-public class CrawlVNDoc extends Crawler<Era> implements Crawling{
-	
-	public CrawlVNDoc(ArrayList listDataCrawl) {
-		super(listDataCrawl);
+public class CrawlVNDoc extends Crawler<Era> implements Crawling {
+
+	public CrawlVNDoc(ArrayList<Era> listDataCrawl) {
+		// TODO Auto-generated constructor stub
+		this.listDataCrawl = listDataCrawl;
 	}
-	
+
 	@Override
 	public void start() throws IOException {
 		String url = "https://vndoc.com/lich-su-viet-nam";
@@ -48,15 +44,6 @@ public class CrawlVNDoc extends Crawler<Era> implements Crawling{
 			Era era = new Era(eraName, fromYear, toYear);
 			this.addDataCrawl(era);
 
-		}
-		String filePath = "src\\data\\era.json";
-		Gson gson = new GsonBuilder().setPrettyPrinting().create();
-		try {
-			FileWriter writer = new FileWriter(new File(filePath));
-			gson.toJson(this.listDataCrawl, writer);
-			writer.close();
-		} catch (IOException e) {
-			e.printStackTrace();
 		}
 
 	}
