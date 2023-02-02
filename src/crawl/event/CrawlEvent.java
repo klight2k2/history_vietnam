@@ -28,12 +28,12 @@ public class CrawlEvent implements Runnable {
 	}
 
 	public static void main(String[] args) {
-		CrawlEvent des = new CrawlEvent();
-		try {
-			des.run();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	//		CrawlEvent des = new CrawlEvent();
+	//	try {
+	//		des.run();
+	//	} catch (Exception e) {
+	//		// TODO Auto-generated catch block
+	//		e.printStackTrace();
+	//	}
 	}
 }

@@ -9,7 +9,11 @@ public abstract class Historical {
 	public Historical(String name) {
 		this.name=name;
 	}
-	
+
+	public String getName() {
+		return name;
+	}
+
 	public boolean addOtherName(String otherName) {
 		if(otherNames.contains(otherName)) {
 			return false;
@@ -23,6 +27,20 @@ public abstract class Historical {
 		Historical historical= (Historical) obj;
 		if(historical.name.equals(this.name)) return true;
 		return false;
-		
+
+	}
+	public boolean checking(Object obj) {
+
+		if(obj instanceof String){
+			String a = (String)obj;
+			if(otherNames == null )return name.contains(a);
+			if(otherNames != null &&!otherNames.isEmpty()){
+				for(int i = 0;i < otherNames.size();i++){
+					if(otherNames.get(i).contains(a))return true;
+				}
+			}
+			if(name != null && !name.isEmpty()) return name.contains(a);
+		}
+		return false;
 	}
 }

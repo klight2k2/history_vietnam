@@ -34,7 +34,7 @@ public class CrawlSite implements Runnable {
 	}
 
 	public static void main(String[] args) {
-		CrawlSite des = new CrawlSite();
-		des.run();
+		//CrawlSite des = new CrawlSite();
+		//des.run();
 	}
 }
