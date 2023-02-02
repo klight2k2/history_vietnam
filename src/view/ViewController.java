@@ -220,10 +220,17 @@ public class ViewController {
 		TableView<T> view2 = new TableView<>();
 
 		//
-		for(int i = 0;i < data.size();i++){
-			if(data.get(i).equals(searchName)){
-				data2.add(data.get(i));
+		if(!data.isEmpty()){
+			for(int i = 0;i < data.size();i++){
+				if(data.get(i) instanceof Historical){
+					Historical a = (Historical) data.get(i);
+					if(a.checking(searchName)){
+						data2.add(data.get(i));
+					}
+				}
+
 			}
+
 		}
 
 		if(!data2.isEmpty()){

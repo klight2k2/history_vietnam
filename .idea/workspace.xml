@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ee548e2-1eb7-426e-8aef-fb7bb7097349" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/crawl/crawlera/CrawlEra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawl/crawlera/CrawlEra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Historical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Historical.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/MainModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/MainModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
