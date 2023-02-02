@@ -50,6 +50,7 @@ public class CrawlEventNguoiKeSu extends Crawler<HistoricalEvent> implements Cra
 				break;
 			}
 			HistoricalEvent event = new HistoricalEvent(desc, startDate, endDate);
+			System.out.println("Crawl Event: " + event.getName());
 			this.addDataCrawl(event);
 		}
 

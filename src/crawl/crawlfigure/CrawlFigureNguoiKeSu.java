@@ -51,11 +51,11 @@ public class CrawlFigureNguoiKeSu extends Crawler<HistoricalFigure> implements C
 
 		this.get(url);
 		String content = (String) response.body();
-		System.out.println(content);
 		String data = content.substring(content.indexOf("\"events\":") + 9, content.indexOf("},{\"script_path\""));
 		try {
 			JSONArray list = new JSONArray(data);
-			for (int i = 0; i < list.length(); i++) {
+//			for (int i = 0; i < list.length(); i++) {
+			for (int i = 0; i < 10; i++) {
 				JSONObject obj = list.getJSONObject(i);
 				obj.getJSONObject("start_date");
 				String nameFigure = obj.getJSONObject("text").getString("headline");
@@ -63,7 +63,7 @@ public class CrawlFigureNguoiKeSu extends Crawler<HistoricalFigure> implements C
 				String born = "";
 				String died = "";
 				String bornIn = "";
-				String imageLink="";
+				String imageLink = "";
 				if (obj.has("start_date")) {
 					born = obj.getJSONObject("start_date").getString("year");
 				}
@@ -90,12 +90,10 @@ public class CrawlFigureNguoiKeSu extends Crawler<HistoricalFigure> implements C
 					otherName = listMoreInfo.get(0).getElementsByTag("td").get(0).text();
 					bornIn = listMoreInfo.get(0).getElementsByTag("td").get(2).text();
 				}
-				;
-				System.out.println(otherName + " " + bornIn);
 
-				HistoricalFigure figure = new HistoricalFigure(nameFigure, died, born, bornIn, desc,imageLink);
+				HistoricalFigure figure = new HistoricalFigure(nameFigure, died, born, bornIn, desc, imageLink);
 				figure.addOtherName(otherName);
-				System.out.println(bornIn);
+				System.out.println("Crawl Figure: " + figure.getName());
 				this.addDataCrawl(figure);
 
 			}

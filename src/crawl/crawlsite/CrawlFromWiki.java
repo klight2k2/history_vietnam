@@ -2,7 +2,6 @@ package crawl.crawlsite;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -15,7 +14,7 @@ public class CrawlFromWiki extends Crawler<HistoricalSite> implements Crawling {
 
 	public CrawlFromWiki(ArrayList<HistoricalSite> listDataCrawl) {
 		// TODO Auto-generated constructor stub
-		this.listDataCrawl=listDataCrawl;
+		this.listDataCrawl = listDataCrawl;
 	}
 
 	@Override
@@ -50,6 +49,7 @@ public class CrawlFromWiki extends Crawler<HistoricalSite> implements Crawling {
 				}
 				HistoricalSite site = new HistoricalSite(nameSite, builtIn, location, objectWorship, loaiXepHang,
 						loaiHinhXepHang);
+				System.out.println("Crawl Site (Wiki): " + site.getName());
 				this.addDataCrawl(site);
 			}
 		}

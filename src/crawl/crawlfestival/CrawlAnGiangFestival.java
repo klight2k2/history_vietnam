@@ -1,15 +1,10 @@
 package crawl.crawlfestival;
 
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 
 import crawl.Crawler;
 import crawl.Crawling;
@@ -36,7 +31,6 @@ public class CrawlAnGiangFestival extends Crawler<Festival> implements Crawling 
 			if (header != null) {
 				String content = p.html();
 				String nameFestival = header.text();
-				System.out.println(nameFestival);
 				int start = content.indexOf("<br>") + 4;
 				String mainData = content.substring(start);
 				String[] data = mainData.split("<br>");
@@ -51,8 +45,6 @@ public class CrawlAnGiangFestival extends Crawler<Festival> implements Crawling 
 					String contentString = "";
 					label = label.concat(dataParts[0]);
 					contentString = contentString.concat(dataParts[1]);
-					System.out.println(label);
-					System.out.println(contentString);
 					switch (label) {
 					case " Thời gian": {
 						holdTime = contentString;
@@ -85,6 +77,7 @@ public class CrawlAnGiangFestival extends Crawler<Festival> implements Crawling 
 
 				}
 				Festival festival = new Festival(nameFestival, holdTime, location, doiTuongSuyTon, desc);
+				System.out.println("Crawl Festival (An Giang): " + festival.getName());
 				this.addDataCrawl(festival);
 
 			}

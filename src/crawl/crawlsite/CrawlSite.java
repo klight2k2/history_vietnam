@@ -15,7 +15,7 @@ public class CrawlSite implements Runnable {
 		// TODO Auto-generated constructor stub
 		this.listDataCrawl = listDataCrawl;
 
-		listWebCrawl.add(new CrawlFromDitich(this.listDataCrawl));
+//		listWebCrawl.add(new CrawlFromDitich(this.listDataCrawl));
 		listWebCrawl.add(new CrawlFromWiki(this.listDataCrawl));
 
 	}

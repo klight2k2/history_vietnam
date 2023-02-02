@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "location": "Xã Long Phú, thị xã Tân Châu, tỉnh An Giang.",
     "doiTuongSuyTon": "Thành Hoàng bổn cảnh.",
     "desc": "Lễ khai hạ, cầu mùa.",
@@ -8,6 +9,7 @@
     "otherNames": []
   },
   {
+    "id": 2,
     "location": "Xã Long Sơn, huyện Phú Tân, tỉnh An Giang.",
     "doiTuongSuyTon": "Lão Gia (danh y cổ Trung Quốc).",
     "desc": "Lễ hội cầu sự việc tốt lành.",
@@ -16,6 +18,7 @@
     "otherNames": []
   },
   {
+    "id": 3,
     "location": "Xã Long Kiên, huyện Chợ Mới, tỉnh An Giang.",
     "doiTuongSuyTon": "Nguyễn Trung Trực",
     "desc": "Lễ dâng hương, lễ cúng tưởng niệm.",
@@ -24,6 +27,7 @@
     "otherNames": []
   },
   {
+    "id": 4,
     "location": "Xã Phú Lâm, huyện Phú Tân, tỉnh An Giang.",
     "doiTuongSuyTon": "Bà Thượng Đồng Cổ Hỷ.",
     "desc": "Dâng lễ vía Bà, hát bội.",
@@ -32,6 +36,7 @@
     "otherNames": []
   },
   {
+    "id": 5,
     "location": "Tại chùa, từng gia đình cộng đồng người Kh’mer thuộc huyện Tri Tôn hoặc Tịnh Biên, tỉnh An Giang.",
     "doiTuongSuyTon": "",
     "desc": "Cầu phước cho các linh hồn thân nhân đã khuất được đầu thai sang kiếp khác, để người quá cố được sung sướng hơn. Trong dịp lễ Đôlta có hội đua bò theo thể thức truyền thống của người Kh’mer.",
@@ -40,6 +45,7 @@
     "otherNames": []
   },
   {
+    "id": 6,
     "location": "Phường Châu Phú A, thị xã Châu Đốc, tỉnh An Giang.",
     "doiTuongSuyTon": "Nguyễn Hữu Cảnh",
     "desc": "Dâng hương, lễ kỳ yên, hát bội đêm.",
@@ -48,6 +54,7 @@
     "otherNames": []
   },
   {
+    "id": 7,
     "location": "miếu Bà Chúa Xứ, núi Sam, cách thị xã Châu Đốc 7km",
     "doiTuongSuyTon": "Bà Chúa Xứ",
     "desc": "lễ tắm Bà.",

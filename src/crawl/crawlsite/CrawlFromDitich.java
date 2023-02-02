@@ -1,9 +1,7 @@
 package crawl.crawlsite;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -44,7 +42,6 @@ public class CrawlFromDitich extends Crawler<HistoricalSite> implements Crawling
 			String builtIn = "";
 			String imageLink = baseUrl
 					+ this.doc.select(".hl__library-hours__today-info > img").first().attr("src").replace("\\", "/");
-			System.out.println("image link :" + imageLink);
 //			String doiTuongTho="Đối tượng thờ";
 			Elements moreInfo = this.doc.select("div.hl__illustrated-list__list-item");
 			for (Element data : moreInfo) {
@@ -85,6 +82,7 @@ public class CrawlFromDitich extends Crawler<HistoricalSite> implements Crawling
 			}
 			HistoricalSite site = new HistoricalSite(nameSite, builtIn, location, objectWorship, loaiXepHang,
 					loaiHinhXepHang, imageLink);
+			System.out.println("Crawl Site (Ditich): " + site.getName());
 			this.addDataCrawl(site);
 		}
 	}

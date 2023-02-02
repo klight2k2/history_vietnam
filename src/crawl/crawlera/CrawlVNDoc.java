@@ -37,11 +37,11 @@ public class CrawlVNDoc extends Crawler<Era> implements Crawling {
 			if (context.length > 1) {
 				fromYear = context[1].split("[-–]")[0];
 				toYear = context[1].split("[-–]")[1].replace(")", "");
-				System.out.println(eraName + " " + fromYear);
 
 			}
 //			int id = this.listDataCrawl.size() + 1;
 			Era era = new Era(eraName, fromYear, toYear);
+			System.out.println("Crawl Era: " + era.getName());
 			this.addDataCrawl(era);
 
 		}
