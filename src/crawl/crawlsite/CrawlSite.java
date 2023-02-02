@@ -26,8 +26,7 @@ public class CrawlSite implements Runnable {
 	private ArrayList<HistoricalSite> listDataCrawl= new ArrayList<>(); 
 	public CrawlSite() {
 		// TODO Auto-generated constructor stub
-		Crawling site1= new  CrawlFromDitich(this.listDataCrawl);
-		listWebCrawl.add(site1);
+		listWebCrawl.add( new  CrawlFromDitich(this.listDataCrawl));
 		listWebCrawl.add(new CrawlFromWiki(this.listDataCrawl));
 		
 	}
@@ -42,7 +41,7 @@ public class CrawlSite implements Runnable {
 				e.printStackTrace();
 			}
 		}
-		String filePath = "D:\\learnHtml\\history_vietnam\\src\\crawl\\site.json";
+		String filePath = "D:\\history_vietnam\\src\\data\\site.json";
 //		BufferedImage image = ImageIO.read(new URL("http://ditich.vn/upload/images/ditich/Ch-L0009.jpg"));
 //		ImageIO.write(image, "png", new File("D:\\oop2\\OOP\\vietnamHistory\\data\\image.png"));
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
