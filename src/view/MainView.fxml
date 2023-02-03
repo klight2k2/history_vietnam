@@ -44,7 +44,7 @@
                         </HBox>
                         <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
                            <children>
-                              <Button minHeight="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="157.0" style="-fx-border-color: #6F6F6F; -fx-background-color: rgba(0,0,0,0); -fx-border-radius: 30;" text="Clear" />
+                              <Button minHeight="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="157.0" style="-fx-border-color: #6F6F6F; -fx-background-color: rgba(0,0,0,0); -fx-border-radius: 30;" text="Clear" onAction="#ClearSearch"/>
                               <Button minHeight="40.0" mnemonicParsing="false" onAction="#SearchByName" prefHeight="40.0" prefWidth="157.0" style="-fx-border-color: #6F6F6F; -fx-background-color: rgba(0,0,0,0); -fx-border-radius: 30;" text="Tìm kiếm" />
                            </children>
                         </HBox>

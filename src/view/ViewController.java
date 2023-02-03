@@ -211,5 +211,30 @@ public class ViewController {
 	  }
 
 
+	public void ClearSearch(ActionEvent event) {
+		  searchInfo.setText("");
+		  String type = selectedItem.getId();
+		  tableData.getColumns().clear();
+		switch (type){
 
+			case "historicalFigureItem":
+				copyTable(historicalFigureTable,(TableView<HistoricalFigure>) tableData);
+				break;
+			case "eraItem":
+				copyTable(eraTable,(TableView<Era>) tableData);
+				break;
+			case "festivalItem":
+				copyTable(festivalTable,(TableView<Festival>) tableData);
+
+				break;
+			case "eventItem":
+				copyTable(eventTable,(TableView<HistoricalEvent>) tableData);
+				break;
+			case "historicSiteItem":
+				copyTable(historicSiteTable,(TableView<HistoricalSite>) tableData);
+				break;
+			default:
+				System.out.println("Loi");
+		}
+	}
 }
