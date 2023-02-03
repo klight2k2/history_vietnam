@@ -22,7 +22,7 @@ import model.HistoricalSite;
 import model.MainModel;
 
 public class ViewController {
-	public ComboBox searchType;
+
 	public TextField searchInfo;
 
     @FXML
@@ -61,19 +61,25 @@ public class ViewController {
 	@FXML
 	  private void initialize() {
 		// Data
-//		MainModel model = new MainModel();
-//		historicalFigureList = FXCollections.observableArrayList(model.getHistoricalFigures());
-//		eventList = FXCollections.observableArrayList(model.getEvents());
-//		festivalList = FXCollections.observableArrayList(model.getFestivals());
-//		eraList = FXCollections.observableArrayList(model.getEras());
+		MainModel model = new MainModel();
+		historicalFigureList = FXCollections.observableArrayList(model.getHistoricalFigures());
+		historicSiteList = FXCollections.observableArrayList(model.getHistoricSites());
+		eventList = FXCollections.observableArrayList(model.getEvents());
+		festivalList = FXCollections.observableArrayList(model.getFestivals());
+		eraList = FXCollections.observableArrayList(model.getEras());
 		  
 //		historicalFigureList = FXCollections.observableArrayList(
-//			new HistoricalFigure("Tran Hung Dao", Arrays.asList("Tran Quoc Tuan"), 900, 1000),
-//			new HistoricalFigure("Tran Hung Dao", Arrays.asList("Tran Quoc Tuan"), 900, 1000)
+//			new HistoricalFigure("Tran Hung Dao", "900", "1000"),
+//			new HistoricalFigure("Tran Hung Dao", "900", "1000")
 //		);
 
 		tableData.getColumns().clear();
-		settingTable(historicalFigureTable, historicalFigureList, Arrays.asList("Tên", "Năm sinh", "Năm mất"), Arrays.asList("name", "born", "died"));
+		settingTable(historicalFigureTable, historicalFigureList, Arrays.asList("Tên"), Arrays.asList("name"));
+		settingTable(historicSiteTable, historicSiteList, Arrays.asList("Tên"), Arrays.asList("name"));
+		settingTable(eventTable, eventList, Arrays.asList("Tên"), Arrays.asList("name"));
+		settingTable(festivalTable, festivalList, Arrays.asList("Tên"), Arrays.asList("name"));
+		settingTable(eraTable, eraList, Arrays.asList("Tên"), Arrays.asList("name"));
+		
 		copyTable(historicalFigureTable,(TableView<HistoricalFigure>) tableData);
 		
 		// Sidebar
@@ -121,71 +127,10 @@ public class ViewController {
                 System.out.println("Loi");
 	    }
 	  }
-	//View Option Searching
-	@FXML
-	protected void ViewOption(MouseEvent event){
 
-		String type = selectedItem.getId();
-
-		ObservableList<String> a = new ObservableListBase<String>() {
-			@Override
-			public String get(int index) {
-				return null;
-			}
-
-			@Override
-			public int size() {
-				return 0;
-			}
-		};
-		switch (type){
-
-			case "historicalFigureItem":
-				a = FXCollections.observableArrayList(
-						"name",
-						"born",
-						"die"
-				);
-				break;
-			case "eraItem":
-				a = FXCollections.observableArrayList(
-						"name",
-						"fromYear",
-						"toYear"
-				);
-				break;
-			case "festivalItem":
-				a = FXCollections.observableArrayList(
-						"name",
-						"date",
-						"location"
-				);
-				break;
-			case "eventItem":
-				a = FXCollections.observableArrayList(
-						"name",
-						"startDate",
-						"endDate",
-						"location"
-				);
-				break;
-			case "historicSiteItem":
-				a = FXCollections.observableArrayList(
-						"name",
-						"location",
-						"builtIn"
-				);
-				break;
-			default:
-				System.out.println("Loi");
-		}
-
-
-		searchType.setItems(a);
-	}
 	//search controller
 	public void SearchByName(ActionEvent event) {
-		String col = (String) searchType.getValue();
+
 		String searchName = searchInfo.getText();
 		String type = selectedItem.getId();
 
@@ -193,28 +138,55 @@ public class ViewController {
 		switch (type){
 
 			case "historicalFigureItem":
-				searchingTable(historicalFigureList,Arrays.asList("Tên", "Năm sinh", "Năm mất"), Arrays.asList("name", "born", "died"), searchName,col);
+				searchingTable(historicalFigureList,Arrays.asList("Tên"), Arrays.asList("name"), searchName);
 				break;
 			case "eraItem":
-				searchingTable(eraList, Arrays.asList("Tên", "Từ năm", "Đến năm"), Arrays.asList("name", "fromYear", "toYear"), searchName,col);
+				searchingTable(eraList, Arrays.asList("Tên"), Arrays.asList("name"), searchName);
 				break;
 			case "festivalItem":
-				searchingTable(festivalList,Arrays.asList("Tên", "Vào", "Tại"), Arrays.asList("name", "date", "location"), searchName,col);
+				searchingTable(festivalList,Arrays.asList("Tên"), Arrays.asList("name"), searchName);
 
 				break;
 			case "eventItem":
-				searchingTable(eventList, Arrays.asList("Tên", "Bắt đầu", "Kết thúc"), Arrays.asList("name", "startDate", "endDate"), searchName,col);
+				searchingTable(eventList, Arrays.asList("Tên"), Arrays.asList("name"), searchName);
 				break;
 			case "historicSiteItem":
-				searchingTable(historicSiteList, Arrays.asList("Tên", "Tại", "Vào năm"), Arrays.asList("name", "location", "buildIn"), searchName,col);
+				searchingTable(historicSiteList, Arrays.asList("Tên"), Arrays.asList("name"), searchName);
 				break;
 			default:
 				System.out.println("Loi");
 		}
 		//searchInfo.setText("");
 	}
+	//Clear Button Action
+	public void ClearSearch(ActionEvent event) {
+		searchInfo.setText("");
+		String type = selectedItem.getId();
+		tableData.getColumns().clear();
+		switch (type){
+
+			case "historicalFigureItem":
+				copyTable(historicalFigureTable,(TableView<HistoricalFigure>) tableData);
+				break;
+			case "eraItem":
+				copyTable(eraTable,(TableView<Era>) tableData);
+				break;
+			case "festivalItem":
+				copyTable(festivalTable,(TableView<Festival>) tableData);
+
+				break;
+			case "eventItem":
+				copyTable(eventTable,(TableView<HistoricalEvent>) tableData);
+				break;
+			case "historicSiteItem":
+				copyTable(historicSiteTable,(TableView<HistoricalSite>) tableData);
+				break;
+			default:
+				System.out.println("Loi");
+		}
+	}
 	//Setting data2 with searchName
-	protected <T> void searchingTable(ObservableList<T> data, List<String> columnName, List<String> columnProperty, String searchName, String col){
+	protected <T> void searchingTable(ObservableList<T> data, List<String> columnName, List<String> columnProperty, String searchName){
 
 		ObservableList<T> data2 = FXCollections.observableArrayList();
 		TableView<T> view2 = new TableView<>();
@@ -246,14 +218,13 @@ public class ViewController {
 	}
 
 
-
-
-
 	private <T> void settingTable(TableView<T> table, ObservableList<T> data, List<String> columnName, List<String> columnProperty) {
 		  table.setItems(data);
 		  for(int i = 0; i < columnName.size(); ++i) {
 			  TableColumn<T, ?> column = new TableColumn<>(columnName.get(i));
-			  column.setMinWidth(100);
+			  if(columnName.get(i) == "STT") {
+				  column.setMinWidth(80);				  
+			  }else column.setMinWidth(300);	
 			  column.setCellValueFactory(new PropertyValueFactory<>(columnProperty.get(i)));
 			  table.getColumns().add(column);
 		  }

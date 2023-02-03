@@ -13,6 +13,14 @@ public class HistoricalFigure extends Historical {
 	protected String bornIn;
 	protected String desc;
 	protected String imageLink;
+	
+	// constructor test
+	public HistoricalFigure(String name, String born, String died) {
+		super(name);
+		this.id = idCounter++;
+		this.died = died;
+		this.born = born;
+	}
 
 	public HistoricalFigure(String name, String died, String born, String bornIn, String desc) {
 		super(name);
