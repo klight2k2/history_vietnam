@@ -30,7 +30,7 @@
                <children>
                   <VBox alignment="CENTER_RIGHT" prefHeight="180.0" prefWidth="711.0" spacing="10.0" style="-fx-background-color: #fff; -fx-background-radius: 15;">
                      <children>
-                        <ComboBox fx:id="searchType" minHeight="45.0" prefHeight="45.0" prefWidth="710.0" promptText="Chọn trường thông tin" style="-fx-border-color: #6F6F6F; -fx-border-radius: 30;" styleClass="context-menu" stylesheets="@style.css" onMouseClicked="#ViewOption" />
+
                         <HBox alignment="CENTER_LEFT" minHeight="45.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #6F6F6F; -fx-border-radius: 30;">
                            <children>
                               <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
