@@ -42,7 +42,6 @@ public class LinkEra implements Runnable {
 		}
 		year = year.replaceAll("\\s+", "");
 		int intYear = Integer.parseInt(year) * trCN;
-		System.out.println("Year: (" + year + ") -> " + intYear);
 		return intYear;
 	}
 
@@ -98,10 +97,5 @@ public class LinkEra implements Runnable {
 		for (Era era : listEraDataRaw) {
 			findPrecededAndSuccessed(era);
 		}
-	}
-
-	public static void main(String[] args) {
-		LinkEra des = new LinkEra();
-		des.run();
 	}
 }

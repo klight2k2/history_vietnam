@@ -26,6 +26,7 @@ public class HistoricalSite extends Historical {
 			String loaiHinhXepHang, String imageLink) {
 		super(name);
 		// TODO Auto-generated constructor stub
+		this.id = idCounter++;
 		this.builtIn = builtIn;
 		this.location = location;
 		this.objectWorship = objectWorship;

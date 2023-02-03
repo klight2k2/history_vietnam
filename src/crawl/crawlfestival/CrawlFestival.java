@@ -29,9 +29,4 @@ public class CrawlFestival implements Runnable {
 
 	}
 
-	public static void main(String[] args) {
-		//CrawlFestival des = new CrawlFestival();
-		//des.run();
-	}
-
 }

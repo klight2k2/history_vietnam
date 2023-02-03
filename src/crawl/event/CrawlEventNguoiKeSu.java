@@ -22,14 +22,12 @@ public class CrawlEventNguoiKeSu extends Crawler<HistoricalEvent> implements Cra
 		this.getHTML(url);
 		Element mainTag = this.doc.getElementsByClass("com-content-article__body").get(0);
 		Elements mainParagraphs = mainTag.getElementsByTag("p");
-		System.out.println(mainParagraphs.size());
 		mainParagraphs.remove(0);
 		String startDate = "";
 		String endDate = "";
 		String desc = "";
 		for (int i = 0; i < mainParagraphs.size(); i++) {
 			Elements times = mainParagraphs.get(i).getElementsByTag("strong");
-			System.out.println(times);
 			switch (i) {
 			case 0, 3, 6, 11, 29, 57, 59, 60, 63, 64, 65, 66, 67, 68, 69, 71, 72, 73, 75, 77, 80, 81, 82, 83, 84, 89,
 					101, 102, 104, 107, 108, 109, 110, 111, 115, 114, 112:

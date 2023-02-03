@@ -1,8 +1,17 @@
 [
   {
-    "id": 0,
+    "id": 1,
     "born": "1102",
     "died": "1179",
+    "relatedEraId": [
+      13
+    ],
+    "relatedEventId": [
+      25,
+      26,
+      27,
+      28
+    ],
     "bornIn": "Không rõ",
     "desc": "\u003cp\u003e\u003cb\u003eTô Hiến Thành\u003c/b\u003e (Hán tự: 蘇憲誠, 11 tháng 2 năm 1102 - 17 tháng 7 năm 1179) quê làng Hạ Mỗ nay là xã Hạ Mỗ huyện Đan Phượng, Hà Nội, là quan đại thần phụ chính nhà Lý, phụng sự hai triều vua: Lý Anh Tông và Lý Cao Tông. Ông là viên quan văn võ song toàn, nổi tiếng là công minh chính trực, được vua phong tước vương mặc dù không phải là tôn thất nhà Lý.\u003c/p\u003e\r\n\u003cp\u003e\u003ca href\u003d\"/nhan-vat/to-hien-thanh\" target\u003d\"_blank\" title\u003d\"\"\u003eXem Thêm\u003c/a\u003e\u003c/p\u003e",
     "imageLink": "",
@@ -12,9 +21,17 @@
     ]
   },
   {
-    "id": 0,
+    "id": 2,
     "born": "1648",
     "died": "1720",
+    "relatedEraId": [
+      20
+    ],
+    "relatedEventId": [
+      59,
+      61,
+      62
+    ],
     "bornIn": "",
     "desc": "\u003cp\u003e\u003cb\u003eNguyễn Quý Đức\u003c/b\u003e (chữ Hán: 阮貴德, 1648 -1720), húy là \u003cb\u003eTộ\u003c/b\u003e (祚), tự \u003cb\u003eBản Nhân\u003c/b\u003e (体仁) hiệu \u003cb\u003eĐường Hiên\u003c/b\u003e (堂軒); là nhà thơ, nhà giáo, nhà sử học, nhà chính trị Việt Nam thời Lê trung hưng\u003c/p\u003e\r\n\u003cp\u003e\u003ca href\u003d\"/nhan-vat/nguyen-quy-duc\" target\u003d\"_blank\" title\u003d\"\"\u003eXem Thêm\u003c/a\u003e\u003c/p\u003e",
     "imageLink": "/images/thumbnail5/200x120/images/wiki/nguyen-quy-duc/7faf18497e16e4117bafb487a4c2e285.jpg",
@@ -24,9 +41,35 @@
     ]
   },
   {
-    "id": 0,
+    "id": 3,
     "born": "1915",
     "died": "1993",
+    "relatedEraId": [
+      23,
+      24
+    ],
+    "relatedEventId": [
+      75,
+      91,
+      92,
+      93,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116
+    ],
     "bornIn": "Hà Nội",
     "desc": "\n\u003cp\u003e\u003cb\u003eĐỗ Đức Dục\u003c/b\u003e (1915-1993) (còn có bút danh Trọng Đức, Như Hà, Tảo Hoài) là nhà trí thức cách mạng, nhà báo, nhà lý luận, dịch giả, nhà nghiên cứu văn học Việt Nam và văn học Pháp, nguyên Phó tổng thư ký Đảng Dân chủ Việt Nam, Thứ trưởng Bộ Văn hóa, nghiên cứu viên Viện Văn học thuộc Ủy ban Khoa học Xã hội (nay là Viện Hàn lâm Khoa học xã hội Việt Nam), Hội viên Hội nhà văn Việt Nam. \u003c/p\u003e\u003cp\u003e\u003ca href\u003d\"/nhan-vat/do-duc-duc\" target\u003d\"_blank\" title\u003d\"\"\u003eXem Thêm\u003c/a\u003e\u003c/p\u003e",
     "imageLink": "/images/thumbnail5/200x120/images/wiki/do-duc-duc/d0285f2ca0dec186ac794dba1d84386f.jpg",
@@ -36,9 +79,35 @@
     ]
   },
   {
-    "id": 0,
+    "id": 4,
     "born": "1914",
     "died": "1988",
+    "relatedEraId": [
+      23,
+      24
+    ],
+    "relatedEventId": [
+      75,
+      91,
+      92,
+      93,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116
+    ],
     "bornIn": "",
     "desc": "\n\u003cp\u003e\u003cb\u003eTrịnh Văn Bô\u003c/b\u003e (1914-1988) là một thương nhân Việt Nam giữa thế kỷ XX. Ông là nhà tư sản theo chủ nghĩa dân tộc, từng ủng hộ cho Chính phủ Cách mạng Lâm thời Việt Nam 5.147 lượng vàng, tương đương số tiền gần gấp đôi ngân khố chính phủ bấy giờ. Hiệu buôn tơ lụa \u003cb\u003ePhúc Lợi\u003c/b\u003e tại số 48 phố Hàng Ngang quận Hoàn Kiếm Hà Nội, trước Cách mạng tháng Tám, cũng là nhà riêng của ông, là nơi Hồ Chí Minh ở dịp cuối tháng 8 đầu tháng 9 năm 1945, và là nơi ra đời bản Tuyên ngôn Độc lập khai sinh ra nước Việt Nam Dân chủ Cộng hòa. \u003c/p\u003e\u003cp\u003e\u003ca href\u003d\"/nhan-vat/trinh-van-bo\" target\u003d\"_blank\" title\u003d\"\"\u003eXem Thêm\u003c/a\u003e\u003c/p\u003e",
     "imageLink": "/images/thumbnail5/200x120/images/wiki/trinh-van-bo/d62ffd04b0722fd60085fe0d2a0924de.jpg",
@@ -48,9 +117,36 @@
     ]
   },
   {
-    "id": 0,
+    "id": 5,
     "born": "1912",
     "died": "1988",
+    "relatedEraId": [
+      23,
+      24
+    ],
+    "relatedEventId": [
+      75,
+      91,
+      92,
+      93,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116
+    ],
     "bornIn": "Hà Nội",
     "desc": "\n\u003cp\u003e\u003cb\u003eTrần Duy Hưng\u003c/b\u003e (16 tháng 1 năm 1912 - 2 tháng 10 năm 1988) là một bác sĩ, Chủ tịch Ủy ban Hành chính đầu tiên của Hà Nội (30 tháng 8 năm 1945 đến tháng 12 năm 1946; 1954 đến 1977 - khi ông viết đơn xin nghỉ), Thứ trưởng Bộ Nội vụ, Thứ trưởng Bộ Y tế Chính phủ Việt Nam Dân chủ Cộng hòa. \u003c/p\u003e\u003cp\u003e\u003ca href\u003d\"/nhan-vat/tran-duy-hung\" target\u003d\"_blank\" title\u003d\"\"\u003eXem Thêm\u003c/a\u003e\u003c/p\u003e",
     "imageLink": "/images/thumbnail5/200x120/images/wiki/tran-duy-hung/c125038df6bef3c05fa72939cc7da376.jpg",
@@ -60,9 +156,26 @@
     ]
   },
   {
-    "id": 0,
+    "id": 6,
     "born": "1800",
     "died": "1851",
+    "relatedEraId": [
+      21,
+      22
+    ],
+    "relatedEventId": [
+      63,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80
+    ],
     "bornIn": "Hải Dương",
     "desc": "\n\u003cp\u003e\u003cb\u003eVũ Tông Phan\u003c/b\u003e (武宗璠, 1800 - 1851) còn gọi là Võ Tông Phan, là Danh sĩ, Nhà giáo dục đời nhà Nguyễn. Ông tự Hoán Phủ, hiệu Lỗ Am, Đường Xuyên, là học trò danh sĩ Phạm Quý Thích, là bạn Cao Bá Quát, Nguyễn Văn Siêu... tại trường Tự Tháp; tục gọi là Nghè Tự Tháp. Vũ Tông Phan nguyên quán ở làng Hoa Đường, huyện Đường An sau đổi là làng Lương Ngọc, nay thuộc xã Thúc Kháng, huyện Bình Giang, tỉnh Hải Dương. Đỗ Tiến sĩ năm Bính Tuất 1826 thời Minh Mạng, ông làm Tham hiệp trấn Ninh Bình nhưng sau bị giáng làm Đốc học Bắc Ninh. Sau này, ông cáo quan về mở trường dạy học ở thôn Tự Tháp, phường Báo Thiên, huyện Thọ Xương (nay là quận Hoàn Kiếm, Hà Nội). \u003c/p\u003e\n\u003cp\u003eTrường Tự Tháp còn gọi là Trường Hồ Đình hay Trường Ông nghè Tự Tháp, nằm ở phía tây Hồ Gươm do Vũ Tông Phan sáng lập, đào tạo được nhiều nhân tài như Hoàng giáp Nguyễn Tư Giản, Hoàng giáp Lê Đình Diên, Phó bảng Phạm Hy Lượng, Cử nhân Nguyễn Huy Đức, Ngô Văn Đặng. \u003c/p\u003e\u003cp\u003e\u003ca href\u003d\"/nhan-vat/vu-tong-phan\" target\u003d\"_blank\" title\u003d\"\"\u003eXem Thêm\u003c/a\u003e\u003c/p\u003e",
     "imageLink": "",
@@ -72,9 +185,25 @@
     ]
   },
   {
-    "id": 0,
+    "id": 7,
     "born": "1912",
     "died": "1939",
+    "relatedEraId": [
+      23
+    ],
+    "relatedEventId": [
+      75,
+      91,
+      92,
+      93,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106
+    ],
     "bornIn": "Hà Nội",
     "desc": "\n\u003cp\u003e\u003cb\u003eVũ Trọng Phụng\u003c/b\u003e (1912-1939) là một nhà văn, nhà báo nổi tiếng của Việt Nam vào đầu thế kỷ 20. Tuy thời gian cầm bút rất ngắn ngủi, với tác phẩm đầu tiên là truyện ngắn Chống nạng lên đường đăng trên Ngọ báo vào năm 1930, ông đã để lại một kho tác phẩm đáng kinh ngạc: hơn 30 truyện ngắn, 9 tập tiểu thuyết, 9 tập phóng sự, 7 vở kịch, cùng một bản dịch vở kịch từ tiếng Pháp, một số bài viết phê bình, tranh luận văn học và hàng trăm bài báo viết về các vấn đề chính trị, xã hội, văn hóa. Một số trích đoạn tác phẩm của ông trong các tác phẩm Số đỏ và Giông Tố đã được đưa vào sách giáo khoa môn Ngữ văn của Việt Nam. (Cần làm rõ thêm) \u003c/p\u003e\n\u003cp\u003eNổi tiếng với giọng văn trào phúng châm biếm xã hội của mình, một số người đã so sánh ông như Balzac của Việt Nam. Tuy nhiên, cũng vì phong cách \"tả chân\" và yếu tố tình dục trong tác phẩm mà khi sinh thời ông đã bị chính quyền bảo hộ Pháp tại Hà Nội gọi ra tòa vì \"tội tổn thương phong hóa\" (outrage aux bonnes moeurs). Về sau này, tác phẩm của ông lại bị cấm in, cấm đọc vì là \"tác phẩm suy đồi\" tại miền Bắc Việt Nam từ 1954 và cả nước từ ngày 30/4/1975 cho đến tận cuối những năm 1980 mới được chính quyền cho lưu hành. . \u003c/p\u003e\u003cp\u003e\u003ca href\u003d\"/nhan-vat/vu-trong-phung\" target\u003d\"_blank\" title\u003d\"\"\u003eXem Thêm\u003c/a\u003e\u003c/p\u003e",
     "imageLink": "/images/thumbnail5/200x120/images/wiki/vu-trong-phung/ca7c3e8161d87f2c8abb55f09cfb5e70.jpg",
@@ -84,9 +213,38 @@
     ]
   },
   {
-    "id": 0,
+    "id": 8,
     "born": "1906",
     "died": "1990",
+    "relatedEraId": [
+      23,
+      24
+    ],
+    "relatedEventId": [
+      75,
+      89,
+      90,
+      91,
+      92,
+      93,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116
+    ],
     "bornIn": "Hà Nội",
     "desc": "\n\u003cp\u003e\u003cb\u003eTrịnh Đình Cửu\u003c/b\u003e (1906-1990) là một nhà cách mạng và chính khách Việt Nam. Ông là một trong 5 đại biểu chính thức của 2 tổ chức Cộng sản (Đông Dương Cộng sản Đảng, An Nam Cộng sản Đảng) tham gia trong hội nghị thành lập Đảng Cộng sản Việt Nam năm 1930, dưới sự chủ trì của Nguyễn Ái Quốc. Trong hội nghị này, ông được bầu làm người đứng đầu lâm thời điều hành Ban Chấp hành Trung ương Đảng khi Đảng được thành lập với cương vị Phụ trách Ban Chấp hành Trung ương Lâm thời Đảng Cộng sản Việt Nam từ tháng 2 đến tháng 10 năm 1930, khi Trần Phú đã được bầu làm lãnh đạo Đảng thay ông trên cương vị chính thức Tổng Bí thư. \u003c/p\u003e\u003cp\u003e\u003ca href\u003d\"/nhan-vat/trinh-dinh-cuu\" target\u003d\"_blank\" title\u003d\"\"\u003eXem Thêm\u003c/a\u003e\u003c/p\u003e",
     "imageLink": "/images/thumbnail5/200x120/images/wiki/trinh-dinh-cuu/25d5bbc9fa03c32e2105132155023dca.jpg",
@@ -96,9 +254,38 @@
     ]
   },
   {
-    "id": 0,
+    "id": 9,
     "born": "1907",
     "died": "1997",
+    "relatedEraId": [
+      23,
+      24
+    ],
+    "relatedEventId": [
+      75,
+      89,
+      90,
+      91,
+      92,
+      93,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116
+    ],
     "bornIn": "",
     "desc": "\n\u003cp\u003e\u003cb\u003eNguyễn Xiển\u003c/b\u003e (27/7/1907–1997) là một nhà khoa học, đồng thời cũng là một chính khách Việt Nam. Ông từng giữ chức vụ Tổng Thư ký Đảng Xã hội Việt Nam (1956–1988) và Phó Chủ tịch Ủy ban Thường vụ Quốc hội Việt Nam (từ năm 1960 đến 1987). \u003c/p\u003e\u003cp\u003e\u003ca href\u003d\"/nhan-vat/nguyen-xien\" target\u003d\"_blank\" title\u003d\"\"\u003eXem Thêm\u003c/a\u003e\u003c/p\u003e",
     "imageLink": "/images/thumbnail5/200x120/images/wiki/nguyen-xien/eb7682fb7cdd877f6d2bf18911b82d7b.jpg",
@@ -108,9 +295,33 @@
     ]
   },
   {
-    "id": 0,
+    "id": 10,
     "born": "1920",
     "died": "1992",
+    "relatedEraId": [
+      23,
+      24
+    ],
+    "relatedEventId": [
+      75,
+      92,
+      93,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116
+    ],
     "bornIn": "Bến Tre",
     "desc": "\n\u003cp\u003e\u003cb\u003eNguyễn Thị Định\u003c/b\u003e (15 tháng 3 năm 1920 – 26 tháng 8 năm 1992), còn gọi là \u003cb\u003eMadame Nguyễn Thị Định\u003c/b\u003e, \u003cb\u003eBa Định\u003c/b\u003e) (bí danh \u003cb\u003eBích Vân\u003c/b\u003e, \u003cb\u003eBa Tấn\u003c/b\u003e, \u003cb\u003eBa Nhất\u003c/b\u003e và \u003cb\u003eBa Hận\u003c/b\u003e ); là nữ tướng đầu tiên của Quân đội Nhân dân Việt Nam. \u003c/p\u003e\u003cp\u003e\u003ca href\u003d\"/nhan-vat/nguyen-thi-dinh\" target\u003d\"_blank\" title\u003d\"\"\u003eXem Thêm\u003c/a\u003e\u003c/p\u003e",
     "imageLink": "/images/thumbnail5/200x120/images/wiki/nguyen-thi-dinh/0787d8459bc64cd961af078a2b67cd9f.jpg",

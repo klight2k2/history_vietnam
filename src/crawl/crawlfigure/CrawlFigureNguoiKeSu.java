@@ -103,9 +103,4 @@ public class CrawlFigureNguoiKeSu extends Crawler<HistoricalFigure> implements C
 			e.printStackTrace();
 		}
 	}
-
-//	public void main(String[] args) {
-//		CrawlFigureNguoiKeSu des = new CrawlFigureNguoiKeSu();
-//		des.start();
-//	}
 }
