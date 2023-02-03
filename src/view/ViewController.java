@@ -61,19 +61,25 @@ public class ViewController {
 	@FXML
 	  private void initialize() {
 		// Data
-//		MainModel model = new MainModel();
-//		historicalFigureList = FXCollections.observableArrayList(model.getHistoricalFigures());
-//		eventList = FXCollections.observableArrayList(model.getEvents());
-//		festivalList = FXCollections.observableArrayList(model.getFestivals());
-//		eraList = FXCollections.observableArrayList(model.getEras());
+		MainModel model = new MainModel();
+		historicalFigureList = FXCollections.observableArrayList(model.getHistoricalFigures());
+		historicSiteList = FXCollections.observableArrayList(model.getHistoricSites());
+		eventList = FXCollections.observableArrayList(model.getEvents());
+		festivalList = FXCollections.observableArrayList(model.getFestivals());
+		eraList = FXCollections.observableArrayList(model.getEras());
 		  
 //		historicalFigureList = FXCollections.observableArrayList(
-//			new HistoricalFigure("Tran Hung Dao", Arrays.asList("Tran Quoc Tuan"), 900, 1000),
-//			new HistoricalFigure("Tran Hung Dao", Arrays.asList("Tran Quoc Tuan"), 900, 1000)
+//			new HistoricalFigure("Tran Hung Dao", "900", "1000"),
+//			new HistoricalFigure("Tran Hung Dao", "900", "1000")
 //		);
 
 		tableData.getColumns().clear();
-		settingTable(historicalFigureTable, historicalFigureList, Arrays.asList("Tên", "Năm sinh", "Năm mất"), Arrays.asList("name", "born", "died"));
+		settingTable(historicalFigureTable, historicalFigureList, Arrays.asList("Tên"), Arrays.asList("name"));
+		settingTable(historicSiteTable, historicSiteList, Arrays.asList("Tên"), Arrays.asList("name"));
+		settingTable(eventTable, eventList, Arrays.asList("Tên"), Arrays.asList("name"));
+		settingTable(festivalTable, festivalList, Arrays.asList("Tên"), Arrays.asList("name"));
+		settingTable(eraTable, eraList, Arrays.asList("Tên"), Arrays.asList("name"));
+		
 		copyTable(historicalFigureTable,(TableView<HistoricalFigure>) tableData);
 		
 		// Sidebar
@@ -246,14 +252,11 @@ public class ViewController {
 	}
 
 
-
-
-
 	private <T> void settingTable(TableView<T> table, ObservableList<T> data, List<String> columnName, List<String> columnProperty) {
 		  table.setItems(data);
 		  for(int i = 0; i < columnName.size(); ++i) {
 			  TableColumn<T, ?> column = new TableColumn<>(columnName.get(i));
-			  column.setMinWidth(100);
+			  column.setMinWidth(300);
 			  column.setCellValueFactory(new PropertyValueFactory<>(columnProperty.get(i)));
 			  table.getColumns().add(column);
 		  }
