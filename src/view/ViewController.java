@@ -138,20 +138,20 @@ public class ViewController {
 		switch (type){
 
 			case "historicalFigureItem":
-				searchingTable(historicalFigureList,Arrays.asList("Tên", "Năm sinh", "Năm mất"), Arrays.asList("name", "born", "died"), searchName);
+				searchingTable(historicalFigureList,Arrays.asList("Tên"), Arrays.asList("name"), searchName);
 				break;
 			case "eraItem":
-				searchingTable(eraList, Arrays.asList("Tên", "Từ năm", "Đến năm"), Arrays.asList("name", "fromYear", "toYear"), searchName);
+				searchingTable(eraList, Arrays.asList("Tên"), Arrays.asList("name"), searchName);
 				break;
 			case "festivalItem":
-				searchingTable(festivalList,Arrays.asList("Tên", "Vào", "Tại"), Arrays.asList("name", "date", "location"), searchName);
+				searchingTable(festivalList,Arrays.asList("Tên"), Arrays.asList("name"), searchName);
 
 				break;
 			case "eventItem":
-				searchingTable(eventList, Arrays.asList("Tên", "Bắt đầu", "Kết thúc"), Arrays.asList("name", "startDate", "endDate"), searchName);
+				searchingTable(eventList, Arrays.asList("Tên"), Arrays.asList("name"), searchName);
 				break;
 			case "historicSiteItem":
-				searchingTable(historicSiteList, Arrays.asList("Tên", "Tại", "Vào năm"), Arrays.asList("name", "location", "buildIn"), searchName);
+				searchingTable(historicSiteList, Arrays.asList("Tên"), Arrays.asList("name"), searchName);
 				break;
 			default:
 				System.out.println("Loi");
@@ -195,7 +195,9 @@ public class ViewController {
 		  table.setItems(data);
 		  for(int i = 0; i < columnName.size(); ++i) {
 			  TableColumn<T, ?> column = new TableColumn<>(columnName.get(i));
-			  column.setMinWidth(300);
+			  if(columnName.get(i) == "STT") {
+				  column.setMinWidth(80);				  
+			  }else column.setMinWidth(300);	
 			  column.setCellValueFactory(new PropertyValueFactory<>(columnProperty.get(i)));
 			  table.getColumns().add(column);
 		  }
