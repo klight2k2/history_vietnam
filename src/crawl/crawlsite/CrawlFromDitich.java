@@ -30,8 +30,8 @@ public class CrawlFromDitich extends Crawler<HistoricalSite> implements Crawling
 			}
 		}
 //		listDetailUrl.add("/FrontEnd/DiTich/Form?do=&ItemId=2022");
-//		for (int i = 0; i < listDetailUrl.size(); i++) {
-		for (int i = 0; i < 50; i++) {
+		for (int i = 0; i < listDetailUrl.size(); i++) {
+//		for (int i = 0; i < 50; i++) {
 			this.getHTML(baseUrl + listDetailUrl.get(i));
 			Element info = this.doc.getElementsByClass("hl__library-info__container").get(0);
 			Elements listInput = info.getElementsByTag("input");
