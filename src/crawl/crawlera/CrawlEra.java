@@ -3,6 +3,7 @@ package crawl.crawlera;
 import java.util.ArrayList;
 
 import crawl.Crawling;
+import crawl.crawlfigure.CrawlFigure;
 import model.Era;
 
 public class CrawlEra implements Runnable {
@@ -14,6 +15,8 @@ public class CrawlEra implements Runnable {
 
 		CrawlVNDoc vndoc = new CrawlVNDoc(this.listDataCrawl);
 		this.listWebCrawl.add(vndoc);
+		CrawlEraFromlVanSu vansu = new CrawlEraFromlVanSu(this.listDataCrawl);
+		this.listWebCrawl.add(vansu);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -26,5 +29,10 @@ public class CrawlEra implements Runnable {
 				e.printStackTrace();
 			}
 		}
+	}
+	public static void main(String[] args) {
+		
+		CrawlEra des = new CrawlEra(new ArrayList<Era>());
+		des.run();
 	}
 }
