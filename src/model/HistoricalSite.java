@@ -35,4 +35,69 @@ public class HistoricalSite extends Historical {
 		this.imageLink = imageLink;
 	}
 
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public static int getIdCounter() {
+		return idCounter;
+	}
+
+	public static void setIdCounter(int idCounter) {
+		HistoricalSite.idCounter = idCounter;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	public String getBuiltIn() {
+		return builtIn;
+	}
+
+	public void setBuiltIn(String builtIn) {
+		this.builtIn = builtIn;
+	}
+
+	public String getObjectWorship() {
+		return objectWorship;
+	}
+
+	public void setObjectWorship(String objectWorship) {
+		this.objectWorship = objectWorship;
+	}
+
+	public String getLoaiHinhXepHang() {
+		return loaiHinhXepHang;
+	}
+
+	public void setLoaiHinhXepHang(String loaiHinhXepHang) {
+		this.loaiHinhXepHang = loaiHinhXepHang;
+	}
+
+	public String getLoaiXepHang() {
+		return loaiXepHang;
+	}
+
+	public void setLoaiXepHang(String loaiXepHang) {
+		this.loaiXepHang = loaiXepHang;
+	}
+
+	public String getImageLink() {
+		return imageLink;
+	}
+
+	public void setImageLink(String imageLink) {
+		this.imageLink = imageLink;
+	}
+	
+	
 }
