@@ -74,7 +74,7 @@ public class ViewController {
 //		);
 
 		tableData.getColumns().clear();
-		settingTable(historicalFigureTable, historicalFigureList, Arrays.asList("Tên"), Arrays.asList("name"));
+		settingTable(historicalFigureTable, historicalFigureList, Arrays.asList("STT", "Tên"), Arrays.asList("id", "name"));
 		settingTable(historicSiteTable, historicSiteList, Arrays.asList("Tên"), Arrays.asList("name"));
 		settingTable(eventTable, eventList, Arrays.asList("Tên"), Arrays.asList("name"));
 		settingTable(festivalTable, festivalList, Arrays.asList("Tên"), Arrays.asList("name"));
@@ -196,8 +196,8 @@ public class ViewController {
 		  for(int i = 0; i < columnName.size(); ++i) {
 			  TableColumn<T, ?> column = new TableColumn<>(columnName.get(i));
 			  if(columnName.get(i) == "STT") {
-				  column.setMinWidth(80);				  
-			  }else column.setMinWidth(300);	
+				  column.setMinWidth(50);				  
+			  }else column.setMinWidth(250);	
 			  column.setCellValueFactory(new PropertyValueFactory<>(columnProperty.get(i)));
 			  table.getColumns().add(column);
 		  }
