@@ -12,9 +12,10 @@ public class CrawlFestival implements Runnable {
 
 	public CrawlFestival(ArrayList<Festival> listDataCrawl) {
 		this.listDataCrawl = listDataCrawl;
-
-		CrawlAnGiangFestival angiang = new CrawlAnGiangFestival(this.listDataCrawl);
-		this.listWebCrawl.add(angiang);
+		this.listWebCrawl.add(new CrawlAnGiangFestival(this.listDataCrawl));
+		this.listWebCrawl.add(new CrawlBacNinhFestival(this.listDataCrawl));
+		this.listWebCrawl.add(new CrawlPhuThoFestival(this.listDataCrawl));
+		this.listWebCrawl.add(new CrawlTuyenQuangFestival(this.listDataCrawl));
 	}
 
 	public void run() {

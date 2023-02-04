@@ -104,7 +104,7 @@ public class CrawlController {
 		String filePath = "src\\data\\";
 		controller.saveFile(filePath + "era.json", controller.listEraData);
 		controller.saveFile(filePath + "festival.json", controller.listFestivalDataRaw);
-		controller.saveFile(filePath + "figure.json", controller.listFigureDataRaw);
+		controller.saveFile(filePath + "figure.json", controller.listFigureData);
 		controller.saveFile(filePath + "site.json", controller.listSiteDataRaw);
 		controller.saveFile(filePath + "event.json", controller.listEventData);
 		System.out.println("Write file completed...");

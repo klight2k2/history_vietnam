@@ -10,9 +10,9 @@ import crawl.Crawler;
 import crawl.Crawling;
 import model.Festival;
 
-public class CrawlBacBinhFestival extends Crawler<Festival> implements Crawling {
+public class CrawlBacNinhFestival extends Crawler<Festival> implements Crawling {
 
-	public CrawlBacBinhFestival(ArrayList<Festival> listDataCrawl) {
+	public CrawlBacNinhFestival(ArrayList<Festival> listDataCrawl) {
 		// TODO Auto-generated constructor stub
 		this.listDataCrawl = listDataCrawl;
 	}
@@ -28,7 +28,6 @@ public class CrawlBacBinhFestival extends Crawler<Festival> implements Crawling 
 			Element p = paragraphs.get(i);
 			String festivalName = festivalNames.get(i).text();
 			festivalName = festivalName.replaceAll("\\d{1,2}. ", "");
-			System.out.println(festivalName);
 			String holdTime = "";
 			String location = "";
 			String doiTuongSuyTon = "";
@@ -38,14 +37,11 @@ public class CrawlBacBinhFestival extends Crawler<Festival> implements Crawling 
 				content = content.replace("hoàng:", "hoàng");
 				String[] data = content.split("<br>");
 				for (String d : data) {
-					System.out.println(d);
 					String[] dataParts = d.split(": ");
 					String label = "";
 					String contentString = "";
 					label = label.concat(dataParts[0]);
 					contentString = contentString.concat(dataParts[1]);
-					System.out.println(label);
-					System.out.println(contentString);
 					switch (label) {
 					case "Thời gian": {
 						holdTime = holdTime.concat(contentString);
@@ -75,6 +71,7 @@ public class CrawlBacBinhFestival extends Crawler<Festival> implements Crawling 
 				}
 			}
 			Festival festival = new Festival(festivalName, holdTime, location, doiTuongSuyTon, desc);
+			System.out.println("Crawl Festival (Bac Ninh): " + festival.getName());
 			this.addDataCrawl(festival);
 		}
 
