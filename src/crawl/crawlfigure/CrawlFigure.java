@@ -27,9 +27,4 @@ public class CrawlFigure implements Runnable {
 			}
 		}
 	}
-
-	public static void main(String[] args) {
-		//CrawlFigure des = new CrawlFigure();
-		//des.run();
-	}
 }

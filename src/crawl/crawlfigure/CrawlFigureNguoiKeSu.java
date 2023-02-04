@@ -54,8 +54,8 @@ public class CrawlFigureNguoiKeSu extends Crawler<HistoricalFigure> implements C
 		String data = content.substring(content.indexOf("\"events\":") + 9, content.indexOf("},{\"script_path\""));
 		try {
 			JSONArray list = new JSONArray(data);
-//			for (int i = 0; i < list.length(); i++) {
-			for (int i = 0; i < 10; i++) {
+			for (int i = 0; i < list.length(); i++) {
+//			for (int i = 0; i < 10; i++) {
 				JSONObject obj = list.getJSONObject(i);
 				obj.getJSONObject("start_date");
 				String nameFigure = obj.getJSONObject("text").getString("headline");
@@ -103,9 +103,4 @@ public class CrawlFigureNguoiKeSu extends Crawler<HistoricalFigure> implements C
 			e.printStackTrace();
 		}
 	}
-
-//	public void main(String[] args) {
-//		CrawlFigureNguoiKeSu des = new CrawlFigureNguoiKeSu();
-//		des.start();
-//	}
 }

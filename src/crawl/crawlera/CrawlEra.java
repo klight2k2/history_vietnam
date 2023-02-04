@@ -27,9 +27,4 @@ public class CrawlEra implements Runnable {
 			}
 		}
 	}
-
-	public static void main(String[] args) {
-		//CrawlEra des = new CrawlEra();
-		//des.run();
-	}
 }

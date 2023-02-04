@@ -31,6 +31,7 @@ public class CrawlFromDitich extends Crawler<HistoricalSite> implements Crawling
 		}
 //		listDetailUrl.add("/FrontEnd/DiTich/Form?do=&ItemId=2022");
 		for (int i = 0; i < listDetailUrl.size(); i++) {
+//		for (int i = 0; i < 50; i++) {
 			this.getHTML(baseUrl + listDetailUrl.get(i));
 			Element info = this.doc.getElementsByClass("hl__library-info__container").get(0);
 			Elements listInput = info.getElementsByTag("input");
@@ -47,12 +48,12 @@ public class CrawlFromDitich extends Crawler<HistoricalSite> implements Crawling
 			for (Element data : moreInfo) {
 				if (data.text().contains("Đối tượng thờ")) {
 
-					objectWorship = data.text().substring(("Đối tượng thờ").length());
-					System.out.println(objectWorship);
+					objectWorship = data.text().substring(("Đối tượng thờ: ").length());
+//					System.out.println(objectWorship);
 				}
 				if (data.text().contains("Niên đại khởi dựng")) {
 					builtIn = data.text().substring(("Niên đại khởi dựng").length());
-					System.out.println(builtIn);
+//					System.out.println(builtIn);
 				}
 			}
 			for (Element input : listInput) {
@@ -82,7 +83,7 @@ public class CrawlFromDitich extends Crawler<HistoricalSite> implements Crawling
 			}
 			HistoricalSite site = new HistoricalSite(nameSite, builtIn, location, objectWorship, loaiXepHang,
 					loaiHinhXepHang, imageLink);
-			System.out.println("Crawl Site (Ditich): " + site.getName());
+			System.out.println("Crawl Site (Ditich): " + site.getName() + ", Worship: " + objectWorship);
 			this.addDataCrawl(site);
 		}
 	}
