@@ -13,14 +13,6 @@ public class HistoricalFigure extends Historical {
 	protected String bornIn;
 	protected String desc;
 	protected String imageLink;
-	
-	// constructor test
-	public HistoricalFigure(String name, String born, String died) {
-		super(name);
-		this.id = idCounter++;
-		this.died = died;
-		this.born = born;
-	}
 
 	public HistoricalFigure(String name, String died, String born, String bornIn, String desc) {
 		super(name);
@@ -48,7 +40,6 @@ public class HistoricalFigure extends Historical {
 	public String getDied() {
 		return this.died;
 	}
-
 	public int getId() {
 		return id;
 	}
@@ -97,6 +88,14 @@ public class HistoricalFigure extends Historical {
 		this.imageLink = imageLink;
 	}
 
+	public static int getIdCounter() {
+		return idCounter;
+	}
+
+	public static void setIdCounter(int idCounter) {
+		HistoricalFigure.idCounter = idCounter;
+	}
+
 	public void setBorn(String born) {
 		this.born = born;
 	}
@@ -105,6 +104,15 @@ public class HistoricalFigure extends Historical {
 		this.died = died;
 	}
 
+	public void setRelatedEraId(List<Integer> relatedEraId) {
+		this.relatedEraId = relatedEraId;
+	}
+
+	public void setRelatedEventId(List<Integer> relatedEventId) {
+		this.relatedEventId = relatedEventId;
+	}
+
+	
 //	public void setRelated(ArrayList<Integer> eraId, ArrayList<Integer> eventId) {
 //		this.relatedEraId = eraId;
 //		this.relatedEventId = eventId;

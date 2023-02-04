@@ -13,9 +13,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ViewController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ViewController">
    <center>
-      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #ccc;" BorderPane.alignment="CENTER">
+      <VBox prefHeight="768.0" prefWidth="855.0" style="-fx-background-color: #ccc;" BorderPane.alignment="CENTER">
          <children>
             <Label text="Tìm kiếm">
                <font>
@@ -44,8 +44,8 @@
                         </HBox>
                         <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
                            <children>
-                              <Button minHeight="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="157.0" style="-fx-border-color: #6F6F6F; -fx-background-color: rgba(0,0,0,0); -fx-border-radius: 30;" text="Clear" onAction="#ClearSearch"/>
-                              <Button minHeight="40.0" mnemonicParsing="false" onAction="#SearchByName" prefHeight="40.0" prefWidth="157.0" style="-fx-border-color: #6F6F6F; -fx-background-color: rgba(0,0,0,0); -fx-border-radius: 30;" text="Tìm kiếm" />
+                              <Button minHeight="40.0" mnemonicParsing="false" onAction="#ClearSearch" prefHeight="40.0" prefWidth="157.0" styleClass="button-clear" stylesheets="@style.css" text="Clear" />
+                              <Button minHeight="40.0" mnemonicParsing="false" onAction="#SearchByName" prefHeight="40.0" prefWidth="157.0" stylesheets="@style.css" text="Tìm kiếm" />
                            </children>
                         </HBox>
                      </children>
@@ -66,26 +66,25 @@
                   <Insets bottom="10.0" left="30.0" right="30.0" top="15.0" />
                </VBox.margin>
             </Label>
-            <HBox prefHeight="457.0" prefWidth="774.0">
+            <VBox prefHeight="516.0" prefWidth="774.0">
                <children>
-                  <TableView fx:id="tableData" maxWidth="310.0" prefHeight="459.0" prefWidth="310.0" stylesheets="@style.css">
+                  <TableView fx:id="tableData" maxWidth="868.0" prefHeight="525.0" prefWidth="774.0" stylesheets="@style.css">
                      <columns>
                         <TableColumn prefWidth="148.0" text="Tên" />
                      </columns>
-                     <HBox.margin>
-                        <Insets left="30.0" />
-                     </HBox.margin>
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </VBox.margin>
                   </TableView>
-                  <BorderPane prefHeight="457.0" prefWidth="405.0" style="-fx-background-color: #fff;" />
                </children>
-            </HBox>
+            </VBox>
          </children>
       </VBox>
    </center>
    <left>
       <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="250.0" spacing="10.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
          <children>
-            <HBox fx:id="historicalFigureItem" alignment="CENTER_LEFT" onMouseClicked="#handleItemClicked" prefHeight="60.0" prefWidth="223.0" spacing="20.0" stylesheets="@style.css">
+            <HBox fx:id="historicalFigureItem" alignment="CENTER_LEFT" onMouseClicked="#handleItemClicked" prefHeight="60.0" prefWidth="223.0" spacing="20.0" styleClass="hoverMenuItem" stylesheets="@style.css">
                <children>
                   <ImageView fitHeight="49.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -99,7 +98,7 @@
                   </Label>
                </children>
             </HBox>
-            <HBox fx:id="eraItem" alignment="CENTER_LEFT" onMouseClicked="#handleItemClicked" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
+            <HBox fx:id="eraItem" alignment="CENTER_LEFT" onMouseClicked="#handleItemClicked" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="hoverMenuItem" stylesheets="@style.css">
                <children>
                   <ImageView fitHeight="49.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -113,7 +112,7 @@
                   </Label>
                </children>
             </HBox>
-            <HBox fx:id="eventItem" alignment="CENTER_LEFT" onMouseClicked="#handleItemClicked" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
+            <HBox fx:id="eventItem" alignment="CENTER_LEFT" onMouseClicked="#handleItemClicked" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="hoverMenuItem" stylesheets="@style.css">
                <children>
                   <ImageView fitHeight="49.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -127,7 +126,7 @@
                   </Label>
                </children>
             </HBox>
-            <HBox fx:id="historicSiteItem" alignment="CENTER_LEFT" onMouseClicked="#handleItemClicked" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
+            <HBox fx:id="historicSiteItem" alignment="CENTER_LEFT" onMouseClicked="#handleItemClicked" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="hoverMenuItem" stylesheets="@style.css">
                <children>
                   <ImageView fitHeight="49.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -141,7 +140,7 @@
                   </Label>
                </children>
             </HBox>
-            <HBox fx:id="festivalItem" alignment="CENTER_LEFT" onMouseClicked="#handleItemClicked" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
+            <HBox fx:id="festivalItem" alignment="CENTER_LEFT" onMouseClicked="#handleItemClicked" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="hoverMenuItem" stylesheets="@style.css">
                <children>
                   <ImageView fitHeight="49.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
                      <image>
