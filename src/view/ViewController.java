@@ -15,8 +15,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import model.Era;
 import model.Festival;
@@ -264,10 +268,14 @@ public class ViewController{
 		    row.setOnMouseClicked(event -> {
 		        if (event.getClickCount() == 2 && (! row.isEmpty()) ) {
 		            T rowData = (T) row.getItem();
-		            System.out.println("hehe");
 		            if(rowData instanceof HistoricalFigure) {
 		            	try {
-							popupData((HistoricalFigure) rowData, historicalFigureTableFieldName, historicalFigureTableFieldProperty);
+							popupData((HistoricalFigure) rowData, 
+									historicalFigureTableFieldName, 
+									historicalFigureTableFieldProperty,
+									historicalFigureLinkFieldName,
+									historicalFigureLinkFieldProperty,
+									"Nhan vat lich su");
 						} catch (IOException e) {
 							e.printStackTrace();
 						}
@@ -278,12 +286,47 @@ public class ViewController{
 		});
 	}
 	
-	private <T> void popupData(T data, List<String> fieldName, List<String> property) throws IOException{
-		Parent root = FXMLLoader.load(getClass().getResource("Profile.fxml"));
+	private <T> void popupData(T data, List<String> fieldName, List<String> property, List<String> linkField, List<String> linkProperty, String title) throws IOException{
+		BorderPane root = FXMLLoader.load(getClass().getResource("Profile.fxml"));
 		Stage stage = new Stage();
-		stage.setTitle("New Window");
+		stage.setTitle("Thong tin chi tiet");
+		VBox vBoxTop = (VBox) root.getTop();
+		Text k = (Text) vBoxTop.getChildren().get(1);
+		k.setText(title);
+//		for (Node node : vBoxTop.getChildren()) {
+//			if (node instanceof TextField) {
+//				((TextField) node).setText(title);
+//			}
+//			if (node instanceof ImageView) {
+//				// anh
+//			}
+//		}
+//		VBox vBoxCenter = (VBox) root.getTop();
+//		VBox vBoxChild = new VBox();
+//		for (Node node : vBoxCenter.getChildren()) {
+//		    if (node instanceof VBox) {
+//		    	vBoxChild = (VBox) node;
+//		        break;
+//		    }
+//		}
+//		HBox hBox = new HBox();
+//		for (Node node : vBoxChild.getChildren()) {
+//		    if (node instanceof HBox) {
+//		    	hBox = (HBox) node;
+//		        break;
+//		    }
+//		}
+//		
+//		for (Node node : hBox.getChildren()) {
+//		    if (node instanceof Label) {
+//		    	((Label) node).setText("Hehe");
+//		    }
+//		    if (node instanceof Text) {
+//		    	((Label) node).setText("Hehe");
+//		    }
+//		}
+//		
 		stage.setScene(new Scene(root));
 		stage.show();
 	}
-	
 }
