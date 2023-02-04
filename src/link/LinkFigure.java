@@ -21,7 +21,10 @@ public class LinkFigure implements Runnable {
 	}
 
 	public int YearStringToInt(String year) {
-		if (year.isEmpty() || year.contains("đến nay")) {
+		if (year.isEmpty()) {
+			return -999999;
+		}
+		if (year.contains("đến nay")) {
 			return 999999;
 		}
 		int trCN = 1;
@@ -37,10 +40,20 @@ public class LinkFigure implements Runnable {
 			year = year.replace("SCN", "");
 		}
 		if (year.contains("-")) {
-			year = year.split("-")[2];
+			String[] yearArr = year.split("-");
+			for (String ele : yearArr) {
+				if (ele.length() == 4) {
+					year = ele;
+				}
+			}
 		}
 		if (year.contains("/")) {
-			year = year.split("/")[2];
+			String[] yearArr = year.split("/");
+			for (String ele : yearArr) {
+				if (ele.length() == 4) {
+					year = ele;
+				}
+			}
 		}
 		year = year.replaceAll("\\s+", "");
 		int intYear = Integer.parseInt(year) * trCN;
@@ -53,6 +66,10 @@ public class LinkFigure implements Runnable {
 		} else {
 			int born = YearStringToInt(curFigure.getBorn());
 			int died = YearStringToInt(curFigure.getDied());
+			if (born == -999999)
+				born = died - 100;
+			if (died == -999999)
+				died = born + 100;
 			int eraId = 0;
 			int eventId = 0;
 			for (Era era : listEraDataRaw) {
