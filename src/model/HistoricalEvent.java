@@ -41,4 +41,6 @@ public class HistoricalEvent extends Historical {
 	public void setEra(int eraId) {
 		this.relatedEraId = eraId;
 	}
+	
+	
 }
