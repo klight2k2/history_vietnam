@@ -1,6 +1,8 @@
 package view;
 
 import java.io.IOException;
+import java.lang.reflect.Field;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -68,16 +70,24 @@ public class ViewController{
 	
 	private List<String> historicalFigureTableFieldName = Arrays.asList("STT", "Tên", "Năm sinh", "Năm mất", "Nơi sinh");
 	private List<String> historicalFigureTableFieldProperty = Arrays.asList("id", "name", "born", "died", "bornIn");
-	private List<String> historicalFigureLinkFieldName = Arrays.asList("Trieu dai", "Su kien lien quan");
+	private List<String> historicalFigureLinkFieldName = Arrays.asList("Triều đại", "Sự kiện liên quan");
 	private List<String> historicalFigureLinkFieldProperty = Arrays.asList("relatedEraId", "relatedEventId");
 	private List<String> historicSiteTableFieldName = Arrays.asList("STT", "Tên", "Địa điểm", "Đối tượng thờ", "Loại hình xếp hạng", "Loại xếp hạng");
 	private List<String> historicSiteTableFieldProperty = Arrays.asList("id", "name", "location", "objectWorship", "loaiHinhXepHang", "loaiXepHang");
+	private List<String> historicSiteLinkFieldName = Arrays.asList();
+	private List<String> historicSiteLinkFieldProperty = Arrays.asList();
 	private List<String> eventTableFieldName = Arrays.asList("STT", "Tên", "Bắt đầu", "Kết thúc");
 	private List<String> eventTableFieldProperty = Arrays.asList("id", "name", "startDate", "endDate");
+	private List<String> eventLinkFieldName = Arrays.asList("Trieu dai");
+	private List<String> eventLinkFieldProperty = Arrays.asList("relatedEraId");
 	private List<String> festivalTableFieldName = Arrays.asList("STT", "Tên", "Địa điểm", "Đối tượng suy tôn", "Thời gian");
 	private List<String> festivalTableFieldProperty = Arrays.asList("id", "name", "location", "doiTuongSuyTon", "holdTime");
+	private List<String> festivalLinkFieldName = Arrays.asList();
+	private List<String> festivalLinkFieldProperty = Arrays.asList();
 	private List<String> eraTableFieldName = Arrays.asList("STT", "Tên", "Từ năm", "Đến năm");
 	private List<String> eraTableFieldProperty = Arrays.asList("id", "name", "fromYear", "toYear");
+	private List<String> eraLinkFieldName = Arrays.asList("Thời đại trước", "Thời đại sau");
+	private List<String> eraLinkFieldProperty = Arrays.asList("isPrecededBy", "isSuccessedBy");
 			
 	@SuppressWarnings("unchecked")
 	@FXML
@@ -268,18 +278,50 @@ public class ViewController{
 		    row.setOnMouseClicked(event -> {
 		        if (event.getClickCount() == 2 && (! row.isEmpty()) ) {
 		            T rowData = (T) row.getItem();
-		            if(rowData instanceof HistoricalFigure) {
 		            	try {
-							popupData((HistoricalFigure) rowData, 
-									historicalFigureTableFieldName, 
-									historicalFigureTableFieldProperty,
-									historicalFigureLinkFieldName,
-									historicalFigureLinkFieldProperty,
-									"Nhan vat lich su");
+		            		if(rowData instanceof HistoricalFigure) {
+								popupData((HistoricalFigure) rowData, 
+										historicalFigureTableFieldName, 
+										historicalFigureTableFieldProperty,
+										historicalFigureLinkFieldName,
+										historicalFigureLinkFieldProperty,
+										"Nhân vật lịch sử");
+			            		}
+		            		if(rowData instanceof HistoricalSite) {
+		            			popupData((HistoricalSite) rowData, 
+		            					historicSiteTableFieldName, 
+										historicSiteTableFieldProperty,
+										historicSiteLinkFieldName,
+										historicSiteLinkFieldProperty,
+										"Di tích lịch sử");
+		            		}
+		            		if(rowData instanceof HistoricalEvent) {
+		            			popupData((HistoricalEvent) rowData, 
+		            					eventTableFieldName, 
+										eventTableFieldProperty,
+										eventLinkFieldName,
+										eventLinkFieldProperty,
+										"Sự kiện lịch sử");
+		            		}
+		            		if(rowData instanceof Festival) {
+		            			popupData((Festival) rowData, 
+		            					festivalTableFieldName, 
+		            					festivalTableFieldProperty,
+		            					festivalLinkFieldName,
+		            					festivalLinkFieldProperty,
+										"Lễ hội văn hóa");
+		            		}
+		            		if(rowData instanceof Era) {
+		            			popupData((Era) rowData, 
+		            					eraTableFieldName, 
+		            					eraTableFieldProperty,
+		            					eraLinkFieldName,
+		            					eraLinkFieldProperty,
+										"Triều đại lịch sử");
+		            		}
 						} catch (IOException e) {
 							e.printStackTrace();
 						}
-		            }
 		        }
 		    });
 		    return row;
@@ -290,43 +332,92 @@ public class ViewController{
 		BorderPane root = FXMLLoader.load(getClass().getResource("Profile.fxml"));
 		Stage stage = new Stage();
 		stage.setTitle("Thong tin chi tiet");
+		
+		// set title
 		VBox vBoxTop = (VBox) root.getTop();
-		Text k = (Text) vBoxTop.getChildren().get(1);
-		k.setText(title);
-//		for (Node node : vBoxTop.getChildren()) {
-//			if (node instanceof TextField) {
-//				((TextField) node).setText(title);
-//			}
-//			if (node instanceof ImageView) {
-//				// anh
-//			}
-//		}
-//		VBox vBoxCenter = (VBox) root.getTop();
-//		VBox vBoxChild = new VBox();
-//		for (Node node : vBoxCenter.getChildren()) {
-//		    if (node instanceof VBox) {
-//		    	vBoxChild = (VBox) node;
-//		        break;
-//		    }
-//		}
-//		HBox hBox = new HBox();
-//		for (Node node : vBoxChild.getChildren()) {
-//		    if (node instanceof HBox) {
-//		    	hBox = (HBox) node;
-//		        break;
-//		    }
-//		}
-//		
-//		for (Node node : hBox.getChildren()) {
-//		    if (node instanceof Label) {
-//		    	((Label) node).setText("Hehe");
-//		    }
-//		    if (node instanceof Text) {
-//		    	((Label) node).setText("Hehe");
-//		    }
-//		}
-//		
+		Text titleEle = (Text) vBoxTop.getChildren().get(1);
+		titleEle.setText(title);
+		
+		// get field element
+		VBox vBoxCenter = (VBox) root.getCenter();
+		VBox vBoxField = (VBox) vBoxCenter.getChildren().get(0);
+		VBox vBoxLink = (VBox) vBoxCenter.getChildren().get(1);
+		
+		vBoxCenter.getChildren().clear();
+		// set field element
+		vBoxCenter.getChildren().add(createPopupElement("Tên", Arrays.asList(((Historical) data).getName()), "ProfileItemField"));
+		for(int i = 0; i < fieldName.size(); ++i) {
+			try {
+				Class<T> clazz = (Class<T>) data.getClass();
+				Field field = clazz.getDeclaredField(property.get(i));
+				field.setAccessible(true);
+				Object propertyValue = field.get(data);
+				vBoxCenter.getChildren().add(createPopupElement(fieldName.get(i), Arrays.asList(propertyValue.toString()), "ProfileItemField"));
+			} catch (NoSuchFieldException | IllegalAccessException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		// set link element
+		for(int i = 0; i < linkField.size(); ++i) {
+			try {
+				Class<T> clazz = (Class<T>) data.getClass();
+				Field field = clazz.getDeclaredField(linkProperty.get(i));
+				field.setAccessible(true);
+				Object propertyValue = field.get(data);
+				// get all name of link object
+				List<String> nameLink = new ArrayList<String>();
+				if(data instanceof HistoricalFigure) {
+					for(int j : (ArrayList<Integer>) propertyValue) {
+						if(linkProperty.get(i) == "relatedEraId") {
+							Era era = eraList.stream().filter(obj -> obj.getId() == j).findFirst().orElse(null);
+							nameLink.add(era.getName());
+						}else if(linkProperty.get(i) == "relatedEventId") {
+							HistoricalEvent event = eventList.stream().filter(obj -> obj.getId() == j).findFirst().orElse(null);
+							nameLink.add(event.getName());
+						}
+					}				
+				}
+				if(data instanceof HistoricalEvent || data instanceof Era) {
+					Era era = eraList.stream().filter(obj -> obj.getId() == (Integer) propertyValue).findFirst().orElse(null);
+					nameLink.add(era.getName());
+				}
+				
+				vBoxCenter.getChildren().add(createPopupElement(linkField.get(i), nameLink, "ProfileItemLink"));
+			} catch (NoSuchFieldException | IllegalAccessException e) {
+				e.printStackTrace();
+			}
+		}
+		
 		stage.setScene(new Scene(root));
 		stage.show();
+	}
+	
+	private VBox createPopupElement(String field, List<String> content, String type) {
+		VBox newVbox = new VBox();
+		try {
+			newVbox = (VBox) FXMLLoader.load(getClass().getResource(type + ".fxml"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		ImageView image = (ImageView)(((HBox)(newVbox.getChildren().get(0))).getChildren().get(0));
+		Label label = (Label)(((HBox)(newVbox.getChildren().get(0))).getChildren().get(1));
+		if(type == "ProfileItemField") {
+			Text text = (Text)(((HBox)(newVbox.getChildren().get(0))).getChildren().get(2));
+			label.setText(field);
+			text.setText(content.get(0));
+		}else if(type == "ProfileItemLink") {
+			label.setText(field);
+			VBox textBox = (VBox)(((HBox)(newVbox.getChildren().get(0))).getChildren().get(2));
+			Text text = (Text) textBox.getChildren().get(0); 
+			textBox.getChildren().clear();
+			for(String t : content) {
+				Text newText = new Text(t);
+				newText.setWrappingWidth(380);
+				textBox.getChildren().add(newText);
+			}
+		}
+		return newVbox;	
 	}
 }

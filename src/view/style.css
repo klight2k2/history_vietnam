@@ -12,6 +12,10 @@
    -fx-font-weight: bold;
 }
 
+.table-row-cell:hover {
+  -fx-cursor: hand;
+}
+
 .hoverMenuItem:hover {
 	-fx-background-color: #ccc;
 	-fx-cursor: hand
