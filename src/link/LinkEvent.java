@@ -9,6 +9,7 @@ public class LinkEvent implements Runnable {
 	private ArrayList<HistoricalEvent> listEventDataRaw;
 	private ArrayList<Era> listEraDataRaw;
 	private ArrayList<HistoricalEvent> listEventData;
+	private int numsOfLinks = 0;
 
 	public LinkEvent(ArrayList<HistoricalEvent> listEventDataRaw, ArrayList<Era> listEraDataRaw,
 			ArrayList<HistoricalEvent> listEventData) {
@@ -62,6 +63,7 @@ public class LinkEvent implements Runnable {
 				}
 			}
 			curEvent.setEra(relatedEraId);
+			this.numsOfLinks += 1;
 //			System.out.println("Related Event " + curEvent.getId() + "to " + relatedEraId);
 			listEventData.add(curEvent);
 		}
@@ -72,5 +74,16 @@ public class LinkEvent implements Runnable {
 		for (HistoricalEvent event : listEventDataRaw) {
 			findEra(event);
 		}
+//
+//		String filePath = "src\\data\\";
+//		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+//		try {
+//			FileWriter writer = new FileWriter(new File(filePath + "numsOfLinkEvent.json"));
+//			gson.toJson(numsOfLinks, writer);
+//			writer.flush();
+//			writer.close();
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
 	}
 }

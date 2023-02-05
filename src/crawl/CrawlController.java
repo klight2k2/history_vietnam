@@ -109,6 +109,7 @@ public class CrawlController {
 		this.saveFile(filePath + "figure.json", this.listFigureData);
 		this.saveFile(filePath + "site.json", this.listSiteDataRaw);
 		this.saveFile(filePath + "event.json", this.listEventData);
+
 		System.out.println("Write file completed...");
 	}
 
@@ -116,6 +117,10 @@ public class CrawlController {
 		crawl();
 		link();
 		saveToJson();
+//		MainModel mainModel = new MainModel();
+//		this.listEraDataRaw = (ArrayList<Era>) mainModel.getEras();
+//		this.listEventDataRaw = (ArrayList<HistoricalEvent>) mainModel.getEvents();
+//		this.listFigureDataRaw = (ArrayList<HistoricalFigure>) mainModel.getHistoricalFigures();
 	}
 
 	public static void main(String[] args) {

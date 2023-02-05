@@ -11,6 +11,7 @@ public class LinkFigure implements Runnable {
 	private ArrayList<Era> listEraDataRaw;
 	private ArrayList<HistoricalEvent> listEventDataRaw;
 	private ArrayList<HistoricalFigure> listFigureData;
+	private int numsOfLinks = 0;
 
 	public LinkFigure(ArrayList<HistoricalFigure> listFigureDataRaw, ArrayList<Era> listEraDataRaw,
 			ArrayList<HistoricalEvent> listEventDataRaw, ArrayList<HistoricalFigure> listFigureData) {
@@ -73,6 +74,7 @@ public class LinkFigure implements Runnable {
 				for (String name : otherNames) {
 					if (curFigure.getBorn().contains(name)) {
 						curFigure.addRelatedEraId(era.getId());
+						this.numsOfLinks += 1;
 						this.listFigureData.add(curFigure);
 						found = true;
 						break;
@@ -101,6 +103,7 @@ public class LinkFigure implements Runnable {
 						|| (born <= eraFromYear && died >= eraToYear)) {
 					eraId = era.getId();
 					curFigure.addRelatedEraId(eraId);
+					this.numsOfLinks += 1;
 				}
 			}
 			for (HistoricalEvent event : listEventDataRaw) {
@@ -116,6 +119,7 @@ public class LinkFigure implements Runnable {
 						|| (born <= eventFromYear && died >= eventToYear)) {
 					eventId = event.getId();
 					curFigure.addRelatedEventId(eventId);
+					this.numsOfLinks += 1;
 				}
 			}
 
@@ -128,5 +132,16 @@ public class LinkFigure implements Runnable {
 		for (HistoricalFigure figure : listFigureDataRaw) {
 			findEraAndEvent(figure);
 		}
+
+//		String filePath = "src\\data\\";
+//		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+//		try {
+//			FileWriter writer = new FileWriter(new File(filePath + "numsOfLinkFigure.json"));
+//			gson.toJson(numsOfLinks, writer);
+//			writer.flush();
+//			writer.close();
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
 	}
 }

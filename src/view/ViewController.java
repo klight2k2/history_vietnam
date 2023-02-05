@@ -17,7 +17,11 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableRow;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -35,7 +39,7 @@ import model.HistoricalFigure;
 import model.HistoricalSite;
 import model.MainModel;
 
-public class ViewController{
+public class ViewController {
 
 	public TextField searchInfo;
 
@@ -70,13 +74,16 @@ public class ViewController{
 	private TableView<HistoricalEvent> eventTable = new TableView<>();
 	private TableView<Festival> festivalTable = new TableView<>();
 	private TableView<Era> eraTable = new TableView<>();
-	
-	private List<String> historicalFigureTableFieldName = Arrays.asList("STT", "Tên", "Năm sinh", "Năm mất", "Nơi sinh");
+
+	private List<String> historicalFigureTableFieldName = Arrays.asList("STT", "Tên", "Năm sinh", "Năm mất",
+			"Nơi sinh");
 	private List<String> historicalFigureTableFieldProperty = Arrays.asList("id", "name", "born", "died", "bornIn");
 	private List<String> historicalFigureLinkFieldName = Arrays.asList("Triều đại", "Sự kiện liên quan");
 	private List<String> historicalFigureLinkFieldProperty = Arrays.asList("relatedEraId", "relatedEventId");
-	private List<String> historicSiteTableFieldName = Arrays.asList("STT", "Tên", "Địa điểm", "Đối tượng thờ", "Loại hình", "Loại xếp hạng");
-	private List<String> historicSiteTableFieldProperty = Arrays.asList("id", "name", "location", "objectWorship", "loaiHinhXepHang", "loaiXepHang");
+	private List<String> historicSiteTableFieldName = Arrays.asList("STT", "Tên", "Địa điểm", "Đối tượng thờ",
+			"Loại hình", "Loại xếp hạng");
+	private List<String> historicSiteTableFieldProperty = Arrays.asList("id", "name", "location", "objectWorship",
+			"loaiHinhXepHang", "loaiXepHang");
 	private List<String> historicSiteLinkFieldName = Arrays.asList();
 	private List<String> historicSiteLinkFieldProperty = Arrays.asList();
 	private List<String> eventTableFieldName = Arrays.asList("STT", "Tên", "Bắt đầu", "Kết thúc");
@@ -84,14 +91,15 @@ public class ViewController{
 	private List<String> eventLinkFieldName = Arrays.asList("Triều đại");
 	private List<String> eventLinkFieldProperty = Arrays.asList("relatedEraId");
 	private List<String> festivalTableFieldName = Arrays.asList("STT", "Tên", "Địa điểm", "Suy tôn", "Thời gian");
-	private List<String> festivalTableFieldProperty = Arrays.asList("id", "name", "location", "doiTuongSuyTon", "holdTime");
+	private List<String> festivalTableFieldProperty = Arrays.asList("id", "name", "location", "doiTuongSuyTon",
+			"holdTime");
 	private List<String> festivalLinkFieldName = Arrays.asList();
 	private List<String> festivalLinkFieldProperty = Arrays.asList();
 	private List<String> eraTableFieldName = Arrays.asList("STT", "Tên", "Từ năm", "Đến năm");
 	private List<String> eraTableFieldProperty = Arrays.asList("id", "name", "fromYear", "toYear");
 	private List<String> eraLinkFieldName = Arrays.asList("Thời đại trước", "Thời đại sau");
 	private List<String> eraLinkFieldProperty = Arrays.asList("isPrecededBy", "isSuccessedBy");
-	
+
 	@SuppressWarnings("unchecked")
 	@FXML
 	private void initialize() {
@@ -104,7 +112,8 @@ public class ViewController{
 		eraList = FXCollections.observableArrayList(model.getEras());
 
 		tableData.getColumns().clear();
-		settingTable(historicalFigureTable, historicalFigureList, historicalFigureTableFieldName, historicalFigureTableFieldProperty);
+		settingTable(historicalFigureTable, historicalFigureList, historicalFigureTableFieldName,
+				historicalFigureTableFieldProperty);
 		settingTable(historicSiteTable, historicSiteList, historicSiteTableFieldName, historicSiteTableFieldProperty);
 		settingTable(eventTable, eventList, eventTableFieldName, eventTableFieldProperty);
 		settingTable(festivalTable, festivalList, festivalTableFieldName, festivalTableFieldProperty);
@@ -121,7 +130,7 @@ public class ViewController{
 		selectedItem.setStyle("-fx-background-color: #ccc");
 
 		// Pop up
-		setEventClickOnRow((TableView<HistoricalFigure>) tableData);		
+		setEventClickOnRow((TableView<HistoricalFigure>) tableData);
 	}
 
 	@FXML
@@ -160,7 +169,7 @@ public class ViewController{
 			System.out.println("Loi");
 		}
 	}
-	
+
 	// crawl button
 	public void Crawl(ActionEvent event) {
 		new Thread(() -> {
@@ -178,25 +187,26 @@ public class ViewController{
 
 		tableData.getColumns().clear();
 		switch (type) {
-			case "historicalFigureItem":
-				searchingTable(historicalFigureList, historicalFigureTableFieldName, historicalFigureTableFieldProperty, searchName);
-				break;
-			case "eraItem":
-				searchingTable(eraList, eraTableFieldName, eraTableFieldProperty, searchName);
-				break;
-			case "festivalItem":
-				searchingTable(festivalList, festivalTableFieldName, festivalTableFieldProperty , searchName);
-				break;
-			case "eventItem":
-				searchingTable(eventList, eventTableFieldName, eventTableFieldProperty, searchName);
-				break;
-			case "historicSiteItem":
-				searchingTable(historicSiteList, historicSiteTableFieldName, historicSiteTableFieldProperty, searchName);
-				break;
-			default:
-				System.out.println("Loi");
+		case "historicalFigureItem":
+			searchingTable(historicalFigureList, historicalFigureTableFieldName, historicalFigureTableFieldProperty,
+					searchName);
+			break;
+		case "eraItem":
+			searchingTable(eraList, eraTableFieldName, eraTableFieldProperty, searchName);
+			break;
+		case "festivalItem":
+			searchingTable(festivalList, festivalTableFieldName, festivalTableFieldProperty, searchName);
+			break;
+		case "eventItem":
+			searchingTable(eventList, eventTableFieldName, eventTableFieldProperty, searchName);
+			break;
+		case "historicSiteItem":
+			searchingTable(historicSiteList, historicSiteTableFieldName, historicSiteTableFieldProperty, searchName);
+			break;
+		default:
+			System.out.println("Loi");
 		}
-		// searchInfo.setText("");
+//		searchInfo.setText("");
 	}
 
 	// Clear Button Action
@@ -205,24 +215,24 @@ public class ViewController{
 		String type = selectedItem.getId();
 		tableData.getColumns().clear();
 		switch (type) {
-			case "historicalFigureItem":
-				copyTable(historicalFigureTable, (TableView<HistoricalFigure>) tableData);
-				break;
-			case "eraItem":
-				copyTable(eraTable, (TableView<Era>) tableData);
-				break;
-			case "festivalItem":
-				copyTable(festivalTable, (TableView<Festival>) tableData);
-	
-				break;
-			case "eventItem":
-				copyTable(eventTable, (TableView<HistoricalEvent>) tableData);
-				break;
-			case "historicSiteItem":
-				copyTable(historicSiteTable, (TableView<HistoricalSite>) tableData);
-				break;
-			default:
-				System.out.println("Loi");
+		case "historicalFigureItem":
+			copyTable(historicalFigureTable, (TableView<HistoricalFigure>) tableData);
+			break;
+		case "eraItem":
+			copyTable(eraTable, (TableView<Era>) tableData);
+			break;
+		case "festivalItem":
+			copyTable(festivalTable, (TableView<Festival>) tableData);
+
+			break;
+		case "eventItem":
+			copyTable(eventTable, (TableView<HistoricalEvent>) tableData);
+			break;
+		case "historicSiteItem":
+			copyTable(historicSiteTable, (TableView<HistoricalSite>) tableData);
+			break;
+		default:
+			System.out.println("Loi");
 		}
 	}
 
@@ -247,12 +257,12 @@ public class ViewController{
 
 		}
 
-		if (!data2.isEmpty()) {
-			if (data2.get(0) instanceof Historical) {
-				Historical a = (Historical) data2.get(0);
-				searchInfo.setText(a.getName());
-			}
-		}
+//		if (!data2.isEmpty()) {
+//			if (data2.get(0) instanceof Historical) {
+//				Historical a = (Historical) data2.get(0);
+//				searchInfo.setText(a.getName());
+//			}
+//		}
 		settingTable(view2, data2, columnName, columnProperty);
 		tableData.getColumns().clear();
 		copyTable(view2, (TableView<T>) tableData);
@@ -281,138 +291,122 @@ public class ViewController{
 		}
 		setEventClickOnRow((TableView<T>) tableData);
 	}
-	
+
 	private <T> void setEventClickOnRow(TableView<T> mainTable) {
 		mainTable.setRowFactory(tv -> {
-		    TableRow<T> row = new TableRow<>();
-		    row.setOnMouseClicked(event -> {
-		        if (event.getClickCount() == 2 && (! row.isEmpty()) ) {
-		            T rowData = (T) row.getItem();
-		            	try {
-		            		if(rowData instanceof HistoricalFigure) {
-								popupData((HistoricalFigure) rowData, 
-										historicalFigureTableFieldName, 
-										historicalFigureTableFieldProperty,
-										historicalFigureLinkFieldName,
-										historicalFigureLinkFieldProperty,
-										"Nhân vật lịch sử");
-			            		}
-		            		if(rowData instanceof HistoricalSite) {
-		            			popupData((HistoricalSite) rowData, 
-		            					historicSiteTableFieldName, 
-										historicSiteTableFieldProperty,
-										historicSiteLinkFieldName,
-										historicSiteLinkFieldProperty,
-										"Di tích lịch sử");
-		            		}
-		            		if(rowData instanceof HistoricalEvent) {
-		            			popupData((HistoricalEvent) rowData, 
-		            					eventTableFieldName, 
-										eventTableFieldProperty,
-										eventLinkFieldName,
-										eventLinkFieldProperty,
-										"Sự kiện lịch sử");
-		            		}
-		            		if(rowData instanceof Festival) {
-		            			popupData((Festival) rowData, 
-		            					festivalTableFieldName, 
-		            					festivalTableFieldProperty,
-		            					festivalLinkFieldName,
-		            					festivalLinkFieldProperty,
-										"Lễ hội văn hóa");
-		            		}
-		            		if(rowData instanceof Era) {
-		            			popupData((Era) rowData, 
-		            					eraTableFieldName, 
-		            					eraTableFieldProperty,
-		            					eraLinkFieldName,
-		            					eraLinkFieldProperty,
-										"Triều đại lịch sử");
-		            		}
-						} catch (IOException e) {
-							e.printStackTrace();
+			TableRow<T> row = new TableRow<>();
+			row.setOnMouseClicked(event -> {
+				if (event.getClickCount() == 2 && (!row.isEmpty())) {
+					T rowData = (T) row.getItem();
+					try {
+						if (rowData instanceof HistoricalFigure) {
+							popupData((HistoricalFigure) rowData, historicalFigureTableFieldName,
+									historicalFigureTableFieldProperty, historicalFigureLinkFieldName,
+									historicalFigureLinkFieldProperty, "Nhân vật lịch sử");
 						}
-		        }
-		    });
-		    return row;
+						if (rowData instanceof HistoricalSite) {
+							popupData((HistoricalSite) rowData, historicSiteTableFieldName,
+									historicSiteTableFieldProperty, historicSiteLinkFieldName,
+									historicSiteLinkFieldProperty, "Di tích lịch sử");
+						}
+						if (rowData instanceof HistoricalEvent) {
+							popupData((HistoricalEvent) rowData, eventTableFieldName, eventTableFieldProperty,
+									eventLinkFieldName, eventLinkFieldProperty, "Sự kiện lịch sử");
+						}
+						if (rowData instanceof Festival) {
+							popupData((Festival) rowData, festivalTableFieldName, festivalTableFieldProperty,
+									festivalLinkFieldName, festivalLinkFieldProperty, "Lễ hội văn hóa");
+						}
+						if (rowData instanceof Era) {
+							popupData((Era) rowData, eraTableFieldName, eraTableFieldProperty, eraLinkFieldName,
+									eraLinkFieldProperty, "Triều đại lịch sử");
+						}
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+				}
+			});
+			return row;
 		});
 	}
-	
-	private <T> void popupData(T data, List<String> fieldName, List<String> property, List<String> linkField, List<String> linkProperty, String title) throws IOException{
+
+	private <T> void popupData(T data, List<String> fieldName, List<String> property, List<String> linkField,
+			List<String> linkProperty, String title) throws IOException {
 		BorderPane root = FXMLLoader.load(getClass().getResource("Profile.fxml"));
 		Stage stage = new Stage();
 		stage.setTitle("Thông tin chi tiết");
-		
+
 		// set title
 		VBox vBoxTop = (VBox) root.getTop();
 		Text titleEle = (Text) vBoxTop.getChildren().get(1);
 		titleEle.setText(title);
-		
+
 		// set avatar
 		ImageView avatar = (ImageView) vBoxTop.getChildren().get(0);
-		if(data instanceof HistoricalFigure) {
+		if (data instanceof HistoricalFigure) {
 			String url = ((HistoricalFigure) data).getImageLink();
-			if(url.equals("")) {
+			if (url == null || url.equals("")) {
 				File file = new File("src/resource/nhanvatlichsu.png");
 				avatar.setImage(new Image(file.toURI().toString()));
 				System.out.println("hehe");
-			}else {
+			} else {
 				Image i = new Image(url);
-				avatar.setImage(i);				
+				avatar.setImage(i);
 			}
 		}
-		if(data instanceof HistoricalSite) {
+		if (data instanceof HistoricalSite) {
 			String url = ((HistoricalSite) data).getImageLink();
-			if(url.equals("")) {
+			if (url == null || url.equals("")) {
 				File file = new File("src/resource/ditich.png");
 				avatar.setImage(new Image(file.toURI().toString()));
-			}else {
+			} else {
 				Image i = new Image(url);
-				avatar.setImage(i);				
+				avatar.setImage(i);
 			}
 		}
-		if(data instanceof Festival) {
+		if (data instanceof Festival) {
 			String url = ((Festival) data).getImageLink();
-			if(url == null || url.equals("")) {
+			if (url == null || url.equals("")) {
 				File file = new File("src/resource/lehoi.png");
 				avatar.setImage(new Image(file.toURI().toString()));
-			}else if(url != null){
+			} else if (url != null) {
 				Image i = new Image(url);
-				avatar.setImage(i);				
+				avatar.setImage(i);
 			}
 		}
-		if(data instanceof Era) {
+		if (data instanceof Era) {
 			File file = new File("src/resource/trieudai.png");
 			avatar.setImage(new Image(file.toURI().toString()));
 		}
-		if(data instanceof HistoricalEvent) {
+		if (data instanceof HistoricalEvent) {
 			File file = new File("src/resource/sukien.png");
 			avatar.setImage(new Image(file.toURI().toString()));
 		}
-		
-		
-		
+
 		// get field element
 		VBox vBoxCenter = (VBox) root.getCenter();
-		
+
 		vBoxCenter.getChildren().clear();
 		// set field element
-		vBoxCenter.getChildren().add(createPopupElement("Tên", Arrays.asList(((Historical) data).getName()), "ProfileItemField"));
-		for(int i = 0; i < fieldName.size(); ++i) {
-			if(property.get(i).equals("name")) continue;
+		vBoxCenter.getChildren()
+				.add(createPopupElement("Tên", Arrays.asList(((Historical) data).getName()), "ProfileItemField"));
+		for (int i = 0; i < fieldName.size(); ++i) {
+			if (property.get(i).equals("name"))
+				continue;
 			try {
 				Class<T> clazz = (Class<T>) data.getClass();
 				Field field = clazz.getDeclaredField(property.get(i));
 				field.setAccessible(true);
 				Object propertyValue = field.get(data);
-				vBoxCenter.getChildren().add(createPopupElement(fieldName.get(i), Arrays.asList(propertyValue.toString()), "ProfileItemField"));
+				vBoxCenter.getChildren().add(createPopupElement(fieldName.get(i),
+						Arrays.asList(propertyValue.toString()), "ProfileItemField"));
 			} catch (NoSuchFieldException | IllegalAccessException e) {
 				e.printStackTrace();
 			}
 		}
-		
+
 		// set link element
-		for(int i = 0; i < linkField.size(); ++i) {
+		for (int i = 0; i < linkField.size(); ++i) {
 			try {
 				Class<T> clazz = (Class<T>) data.getClass();
 				Field field = clazz.getDeclaredField(linkProperty.get(i));
@@ -420,32 +414,34 @@ public class ViewController{
 				Object propertyValue = field.get(data);
 				// get all name of link object
 				List<String> nameLink = new ArrayList<String>();
-				if(data instanceof HistoricalFigure) {
-					for(int j : (ArrayList<Integer>) propertyValue) {
-						if(linkProperty.get(i) == "relatedEraId") {
+				if (data instanceof HistoricalFigure) {
+					for (int j : (ArrayList<Integer>) propertyValue) {
+						if (linkProperty.get(i) == "relatedEraId") {
 							Era era = eraList.stream().filter(obj -> obj.getId() == j).findFirst().orElse(null);
 							nameLink.add(era.getName());
-						}else if(linkProperty.get(i) == "relatedEventId") {
-							HistoricalEvent event = eventList.stream().filter(obj -> obj.getId() == j).findFirst().orElse(null);
+						} else if (linkProperty.get(i) == "relatedEventId") {
+							HistoricalEvent event = eventList.stream().filter(obj -> obj.getId() == j).findFirst()
+									.orElse(null);
 							nameLink.add(event.getName());
 						}
-					}				
+					}
 				}
-				if(data instanceof HistoricalEvent || data instanceof Era) {
-					Era era = eraList.stream().filter(obj -> obj.getId() == (Integer) propertyValue).findFirst().orElse(null);
+				if (data instanceof HistoricalEvent || data instanceof Era) {
+					Era era = eraList.stream().filter(obj -> obj.getId() == (Integer) propertyValue).findFirst()
+							.orElse(null);
 					nameLink.add(era.getName());
 				}
-				
+
 				vBoxCenter.getChildren().add(createPopupElement(linkField.get(i), nameLink, "ProfileItemLink"));
 			} catch (NoSuchFieldException | IllegalAccessException e) {
 				e.printStackTrace();
 			}
 		}
-		
+
 		stage.setScene(new Scene(root));
 		stage.show();
 	}
-	
+
 	private VBox createPopupElement(String field, List<String> content, String type) {
 		VBox newVbox = new VBox();
 		try {
@@ -454,47 +450,48 @@ public class ViewController{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		ImageView image = (ImageView)(((HBox)(newVbox.getChildren().get(0))).getChildren().get(0));	
-		if(Arrays.asList("Địa điểm", "Nơi sinh").contains(field)) {
+		ImageView image = (ImageView) (((HBox) (newVbox.getChildren().get(0))).getChildren().get(0));
+		if (Arrays.asList("Địa điểm", "Nơi sinh").contains(field)) {
 			File file = new File("src/resource/location.png");
 			image.setImage(new Image(file.toURI().toString()));
 		}
-		if(Arrays.asList("Đối tượng thờ", "Suy tôn").contains(field)) {
+		if (Arrays.asList("Đối tượng thờ", "Suy tôn").contains(field)) {
 			File file = new File("src/resource/person.png");
 			image.setImage(new Image(file.toURI().toString()));
 		}
-		if(Arrays.asList("Triều đại", "Thời đại trước", "Thời đại sau").contains(field)) {
+		if (Arrays.asList("Triều đại", "Thời đại trước", "Thời đại sau").contains(field)) {
 			File file = new File("src/resource/trieudai.png");
 			image.setImage(new Image(file.toURI().toString()));
 		}
-		if(Arrays.asList("Năm sinh", "Năm mất", "Từ năm", "Đến năm", "Thời gian", "Bắt đầu", "Kết thúc").contains(field)) {
+		if (Arrays.asList("Năm sinh", "Năm mất", "Từ năm", "Đến năm", "Thời gian", "Bắt đầu", "Kết thúc")
+				.contains(field)) {
 			File file = new File("src/resource/time.png");
 			image.setImage(new Image(file.toURI().toString()));
 		}
-		if(Arrays.asList("Loại hình", "Loại xếp hạng").contains(field)) {
+		if (Arrays.asList("Loại hình", "Loại xếp hạng").contains(field)) {
 			File file = new File("src/resource/trophy.png");
 			image.setImage(new Image(file.toURI().toString()));
 		}
-		if(Arrays.asList("Sự kiện liên quan").contains(field)) {
+		if (Arrays.asList("Sự kiện liên quan").contains(field)) {
 			File file = new File("src/resource/sukien.png");
 			image.setImage(new Image(file.toURI().toString()));
 		}
-		Label label = (Label)(((HBox)(newVbox.getChildren().get(0))).getChildren().get(1));
-		if(type == "ProfileItemField") {
-			Text text = (Text)(((HBox)(newVbox.getChildren().get(0))).getChildren().get(2));
+		Label label = (Label) (((HBox) (newVbox.getChildren().get(0))).getChildren().get(1));
+		if (type == "ProfileItemField") {
+			Text text = (Text) (((HBox) (newVbox.getChildren().get(0))).getChildren().get(2));
 			label.setText(field);
 			text.setText(content.get(0));
-		}else if(type == "ProfileItemLink") {
+		} else if (type == "ProfileItemLink") {
 			label.setText(field);
-			VBox textBox = (VBox)(((HBox)(newVbox.getChildren().get(0))).getChildren().get(2));
-			Text text = (Text) textBox.getChildren().get(0); 
+			VBox textBox = (VBox) (((HBox) (newVbox.getChildren().get(0))).getChildren().get(2));
+			Text text = (Text) textBox.getChildren().get(0);
 			textBox.getChildren().clear();
-			for(String t : content) {
+			for (String t : content) {
 				Text newText = new Text(t);
 				newText.setWrappingWidth(380);
 				textBox.getChildren().add(newText);
 			}
 		}
-		return newVbox;	
+		return newVbox;
 	}
 }

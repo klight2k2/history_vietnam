@@ -7,6 +7,7 @@ import model.Era;
 public class LinkEra implements Runnable {
 	private ArrayList<Era> listEraDataRaw;
 	private ArrayList<Era> listEraData;
+	private int numsOfLinks = 0;
 
 	public LinkEra(ArrayList<Era> listEraDataRaw, ArrayList<Era> listEraData) {
 		this.listEraDataRaw = listEraDataRaw;
@@ -48,6 +49,7 @@ public class LinkEra implements Runnable {
 	public void findPrecededAndSuccessed(Era curEra) {
 		if (curEra.getFromYear().isEmpty() && curEra.getToYear().isEmpty()) {
 			curEra.fillEra(1, 2);
+			this.numsOfLinks += 2;
 			listEraData.add(curEra);
 		} else {
 			int nearestPreviousEraGap = 99999;
@@ -87,6 +89,7 @@ public class LinkEra implements Runnable {
 					}
 				}
 
+			this.numsOfLinks += 2;
 			curEra.fillEra(nearestPreviousEraId, nearestNextEraId);
 			listEraData.add(curEra);
 		}
@@ -97,5 +100,16 @@ public class LinkEra implements Runnable {
 		for (Era era : listEraDataRaw) {
 			findPrecededAndSuccessed(era);
 		}
+
+//		String filePath = "src\\data\\";
+//		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+//		try {
+//			FileWriter writer = new FileWriter(new File(filePath + "numsOfLinkEra.json"));
+//			gson.toJson(numsOfLinks, writer);
+//			writer.flush();
+//			writer.close();
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
 	}
 }

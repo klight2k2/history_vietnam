@@ -60,7 +60,7 @@ public class CrawlFigureFromVanSu extends Crawler<HistoricalFigure> implements C
 				born = era;
 				died = era;
 			}
-			HistoricalFigure figure = new HistoricalFigure(nameFigure, died, born, bornIn, desc);
+			HistoricalFigure figure = new HistoricalFigure(nameFigure, died, born, bornIn, desc, imageLink);
 			figure.addOtherName(otherName);
 			System.out.println("Crawl Figure: " + figure.getName());
 			this.addDataCrawl(figure);

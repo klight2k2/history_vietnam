@@ -8,14 +8,17 @@ import java.util.List;
 import com.google.gson.Gson;
 
 public class MainModel {
-	private  List<HistoricalFigure> HistoricalFigures = new ArrayList<>();
-	private  List<Era> Eras = new ArrayList<>();
-	private  List<Festival> Festivals = new ArrayList<>();
-	private  List<HistoricalSite> HistoricSites = new ArrayList<>();
-	private  List<HistoricalEvent> Events = new ArrayList<>();
+	private List<HistoricalFigure> HistoricalFigures = new ArrayList<>();
+	private List<Era> Eras = new ArrayList<>();
+	private List<Festival> Festivals = new ArrayList<>();
+	private List<HistoricalSite> HistoricSites = new ArrayList<>();
+	private List<HistoricalEvent> Events = new ArrayList<>();
+	private int numsOfLinkEra = 0;
+	private int numsOfLinkEvent = 0;
+	private int numsOfLinkFigure = 0;
 
 	public MainModel() {
-		try{
+		try {
 			Gson gson = new Gson();
 
 			Era Eras_Temp[] = null;
@@ -52,8 +55,17 @@ public class MainModel {
 			for (HistoricalSite p : HistoricalSite_Temp) {
 				HistoricSites.add(p);
 			}
-		}
-		catch (FileNotFoundException e) {
+
+			FileReader reader_linkEra = new FileReader("src/data/numsOfLinkEra.json");
+			this.numsOfLinkEra = gson.fromJson(reader_linkEra, Integer.class);
+
+			FileReader reader_linkEvent = new FileReader("src/data/numsOfLinkEvent.json");
+			this.numsOfLinkEvent = gson.fromJson(reader_linkEvent, Integer.class);
+
+			FileReader reader_linkFigure = new FileReader("src/data/numsOfLinkFigure.json");
+			this.numsOfLinkFigure = gson.fromJson(reader_linkFigure, Integer.class);
+
+		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
 	}
@@ -77,6 +89,5 @@ public class MainModel {
 	public List<HistoricalEvent> getEvents() {
 		return Events;
 	}
-
 
 }

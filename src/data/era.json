@@ -1,1 +1,266 @@
-[]
+[
+  {
+    "id": 1,
+    "fromYear": "",
+    "toYear": "",
+    "isPrecededBy": 1,
+    "isSuccessedBy": 2,
+    "name": "Việt Nam Thời tiền sử",
+    "otherNames": [
+      "Thời tiền sử"
+    ]
+  },
+  {
+    "id": 2,
+    "fromYear": "2000",
+    "toYear": "258 trCN",
+    "isPrecededBy": 1,
+    "isSuccessedBy": 3,
+    "name": "Thời kỳ dựng nước",
+    "otherNames": [
+      "Dựng nước (2000 - 258 trCN)"
+    ]
+  },
+  {
+    "id": 3,
+    "fromYear": "257",
+    "toYear": "208 trCN",
+    "isPrecededBy": 2,
+    "isSuccessedBy": 4,
+    "name": "Nhà Thục",
+    "otherNames": [
+      "Nhà Thục (257- 208 trCN)"
+    ]
+  },
+  {
+    "id": 4,
+    "fromYear": "207 trCN",
+    "toYear": "39",
+    "isPrecededBy": 3,
+    "isSuccessedBy": 5,
+    "name": "Thời kỳ phong kiến phương Bắc đô hộ lần thứ nhất",
+    "otherNames": [
+      "Bắc thuộc lần 1 (207 trCN - 39)"
+    ]
+  },
+  {
+    "id": 5,
+    "fromYear": "40",
+    "toYear": "43",
+    "isPrecededBy": 4,
+    "isSuccessedBy": 6,
+    "name": "Trưng Nữ Vương",
+    "otherNames": [
+      "Trưng Nữ Vương (40-43)"
+    ]
+  },
+  {
+    "id": 6,
+    "fromYear": "43",
+    "toYear": "542",
+    "isPrecededBy": 5,
+    "isSuccessedBy": 7,
+    "name": "Thời kỳ phong kiến phương Bắc đô hộ lần thứ hai",
+    "otherNames": [
+      "Bắc thuộc lần 2 (43-542)"
+    ]
+  },
+  {
+    "id": 7,
+    "fromYear": "544",
+    "toYear": "602",
+    "isPrecededBy": 6,
+    "isSuccessedBy": 8,
+    "name": "Nhà tiền Lý và nhà Triệu",
+    "otherNames": [
+      "Nhà Tiền Lý, Triệu (544-602)"
+    ]
+  },
+  {
+    "id": 8,
+    "fromYear": "603",
+    "toYear": "939",
+    "isPrecededBy": 7,
+    "isSuccessedBy": 10,
+    "name": "Thời kỳ phong kiến phương Bắc đô hộ lần thứ ba",
+    "otherNames": [
+      "Bắc thuộc lần lần 3 (603-939)"
+    ]
+  },
+  {
+    "id": 9,
+    "fromYear": "905",
+    "toYear": "938",
+    "isPrecededBy": 9,
+    "isSuccessedBy": 10,
+    "name": "Thời kỳ xây nền tự chủ",
+    "otherNames": [
+      "Xây nền tự chủ (905 - 938)"
+    ]
+  },
+  {
+    "id": 10,
+    "fromYear": "939",
+    "toYear": "965",
+    "isPrecededBy": 8,
+    "isSuccessedBy": 11,
+    "name": "Nhà Ngô",
+    "otherNames": [
+      "Nhà Ngô (939-965)"
+    ]
+  },
+  {
+    "id": 11,
+    "fromYear": "968",
+    "toYear": "980",
+    "isPrecededBy": 10,
+    "isSuccessedBy": 12,
+    "name": "Nhà Đinh",
+    "otherNames": [
+      "Nhà Đinh (968-980)"
+    ]
+  },
+  {
+    "id": 12,
+    "fromYear": "980",
+    "toYear": "1009",
+    "isPrecededBy": 11,
+    "isSuccessedBy": 13,
+    "name": "Nhà Tiền Lê",
+    "otherNames": [
+      "Nhà Tiền Lê (980-1009)"
+    ]
+  },
+  {
+    "id": 13,
+    "fromYear": "1010",
+    "toYear": "1225",
+    "isPrecededBy": 12,
+    "isSuccessedBy": 14,
+    "name": "Nhà Lý",
+    "otherNames": [
+      "Nhà Lý (1010-1225)"
+    ]
+  },
+  {
+    "id": 14,
+    "fromYear": "1225",
+    "toYear": "1400",
+    "isPrecededBy": 13,
+    "isSuccessedBy": 15,
+    "name": "Nhà Trần",
+    "otherNames": [
+      "Nhà Trần (1225-1400)"
+    ]
+  },
+  {
+    "id": 15,
+    "fromYear": "1400",
+    "toYear": "1407",
+    "isPrecededBy": 14,
+    "isSuccessedBy": 16,
+    "name": "Nhà Hồ",
+    "otherNames": [
+      "Nhà Hồ (1400-1407)"
+    ]
+  },
+  {
+    "id": 16,
+    "fromYear": "1407",
+    "toYear": "1413",
+    "isPrecededBy": 15,
+    "isSuccessedBy": 17,
+    "name": "Hậu Trần",
+    "otherNames": [
+      "Hậu Trần (1407-1413)"
+    ]
+  },
+  {
+    "id": 17,
+    "fromYear": "1414",
+    "toYear": "1427",
+    "isPrecededBy": 16,
+    "isSuccessedBy": 18,
+    "name": "Thời kỳ thuộc Minh",
+    "otherNames": [
+      "Thuộc Minh (1414-1427)"
+    ]
+  },
+  {
+    "id": 18,
+    "fromYear": "1428",
+    "toYear": "1527",
+    "isPrecededBy": 17,
+    "isSuccessedBy": 19,
+    "name": "Triều Lê Sơ",
+    "otherNames": [
+      "Triều Lê Sơ (1428-1527)"
+    ]
+  },
+  {
+    "id": 19,
+    "fromYear": "1527",
+    "toYear": "1592",
+    "isPrecededBy": 18,
+    "isSuccessedBy": 20,
+    "name": "Bắc Triều - Nam Triều",
+    "otherNames": [
+      "Nam - Bắc Triều (1527-1592)"
+    ]
+  },
+  {
+    "id": 20,
+    "fromYear": "1533",
+    "toYear": "1788",
+    "isPrecededBy": 19,
+    "isSuccessedBy": 21,
+    "name": "Thời Trịnh - Nguyễn phân tranh",
+    "otherNames": [
+      "Trịnh - Nguyễn (1533-1788)"
+    ]
+  },
+  {
+    "id": 21,
+    "fromYear": "1778",
+    "toYear": "1802",
+    "isPrecededBy": 20,
+    "isSuccessedBy": 22,
+    "name": "Nhà Tây Sơn",
+    "otherNames": [
+      "Nhà Tây Sơn (1778-1802)"
+    ]
+  },
+  {
+    "id": 22,
+    "fromYear": "1802",
+    "toYear": "1883",
+    "isPrecededBy": 21,
+    "isSuccessedBy": 23,
+    "name": "Nhà Nguyễn thời kỳ độc lập",
+    "otherNames": [
+      "Nhà Nguyễn độc lập (1802-1883)"
+    ]
+  },
+  {
+    "id": 23,
+    "fromYear": "1883",
+    "toYear": "1945",
+    "isPrecededBy": 22,
+    "isSuccessedBy": 24,
+    "name": "Thời kì Pháp đô hộ",
+    "otherNames": [
+      "Pháp đô hộ (1883-1945)"
+    ]
+  },
+  {
+    "id": 24,
+    "fromYear": "1945",
+    "toYear": "đến nay",
+    "isPrecededBy": 23,
+    "isSuccessedBy": 24,
+    "name": "Nước Việt Nam mới",
+    "otherNames": [
+      "Nước Việt Nam mới"
+    ]
+  }
+]
