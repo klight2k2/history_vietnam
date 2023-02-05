@@ -24,6 +24,7 @@ public abstract class Crawler<T>{
 		try {
 			doc = Jsoup.connect(url).userAgent("Mozilla").get();
 		} catch (IOException e) {
+			System.out.println("Error from url:" +url);
 			e.printStackTrace();
 		}
 	}

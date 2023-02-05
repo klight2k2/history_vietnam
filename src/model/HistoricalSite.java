@@ -1,5 +1,7 @@
 package model;
 
+import org.jsoup.select.Evaluator.IndexEquals;
+
 public class HistoricalSite extends Historical {
 	protected int id;
 	public static int idCounter = 1;
@@ -99,5 +101,15 @@ public class HistoricalSite extends Historical {
 		this.imageLink = imageLink;
 	}
 	
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof HistoricalSite) {
+			HistoricalSite site = (HistoricalSite) obj;
+			if(this.name.equals(site.getName()) && this.location.equals(site.getLocation())) {
+				return true;
+			}
+		}
+		return false;
+	}
 	
 }

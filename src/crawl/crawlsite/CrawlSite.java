@@ -15,7 +15,7 @@ public class CrawlSite implements Runnable {
 		this.listDataCrawl = listDataCrawl;
 
 		listWebCrawl.add(new CrawlFromDitich(this.listDataCrawl));
-//		listWebCrawl.add(new CrawlFromWiki(this.listDataCrawl));
+		listWebCrawl.add(new CrawlFromWiki(this.listDataCrawl));
 
 	}
 

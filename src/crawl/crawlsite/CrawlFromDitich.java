@@ -26,16 +26,19 @@ public class CrawlFromDitich extends Crawler<HistoricalSite> implements Crawling
 	@Override
 	public void start() throws IOException {
 		String baseUrl = "http://ditich.vn";
-		this.getHTML(baseUrl + "/FrontEnd/DiTich?cpage=1&rpage=4024");
-		Elements listSite = this.doc.getElementsByClass("ih-item square colored effect4");
-		for (Element site : listSite) {
-			listDetailUrl.add(site.getElementsByTag("a").attr("href"));
-			
+		for (int i = 1; i < 64; i++) {
+
+			this.getHTML(baseUrl + "/FrontEnd/DiTich?cpage=" + i + "&rpage=64" + "&tpage=" + i);
+			Elements listSite = this.doc.getElementsByClass("ih-item square colored effect4");
+			for (Element site : listSite) {
+				listDetailUrl.add(site.getElementsByTag("a").attr("href"));
+
+			}
 		}
 		System.out.println("Total URL: " + listDetailUrl.size());
 //		listDetailUrl.add("/FrontEnd/DiTich/Form?do=&ItemId=2022");
-//		for (int i = 0; i < listDetailUrl.size(); i++) {
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < listDetailUrl.size(); i++) {
+//		for (int i = 0; i < 100; i++) {
 			this.getHTML(baseUrl + listDetailUrl.get(i));
 			Element info = this.doc.getElementsByClass("hl__library-info__container").get(0);
 			Elements listInput = info.getElementsByTag("input");

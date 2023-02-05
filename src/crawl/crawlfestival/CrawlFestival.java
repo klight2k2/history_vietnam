@@ -21,7 +21,7 @@ public class CrawlFestival implements Runnable {
 		this.listWebCrawl.add(new CrawlHoChiMinhFestival(this.listDataCrawl));
 		this.listWebCrawl.add(new CrawlNgheAnFestival(this.listDataCrawl));
 		this.listWebCrawl.add(new CrawlPhuThoFestival(this.listDataCrawl));
-		this.listWebCrawl.add(new CrawlQuangNinhFestival(this.listDataCrawl));
+//		this.listWebCrawl.add(new CrawlQuangNinhFestival(this.listDataCrawl));
 		this.listWebCrawl.add(new CrawlTuyenQuangFestival(this.listDataCrawl));
 	}
 
