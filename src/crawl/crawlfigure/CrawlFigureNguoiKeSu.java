@@ -73,7 +73,7 @@ public class CrawlFigureNguoiKeSu extends Crawler<HistoricalFigure> implements C
 				}
 				if (obj.has("media")) {
 
-					imageLink = obj.getJSONObject("media").getString("thumbnail");
+					imageLink ="https://nguoikesu.com" +  obj.getJSONObject("media").getString("thumbnail");
 				}
 				String detailUrl = "https://vansu.vn/viet-nam/viet-nam-nhan-vat?keyword=" + encodeValue(nameFigure);
 				this.getHTML(detailUrl);
