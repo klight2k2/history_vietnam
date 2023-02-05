@@ -33,6 +33,7 @@ public class CrawlFromWiki extends Crawler<HistoricalSite> implements Crawling {
 				String objectWorship = "";
 				String location = "";
 				String nameSite = "";
+				String imageLink = "";
 				if (data.select("td").size() > 5) {
 
 					nameSite = data.select("td").get(0).text().trim();
@@ -48,8 +49,9 @@ public class CrawlFromWiki extends Crawler<HistoricalSite> implements Crawling {
 					loaiXepHang = "di tích cấp quốc gia";
 				}
 				HistoricalSite site = new HistoricalSite(nameSite, builtIn, location, objectWorship, loaiXepHang,
-						loaiHinhXepHang);
-				System.out.println("Crawl Site (Wiki): " + site.getName());
+						loaiHinhXepHang, imageLink);
+				System.out.println(
+						"Crawl Site (Wiki): " + site.getId() + "::" + site.getName() + ", Worship: " + objectWorship);
 				this.addDataCrawl(site);
 			}
 		}

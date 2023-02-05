@@ -63,6 +63,23 @@ public class LinkFigure implements Runnable {
 	public void findEraAndEvent(HistoricalFigure curFigure) {
 		if (curFigure.getBorn().isEmpty() && curFigure.getDied().isEmpty()) {
 			listFigureData.add(curFigure);
+		} else if (curFigure.getBorn().indexOf("-") == 0) {
+			boolean found = false;
+			for (Era era : listEraDataRaw) {
+				if (found) {
+					break;
+				}
+				ArrayList<String> otherNames = era.getOtherNames();
+				for (String name : otherNames) {
+					if (curFigure.getBorn().contains(name)) {
+						curFigure.addRelatedEraId(era.getId());
+						this.listFigureData.add(curFigure);
+						found = true;
+						break;
+					}
+				}
+			}
+
 		} else {
 			int born = YearStringToInt(curFigure.getBorn());
 			int died = YearStringToInt(curFigure.getDied());

@@ -2,13 +2,12 @@ package crawl.crawlsite;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 import crawl.Crawling;
 import model.HistoricalSite;
 
 public class CrawlSite implements Runnable {
-	private List<Crawling> listWebCrawl = new ArrayList<>();
+	private ArrayList<Crawling> listWebCrawl = new ArrayList<>();
 	private ArrayList<HistoricalSite> listDataCrawl;
 
 	public CrawlSite(ArrayList<HistoricalSite> listDataCrawl) {
@@ -16,7 +15,7 @@ public class CrawlSite implements Runnable {
 		this.listDataCrawl = listDataCrawl;
 
 		listWebCrawl.add(new CrawlFromDitich(this.listDataCrawl));
-		listWebCrawl.add(new CrawlFromWiki(this.listDataCrawl));
+//		listWebCrawl.add(new CrawlFromWiki(this.listDataCrawl));
 
 	}
 
@@ -31,5 +30,10 @@ public class CrawlSite implements Runnable {
 			}
 		}
 
+	}
+
+	public static void main(String[] args) {
+		CrawlSite des = new CrawlSite(new ArrayList<HistoricalSite>());
+		des.run();
 	}
 }

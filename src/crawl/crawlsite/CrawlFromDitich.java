@@ -1,10 +1,15 @@
 package crawl.crawlsite;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import crawl.Crawler;
 import crawl.Crawling;
@@ -29,9 +34,10 @@ public class CrawlFromDitich extends Crawler<HistoricalSite> implements Crawling
 
 			}
 		}
+		System.out.println("Total URL: " + listDetailUrl.size());
 //		listDetailUrl.add("/FrontEnd/DiTich/Form?do=&ItemId=2022");
-		for (int i = 0; i < listDetailUrl.size(); i++) {
-//		for (int i = 0; i < 50; i++) {
+//		for (int i = 0; i < listDetailUrl.size(); i++) {
+		for (int i = 0; i < 100; i++) {
 			this.getHTML(baseUrl + listDetailUrl.get(i));
 			Element info = this.doc.getElementsByClass("hl__library-info__container").get(0);
 			Elements listInput = info.getElementsByTag("input");
@@ -83,8 +89,20 @@ public class CrawlFromDitich extends Crawler<HistoricalSite> implements Crawling
 			}
 			HistoricalSite site = new HistoricalSite(nameSite, builtIn, location, objectWorship, loaiXepHang,
 					loaiHinhXepHang, imageLink);
-			System.out.println("Crawl Site (Ditich): " + site.getName() + ", Worship: " + objectWorship);
+			System.out.println(
+					"Crawl Site (Ditich): " + site.getId() + "::" + site.getName() + ", Worship: " + objectWorship);
 			this.addDataCrawl(site);
+			System.out.println(this.listDataCrawl.size());
+		}
+
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		try {
+			String filePath = "src\\data\\";
+			FileWriter writer = new FileWriter(new File(filePath + "testSite.json"));
+			gson.toJson(this.listDataCrawl, writer);
+			writer.close();
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 }

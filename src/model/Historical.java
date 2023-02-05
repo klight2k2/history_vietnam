@@ -6,6 +6,10 @@ public abstract class Historical {
 	protected String name;
 	protected ArrayList<String> otherNames = new ArrayList<>();
 
+	public ArrayList<String> getOtherNames() {
+		return otherNames;
+	}
+
 	public Historical(String name) {
 		this.name = name;
 	}
@@ -31,17 +35,21 @@ public abstract class Historical {
 		return false;
 
 	}
+
 	public boolean checking(Object obj) {
 
-		if(obj instanceof String){
-			String a = (String)obj;
-			if(otherNames == null )return name.contains(a);
-			if(otherNames != null &&!otherNames.isEmpty()){
-				for(int i = 0;i < otherNames.size();i++){
-					if(otherNames.get(i).contains(a))return true;
+		if (obj instanceof String) {
+			String a = (String) obj;
+			if (otherNames == null)
+				return name.contains(a);
+			if (otherNames != null && !otherNames.isEmpty()) {
+				for (int i = 0; i < otherNames.size(); i++) {
+					if (otherNames.get(i).contains(a))
+						return true;
 				}
 			}
-			if(name != null && !name.isEmpty()) return name.contains(a);
+			if (name != null && !name.isEmpty())
+				return name.contains(a);
 		}
 		return false;
 	}
