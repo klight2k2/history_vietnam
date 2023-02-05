@@ -1,7 +1,9 @@
 package view;
 
+import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Field;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -17,6 +19,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
@@ -78,9 +81,9 @@ public class ViewController{
 	private List<String> historicSiteLinkFieldProperty = Arrays.asList();
 	private List<String> eventTableFieldName = Arrays.asList("STT", "Tên", "Bắt đầu", "Kết thúc");
 	private List<String> eventTableFieldProperty = Arrays.asList("id", "name", "startDate", "endDate");
-	private List<String> eventLinkFieldName = Arrays.asList("Trieu dai");
+	private List<String> eventLinkFieldName = Arrays.asList("Triều đại");
 	private List<String> eventLinkFieldProperty = Arrays.asList("relatedEraId");
-	private List<String> festivalTableFieldName = Arrays.asList("STT", "Tên", "Địa điểm", "Đối tượng suy tôn", "Thời gian");
+	private List<String> festivalTableFieldName = Arrays.asList("STT", "Tên", "Địa điểm", "Suy tôn", "Thời gian");
 	private List<String> festivalTableFieldProperty = Arrays.asList("id", "name", "location", "doiTuongSuyTon", "holdTime");
 	private List<String> festivalLinkFieldName = Arrays.asList();
 	private List<String> festivalLinkFieldProperty = Arrays.asList();
@@ -88,7 +91,7 @@ public class ViewController{
 	private List<String> eraTableFieldProperty = Arrays.asList("id", "name", "fromYear", "toYear");
 	private List<String> eraLinkFieldName = Arrays.asList("Thời đại trước", "Thời đại sau");
 	private List<String> eraLinkFieldProperty = Arrays.asList("isPrecededBy", "isSuccessedBy");
-			
+	
 	@SuppressWarnings("unchecked")
 	@FXML
 	private void initialize() {
@@ -338,6 +341,11 @@ public class ViewController{
 		Text titleEle = (Text) vBoxTop.getChildren().get(1);
 		titleEle.setText(title);
 		
+		// set avatar
+		if(data instanceof HistoricalFigure || data instanceof HistoricalSite || data instanceof Festival ) {
+			
+		}
+		
 		// get field element
 		VBox vBoxCenter = (VBox) root.getCenter();
 		VBox vBoxField = (VBox) vBoxCenter.getChildren().get(0);
@@ -401,7 +409,31 @@ public class ViewController{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		ImageView image = (ImageView)(((HBox)(newVbox.getChildren().get(0))).getChildren().get(0));
+		ImageView image = (ImageView)(((HBox)(newVbox.getChildren().get(0))).getChildren().get(0));	
+		if(Arrays.asList("Địa điểm", "Nơi sinh").contains(field)) {
+			File file = new File("src/resource/location.png");
+			image.setImage(new Image(file.toURI().toString()));
+		}
+		if(Arrays.asList("Đối tượng thờ", "Suy tôn").contains(field)) {
+			File file = new File("src/resource/person.png");
+			image.setImage(new Image(file.toURI().toString()));
+		}
+		if(Arrays.asList("Triều đại", "Thời đại trước", "Thời đại sau").contains(field)) {
+			File file = new File("src/resource/trieudai.png");
+			image.setImage(new Image(file.toURI().toString()));
+		}
+		if(Arrays.asList("Năm sinh", "Năm mất", "Từ năm", "Đến năm", "Thời gian", "Bắt đầu", "Kết thúc").contains(field)) {
+			File file = new File("src/resource/time.png");
+			image.setImage(new Image(file.toURI().toString()));
+		}
+		if(Arrays.asList("Loại hình xếp hạng", "Loại xếp hạng").contains(field)) {
+			File file = new File("src/resource/trophy.png");
+			image.setImage(new Image(file.toURI().toString()));
+		}
+		if(Arrays.asList("Sự kiện liên quan").contains(field)) {
+			File file = new File("src/resource/sukien.png");
+			image.setImage(new Image(file.toURI().toString()));
+		}
 		Label label = (Label)(((HBox)(newVbox.getChildren().get(0))).getChildren().get(1));
 		if(type == "ProfileItemField") {
 			Text text = (Text)(((HBox)(newVbox.getChildren().get(0))).getChildren().get(2));
