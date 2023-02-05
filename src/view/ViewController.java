@@ -8,6 +8,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import javax.swing.JOptionPane;
+
+import crawl.CrawlController;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.ObservableListBase;
@@ -121,7 +124,7 @@ public class ViewController{
 		selectedItem.setStyle("-fx-background-color: #ccc");
 
 		// Pop up
-		setEventClickOnRow((TableView<HistoricalFigure>) tableData);
+		setEventClickOnRow((TableView<HistoricalFigure>) tableData);		
 	}
 
 	@FXML
@@ -160,6 +163,12 @@ public class ViewController{
 			System.out.println("Loi");
 		}
 	}
+	
+	// crawl button
+	public void Crawl(ActionEvent event) {
+//		new CrawlController();
+		JOptionPane.showMessageDialog(null, "Tải dữ liệu thành công", "Success", JOptionPane.INFORMATION_MESSAGE);
+	}
 
 	// search controller
 	public void SearchByName(ActionEvent event) {
@@ -169,24 +178,23 @@ public class ViewController{
 
 		tableData.getColumns().clear();
 		switch (type) {
-
-		case "historicalFigureItem":
-			searchingTable(historicalFigureList, historicalFigureTableFieldName, historicalFigureTableFieldProperty, searchName);
-			break;
-		case "eraItem":
-			searchingTable(eraList, eraTableFieldName, eraTableFieldProperty, searchName);
-			break;
-		case "festivalItem":
-			searchingTable(festivalList, festivalTableFieldName, festivalTableFieldProperty , searchName);
-			break;
-		case "eventItem":
-			searchingTable(eventList, eventTableFieldName, eventTableFieldProperty, searchName);
-			break;
-		case "historicSiteItem":
-			searchingTable(historicSiteList, historicSiteTableFieldName, historicSiteTableFieldProperty, searchName);
-			break;
-		default:
-			System.out.println("Loi");
+			case "historicalFigureItem":
+				searchingTable(historicalFigureList, historicalFigureTableFieldName, historicalFigureTableFieldProperty, searchName);
+				break;
+			case "eraItem":
+				searchingTable(eraList, eraTableFieldName, eraTableFieldProperty, searchName);
+				break;
+			case "festivalItem":
+				searchingTable(festivalList, festivalTableFieldName, festivalTableFieldProperty , searchName);
+				break;
+			case "eventItem":
+				searchingTable(eventList, eventTableFieldName, eventTableFieldProperty, searchName);
+				break;
+			case "historicSiteItem":
+				searchingTable(historicSiteList, historicSiteTableFieldName, historicSiteTableFieldProperty, searchName);
+				break;
+			default:
+				System.out.println("Loi");
 		}
 		// searchInfo.setText("");
 	}
@@ -197,25 +205,24 @@ public class ViewController{
 		String type = selectedItem.getId();
 		tableData.getColumns().clear();
 		switch (type) {
-
-		case "historicalFigureItem":
-			copyTable(historicalFigureTable, (TableView<HistoricalFigure>) tableData);
-			break;
-		case "eraItem":
-			copyTable(eraTable, (TableView<Era>) tableData);
-			break;
-		case "festivalItem":
-			copyTable(festivalTable, (TableView<Festival>) tableData);
-
-			break;
-		case "eventItem":
-			copyTable(eventTable, (TableView<HistoricalEvent>) tableData);
-			break;
-		case "historicSiteItem":
-			copyTable(historicSiteTable, (TableView<HistoricalSite>) tableData);
-			break;
-		default:
-			System.out.println("Loi");
+			case "historicalFigureItem":
+				copyTable(historicalFigureTable, (TableView<HistoricalFigure>) tableData);
+				break;
+			case "eraItem":
+				copyTable(eraTable, (TableView<Era>) tableData);
+				break;
+			case "festivalItem":
+				copyTable(festivalTable, (TableView<Festival>) tableData);
+	
+				break;
+			case "eventItem":
+				copyTable(eventTable, (TableView<HistoricalEvent>) tableData);
+				break;
+			case "historicSiteItem":
+				copyTable(historicSiteTable, (TableView<HistoricalSite>) tableData);
+				break;
+			default:
+				System.out.println("Loi");
 		}
 	}
 
