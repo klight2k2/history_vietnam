@@ -1,0 +1,927 @@
+[
+  {
+    "id": 1,
+    "location": "Xã Long Phú, thị xã Tân Châu, tỉnh An Giang.",
+    "doiTuongSuyTon": "Thành Hoàng bổn cảnh.",
+    "desc": "Lễ khai hạ, cầu mùa.",
+    "holdTime": "7/1 âm lịch.",
+    "name": "Hội đình Long Phú",
+    "otherNames": []
+  },
+  {
+    "id": 2,
+    "location": "Xã Long Sơn, huyện Phú Tân, tỉnh An Giang.",
+    "doiTuongSuyTon": "Lão Gia (danh y cổ Trung Quốc).",
+    "desc": "Lễ hội cầu sự việc tốt lành.",
+    "holdTime": "15/1 âm lịch.",
+    "name": "Hội đền Bảo Sanh",
+    "otherNames": []
+  },
+  {
+    "id": 3,
+    "location": "Xã Long Kiên, huyện Chợ Mới, tỉnh An Giang.",
+    "doiTuongSuyTon": "Nguyễn Trung Trực",
+    "desc": "Lễ dâng hương, lễ cúng tưởng niệm.",
+    "holdTime": "18 – 19/ 10 âm lịch.",
+    "name": "Hội đền Nguyễn Trung Trực",
+    "otherNames": []
+  },
+  {
+    "id": 4,
+    "location": "Xã Phú Lâm, huyện Phú Tân, tỉnh An Giang.",
+    "doiTuongSuyTon": "Bà Thượng Đồng Cổ Hỷ.",
+    "desc": "Dâng lễ vía Bà, hát bội.",
+    "holdTime": "15 – 16/3 âm lịch.",
+    "name": "Hội miếu Bằng Lang",
+    "otherNames": []
+  },
+  {
+    "id": 5,
+    "location": "Tại chùa, từng gia đình cộng đồng người Kh’mer thuộc huyện Tri Tôn hoặc Tịnh Biên, tỉnh An Giang.",
+    "doiTuongSuyTon": "",
+    "desc": "Cầu phước cho các linh hồn thân nhân đã khuất được đầu thai sang kiếp khác, để người quá cố được sung sướng hơn. Trong dịp lễ Đôlta có hội đua bò theo thể thức truyền thống của người Kh’mer.",
+    "holdTime": "Từ ngày 29 tháng 8 đến ngày 1 tháng 9 âm lịch (nếu tháng thiếu sẽ kéo dài sang ngày 2 tháng 9 âm lịch).",
+    "name": "Lễ Đôlta và hội đua bò",
+    "otherNames": []
+  },
+  {
+    "id": 6,
+    "location": "Phường Châu Phú A, thị xã Châu Đốc, tỉnh An Giang.",
+    "doiTuongSuyTon": "Nguyễn Hữu Cảnh",
+    "desc": "Dâng hương, lễ kỳ yên, hát bội đêm.",
+    "holdTime": "9 – 11/5 âm lịch.",
+    "name": "Lễ hội đình Châu Phú",
+    "otherNames": []
+  },
+  {
+    "id": 7,
+    "location": "miếu Bà Chúa Xứ, núi Sam, cách thị xã Châu Đốc 7km",
+    "doiTuongSuyTon": "Bà Chúa Xứ",
+    "desc": "lễ tắm Bà.",
+    "holdTime": "từ đêm 23/4 đến 27/4 âm lịch",
+    "name": "Lễ hội miếu Bà Chúa Xứ",
+    "otherNames": []
+  },
+  {
+    "id": 8,
+    "location": "Đình làng Đình Bảng, xã Đình Bảng, thị xã Từ Sơn, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Thờ núi, thần nước, thần đất và 6 nhân thần có công dựng lại làng sau cuộc tàn phá của quân Minh.",
+    "desc": "Tế thần, đấu vật, chọi gà.",
+    "holdTime": "14 – 15/2 âm lịch.",
+    "name": "Lễ hội làng Đình Bảng",
+    "otherNames": []
+  },
+  {
+    "id": 9,
+    "location": "Xã Đình Tổ, huyện Thuận Thành, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Đức Phật",
+    "desc": "Lễ cúng Phật; lễ dâng hương; lễ cúng đàn trần tế cầu phúc; lễ cúng Tổ; hát quan họ trên thuyền; hội thi thả chim bồ câu.",
+    "holdTime": "23-24/3 âm lịch",
+    "name": "Hội chùa Bút Tháp",
+    "otherNames": []
+  },
+  {
+    "id": 10,
+    "location": "Xã Phật Tích, huyện Tiên Du, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Phật Bà Quan Âm và Lý Thánh Tông.",
+    "desc": "Lễ Phật, nghe giảng kinh, cầu yên, cầu phúc, thăm di tích.",
+    "holdTime": "4/1 âm lịch.",
+    "name": "Hội chùa Phật Tích",
+    "otherNames": []
+  },
+  {
+    "id": 11,
+    "location": "Huyện Yên Phong, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "",
+    "desc": "Đây là một lễ hội ở Bắc Ninh rất độc đáo. Bốn làng từng chung sức đuổi cướp giữ làng, giúp nhau sản xuất. Trước hội bốn làng đã giúp nhau cấy lúa. Ngày 8/1, bốn làng cùng mở hội tế thần và cùng dự tiệc. Lễ hội có trò kéo co, đấu vật, đánh cờ, hát chèo.",
+    "holdTime": "8/1 âm lịch.",
+    "name": "Hội Du xuân",
+    "otherNames": []
+  },
+  {
+    "id": 12,
+    "location": "Làng Đông Hồ, xã Song Hồ, huyện Thuận Thành, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Thành hoàng làng, tổ nghề.",
+    "desc": "Trưng bày và bán tranh dân gian Đông Hồ trong sân đình. Dựng một cầu bằng tranh trong đình tượng trưng cho sự giao lưu, hòa hợp.",
+    "holdTime": "15/3 âm lịch.",
+    "name": "Hội làng Đông Hồ",
+    "otherNames": []
+  },
+  {
+    "id": 13,
+    "location": "Làng Cổ Mễ, phường Vũ Ninh, thành phố Bắc Ninh, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Là một trong những lễ hội ở Bắc Ninh thờ Bà Chúa Kho, Tứ phủ công đồng.",
+    "desc": "Lễ hội có tục dâng hương, khấn vay tiền Bà Chúa (tượng trưng) “cầu tài phát lộc”.",
+    "holdTime": "14/1 âm lịch.",
+    "name": "Lễ đền Bà Chúa Kho",
+    "otherNames": []
+  },
+  {
+    "id": 14,
+    "location": "Xã Tam Sơn, thị xã Từ Sơn, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Đức Phật, trạng nguyên Nguyễn Phan Quang, tiết nghĩa Đại Vương Nguyễn Tự Cường, các tiến sĩ của làng, công chúa Thuần Dương, Thổ địa, Quan Công.",
+    "desc": "Múa rối nước, cờ bỏi, chọi gà, đập nồi niêu (đựng trấu, nước), thi hát quan họ.",
+    "holdTime": "8 – 12/1 âm lịch.",
+    "name": "Hội chùa Tam Sơn",
+    "otherNames": []
+  },
+  {
+    "id": 15,
+    "location": "Xã Đại Bái, huyện Gia Bình, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Nguyễn Công Truyền.",
+    "desc": "Các trưởng họ mang sản phẩm đồng, bạc chạm dâng lên bàn thờ, dâng hương tổ sư, thắp hương của người đồng niên (49 tuổi), hát ả đào, ném cướp cây bông.",
+    "holdTime": "29/9 âm lịch.",
+    "name": "Hội Đại Bái",
+    "otherNames": []
+  },
+  {
+    "id": 16,
+    "location": "Xã Mộ Đạo, huyện Quế Võ, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Ông Bính, một vị tướng thời Hùng Vương thứ 18.",
+    "desc": "Rước lớn, thi thả diều, bơi chải.",
+    "holdTime": "18/3 âm lịch.",
+    "name": "Hội Đậu",
+    "otherNames": []
+  },
+  {
+    "id": 17,
+    "location": "Làng Đại Than, xã Cao Đức, huyện Gia Bình, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Cao Lỗ, tướng giỏi của An Dương Vương.",
+    "desc": "Lễ rước thần của 7 làng cùng thờ Cao Lỗ và tổ chức đua thuyền trên sông Lục Đầu.",
+    "holdTime": "10/3 âm lịch.",
+    "name": "Hội đền Cao Lỗ Vương (Hội làng Đại Than)",
+    "otherNames": []
+  },
+  {
+    "id": 18,
+    "location": "Xã Thanh Khương, huyện Thuận Thành, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Phật Mẫu Man Nương và bốn con gái bà là Pháp Vân (Mây – Bà Dâu – thờ ở chùa Dâu), Pháp Vũ (Mưa – Bà Đậu – thờ ở chùa Thành Đạo), Pháp Lôi (Sấm, Sét – Bà Tương – thờ ở chùa Phi Tương), Pháp Điện (Chớp – Bà Dàn – thờ ở chùa Phương Quan).",
+    "desc": "Lễ rước lớn, múa rồng.",
+    "holdTime": "8/4 âm lịch.",
+    "name": "Hội chùa Dâu",
+    "otherNames": []
+  },
+  {
+    "id": 19,
+    "location": "Làng Vạn Ty, xã Thái Bảo, huyện Gia Bình, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Phật Mẫu Man Nương.",
+    "desc": "Đọc kinh, rước oản, dâng hương lễ Phật, thi oản, thi vật, thi dệt, đua thuyền và diễn xướng dân gian.",
+    "holdTime": "18 – 23/1 âm lịch.",
+    "name": "Hội chùa Tổ (chùa Phúc Nghiêm)",
+    "otherNames": []
+  },
+  {
+    "id": 20,
+    "location": "Làng Ngọc Khám, xã Gia Đông, huyện Thuận Thành, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Ba thành hoàng Lạc Long Quân, Tri Sơn (Sơn thần), Tri Thủy (Thủy thần).",
+    "desc": "Lễ rước Lạc Long Quân về đình, hội đồng Thành hoàng, tế lễ cầu mùa, đón trận mưa đầu mùa.",
+    "holdTime": "7/4 âm lịch.",
+    "name": "Hội Khám",
+    "otherNames": []
+  },
+  {
+    "id": 21,
+    "location": "Làng Viêm Xá (làng Diềm), xã Hòa Long, huyện Yên Phong, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Đức Vua Bà (bà tổ của dân ca quan họ).",
+    "desc": "Lễ giỗ tổ quan họ có hát quan cầu đảo, quan họ trùm đầu, và trò chơi cướp quả cầu nước.",
+    "holdTime": "7/2 âm lịch.",
+    "name": "Hội làng Đức Vua Bà",
+    "otherNames": []
+  },
+  {
+    "id": 22,
+    "location": "Làng Diềm là tên gọi nôm của thôn Viêm Xá, xã Hòa Long, Bắc Ninh.",
+    "doiTuongSuyTon": "Lễ hội là dịp để thể hiện sự tôn kính và lòng nhớ ơn của dân làng đối với Thủy tổ Quan họ và cũng là thời điểm để bà con cầu cho mưa thuận, gió hòa, một năm làm ăn phát đạt.",
+    "desc": "Rước kiệu và hát quan họ",
+    "holdTime": "Lễ hội diễn ra trong 3 ngày, trong đó ngày 25/3 (mùng 6/2 âm lịch) là chính hội.",
+    "name": "Hội làng Diềm",
+    "otherNames": []
+  },
+  {
+    "id": 23,
+    "location": "Đồi Lim, thuộc thị trấn Lim, huyện Tiên Du, tỉnh Bắc Ninh, cách Hà Nội 18km.",
+    "doiTuongSuyTon": "Đây là một lễ hội ở Bắc Ninh thờ Vua Bà và ông Hiếu Trung Hầu, tương truyền là hai vị tổ của các làn điệu dân ca Quan họ",
+    "desc": "Hát Quan họ trên đồi, trên thuyền, tại nhà.",
+    "holdTime": "tổ chức vào ngày 13/1 Âm lịch",
+    "name": "Hội Lim",
+    "otherNames": []
+  },
+  {
+    "id": 24,
+    "location": " diễn ra tham khảo: 19/02 - 21/02 âm lịch",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội Quan Thế Âm được tổ chức đều đặn hàng năm vào ba ngày 19, 20, 21 tháng 2 âm lịch tại khu du lịch Ngũ Hành Sơn. Đây là lễ hội truyền thống có quy mô lớn bậc nhất tại thành phố biển. Lễ hội Đà Nẵng này thu hút đông đảo du khách bốn phương và các tín đồ Phật giáo với nhiều hoạt động mang ý nghĩa cầu cho dân an, mưa thuận gió an, nhà nhà mạnh khỏe, yêu thương nhau.",
+    "holdTime": "h Ngũ Hành Sơn, thành phố Đà Nẵng",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-da-nang-2_1632922668.jpg",
+    "name": "Lễ hội Quán Thế Âm Đà Nẵng",
+    "otherNames": []
+  },
+  {
+    "id": 25,
+    "location": " diễn ra tham khảo: tháng 01 âm lịch",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội đua thuyền được xem là niềm tự hào, là nét đẹp truyền thống văn hóa của người dân thành phố biển. Lễ hội Đà Nẵng này được tổ chức hàng năm với sự tham gia của hơn 20 đội đến từ các địa phương trong tỉnh và một số tỉnh lân cận khác như Quảng Nam, Quảng Ngãi, Huế… tạo nên không khí náo nhiệt, vui tươi, thu hút đông đảo du khách bốn phương tham gia cổ vũ.",
+    "holdTime": "quận Liên Chiểu, thành phố Đà Nẵng",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-da-nang-3_1632922702.jpg",
+    "name": "Lễ hội đua thuyền Đà Nẵng",
+    "otherNames": []
+  },
+  {
+    "id": 26,
+    "location": " diễn ra tham khảo: từ tháng 04 đến tháng 09 hàng năm",
+    "doiTuongSuyTon": "",
+    "desc": "Bà Nà Hill là một trong những khu du lịch nổi tiếng và sầm uất bậc nhất tại Đà Nẵng. Đến với Bà Nà Hill, ban sẽ được ngắm nhìn khung cảnh sơn thủy hữu tình đẹp hút hồn và trải nghiệm lễ hội Carnival vui nhộn.",
+    "holdTime": "ng Du Dome, khu làng Pháp, Bà Nà Hill, thành phố Đà Nẵng",
+    "imageLink": "",
+    "name": "Lễ hội Carnival - Bà Nà Hill Đà Nẵng",
+    "otherNames": []
+  },
+  {
+    "id": 27,
+    "location": " diễn ra tham khảo: 27/03 - 28/03; 30/04 - 01/05",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội pháo hoa Đà Nẵng là lễ hội nổi tiếng, mang tầm cỡ quốc tế, thu hút đông đảo du khách ghé thăm hàng năm. Nhiều sự kiện đặc sắc khác cũng được tổ chức trong lễ hội Đà Nẵng này như: trình diễn thuyền hoa, thả hoa đăng, đua thuyền… đem đến cho người xem những trải nghiệm sống động, mới lạ và nhiều dấu ấn khó phai trong chuyến ghé thăm thành phố Đà Nẵng xinh đẹp, đáng sống bậc nhất Việt Nam.",
+    "holdTime": "Hàn, thành phố Đà Nẵng",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-da-nang-5_1632922798.jpg",
+    "name": "Lễ hội pháo hoa Đà Nẵng",
+    "otherNames": []
+  },
+  {
+    "id": 28,
+    "location": " diễn ra tham khảo: 14/01 - 16/01 âm lịch",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội Cầu Ngư ở Đà Nẵng còn có tên gọi khác là lễ hội Cá Ông. Đây là lễ hội Đà Nẵng truyền thống, được tổ chức hàng năm tại miếu Thuyền với mong muốn cầu cho mưa thuận gió hòa, đánh bắt bội thu, thuyền bè ra khơi an toàn…",
+    "holdTime": "n, đường Nguyễn Tất Thành, phường Thanh Khê Đông, thành phố Đà Nẵng",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-da-nang-6__1633264277.jpg",
+    "name": "Lễ hội Cầu Ngư Đà Nẵng",
+    "otherNames": []
+  },
+  {
+    "id": 29,
+    "location": " diễn ra tham khảo: 27/04 - 01/05",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội khinh khí cầu là lễ hội Đà Nẵng thu hút đông đảo du khách bốn phương đến tham gia, trải nghiệm. Tại đây, bạn sẽ được ngắm nhìn những chiếc khinh khí cầu màu sắc sặc sỡ đang chao lượn trên bầu trời trong xanh, tạo nên một cảnh sắc tuyệt đẹp, khiến bạn khó lòng rời mắt.",
+    "holdTime": "ghệ cao và Hồ Hòa Trung, thành phố Đà Nẵng",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-da-nang-7_1632922879.jpg",
+    "name": "Lễ hội khinh khí cầu Đà Nẵng",
+    "otherNames": []
+  },
+  {
+    "id": 30,
+    "location": " diễn ra tham khảo: tất cả các tháng trong năm",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội âm nhạc Đà Nẵng được tổ chức vào tất cả các tháng trong năm nhằm truyền bá văn hóa nghệ thuật, hình ảnh thành phố du lịch, mang đến nhiều trải nghiệm hấp dẫn cho du khách bốn phương. Đến với các ngày diễn ra lễ hội, bạn sẽ được hòa vào không khí sôi động, đặc sắc của các loại hình âm nhạc khác nhau như âm nhạc đường phố, nhạc hơi, biểu diễn hòa tấu nhạc cụ dân tộc…",
+    "holdTime": " sông Hàn, thành phố Đà Nẵng",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-da-nang-8_1632922909.jpg",
+    "name": "Lễ hội âm nhạc Đà Nẵng",
+    "otherNames": []
+  },
+  {
+    "id": 31,
+    "location": " diễn ra tham khảo: 12/01 âm lịch",
+    "doiTuongSuyTon": "",
+    "desc": "Cứ mỗi độ xuân sang, người người, nhà nhà làng Hòa Mỹ lại nô nức chuẩn bị cho lễ hội đình làng để thể hiện tinh thần “uống nước nhớ nguồn”, cầu cho một năm mới an khang, thịnh vượng, phát tài lộc. Lễ hội Đà Nẵng này gồm phần lễ và phần hội. Ở phần hội có nhiều trò chơi dân gian đặc sắc như đập om, kéo co, bài chòi… thu hút đông đảo nam thanh nữ tú bốn phương đến tham gia trải nghiệm.",
+    "holdTime": "ỹ, phường Hòa Minh, quận Liên Chiểu, thành phố Đà Nẵng",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-da-nang-9_1633264468.jpg",
+    "name": "Lễ hội làng Hòa Mỹ",
+    "otherNames": []
+  },
+  {
+    "id": 32,
+    "location": " diễn ra tham khảo: 09/01 - 10/01",
+    "doiTuongSuyTon": "",
+    "desc": "Trải qua hơn 500 năm tuổi, làng cổ Túy Loan vẫn duy trì nét đẹp truyền thống với lễ hội đình làng trang nghiêm cùng nhiều hoạt động vui chơi ý nghĩa, được đông đảo khách thập phương nhiệt tình tham gia. Đến với lễ hội Đà Nẵng này, bạn không chỉ được hòa mình vào không khí náo nhiệt trong những tiếng hò reo, cổ vũ của người dân mà còn có cơ hội thưởng thức nhiều đặc sản hấp dẫn như mì Quảng, bánh tráng cuốn…",
+    "holdTime": "oan, xã Hòa Phong, huyện Hòa Vang, thành phố Đà Nẵng",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-da-nang-01_1633264612.jpg",
+    "name": "Lễ hội làng Túy Loan",
+    "otherNames": []
+  },
+  {
+    "id": 33,
+    "location": " diễn ra tham khảo: 10/08 âm lịch",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội đình làng An Hải được tổ chức hàng năm để hồi tưởng lại những ngày tháng chiến tranh khốc liệt và thể hiện niềm tự hào dân tộc, biết ơn với thế hệ cha ông đã hy sinh bảo vệ độc lập cho đất nước. Đến với lễ hội Đà Nẵng này, bạn sẽ được đắm chìm vào những điệu hát tuồng với lời ca da diết và xem nhiều phần thi hội hấp dẫn như: lắc thúng, múa lân, điền kinh…",
+    "holdTime": "i, phường An Hải Tây, quận Sơn Trà, thành phố Đà Nẵng",
+    "imageLink": "",
+    "name": "Lễ hội làng An Hải",
+    "otherNames": []
+  },
+  {
+    "id": 34,
+    "location": " diễn ra tham khảo: 29/03 - 30/03 âm lịch",
+    "doiTuongSuyTon": "",
+    "desc": "Mục Đồng là lễ hội Đà Nẵng mang ý nghĩa sâu sắc, được nhiều khách du lịch yêu thích và tìm đến trải nghiệm. Khách tham dự không chỉ được chiêm ngưỡng phần lễ bái trang nghiêm mà còn được ngắm nhìn các cô cậu mục đồng xếp thành hàng dài lần lượt hướng về Cồn Thần trong tiếng chiêng, tiếng trống nhộn nhịp.",
+    "holdTime": " Lệ, thôn Phong Nam, xã Hòa Châu, huyện Hòa Vang, thành phố Đà Nẵng",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-da-nang-02_1633264881.jpg",
+    "name": "Lễ hội Mục Đồng",
+    "otherNames": []
+  },
+  {
+    "id": 35,
+    "location": " diễn ra tham khảo: 20/04/2023 - 24/04/2023",
+    "doiTuongSuyTon": "",
+    "desc": "Bên cạnh các lễ hội Đà Nẵng truyền thống, thành phố biển này còn nổi tiếng với lễ hội sách Hải Châu diễn ra vào khoảng bốn ngày trong năm. Lễ hội được tổ chức với quy mô lớn, thu hút đông đảo bạn đọc yêu sách trên khắp cả nước đến giao lưu và trao đổi các kiến thức văn hóa. Trong những ngày diễn ra lễ hội, bạn sẽ được mua sách với giá cực ưu đãi, trải nghiệm nhiều hoạt động giải trí lý thú, bổ ích và nhận nhiều phần quà có giá trị từ ban tổ chức.",
+    "holdTime": "bờ tây Cầu Rồng, quận Hải Châu, thành phố Đà Nẵng",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-da-nang-13_1632923148.jpg",
+    "name": "Hội sách Đà Nẵng 2023",
+    "otherNames": []
+  },
+  {
+    "id": 36,
+    "location": "thôn Yên Lạc, xã Mộc, Duy Tiên, Hà Nam",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội đền Lảnh Giang là một trong những lễ hội ở Hà Nam lớn nhất trong năm. Đền Lảnh Giang là nơi thờ Tam vị Đại Vương (ba vị tướng đời Hùng Vương) cùng công chúa Tiên Dung và Chử Đồng Tử. Hằng năm, vào tháng 6 và tháng 8 âm lịch, nơi đây lại tổ chức lễ hội nhằm cầu mong mưa thuận gió hóa, thần linh che chở cho nhân dân trước thiên tai, bão lũ.",
+    "holdTime": " 18 - 25 tháng 6 âm lịch và 25 tháng 8 âm lịch",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-o-ha-nam-2_1639187624.jpg",
+    "name": "Lễ hội đền Lảnh Giang - lễ hội Hà Nam không thể bỏ qua",
+    "otherNames": []
+  },
+  {
+    "id": 37,
+    "location": "đền Trần Thương, xã Nhân Đạo, Lý Nhân, Hà Nam",
+    "doiTuongSuyTon": "",
+    "desc": "Đền Trần Thương là nơi thờ anh hùng dân tộc Trần Hưng Đạo. Lễ hội đền Trần Thương là một trong những lễ hội ở Hà Nam nổi tiếng nhằm tưởng nhớ công ơn Đức Thánh Trần và những vị anh hùng đã có công trong cuộc chiến chống quân Nguyên Mông vào thế kỷ XIII.",
+    "holdTime": " 18 - 20 tháng 8 âm lịch",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-o-ha-nam-3_1639187652.jpg",
+    "name": "Lễ hội đền Trần Thương",
+    "otherNames": []
+  },
+  {
+    "id": 38,
+    "location": "chùa Bà Đanh, thôn Đanh Xá, xã Ngọc Sơn, Kim Bảng, Hà Nam",
+    "doiTuongSuyTon": "",
+    "desc": "Du lịch Hà Nam vào mùa xuân, du khách nhất định không thể bỏ qua lễ hội đền Bà Đanh đặc sắc. Chùa Bà Đanh Hà Nam hay còn gọi là đền Bà Đanh là nơi thờ Pháp Vũ, một vị thần trong Tứ pháp (Vân, Vũ, Lôi, Điện). Lễ hội Hà Nam truyền thống đền Bà Đanh nhằm cầu thần linh phù trợ cho sản xuất nông nghiệp, mong mưa thuận gió hòa để cây cối tốt tươi, đời sống nhân dân no ấm.",
+    "holdTime": " tháng 2 âm lịch",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-o-ha-nam-4_1639187697.jpg",
+    "name": "Lễ hội đền Bà Đanh - lễ hội truyền thống của Hà Nam",
+    "otherNames": []
+  },
+  {
+    "id": 39,
+    "location": "chùa Long Đọi, xã Đọi Sơn, Duy Tiên, Hà Nam",
+    "doiTuongSuyTon": "",
+    "desc": "Tháng 3 âm lịch hằng năm là thời điểm người dân nô nức đón chờ lễ hội chùa Đọi Sơn Hà Nam. Lễ hội ở Hà Nam này được tổ chức nhằm tưởng nhớ tới Đức Phật và vua Lý Nhân Tông. Đây là một trong những lễ hội truyền thống thể hiện nét văn hóa tín ngưỡng độc đáo của người Hà Nam.",
+    "holdTime": " 19 - 21 tháng 3 âm lịch",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-o-ha-nam-5_1639187726.jpg",
+    "name": "Lễ hội chùa Long Đọi Sơn Hà Nam",
+    "otherNames": []
+  },
+  {
+    "id": 40,
+    "location": "làng Gừa, xã Liêm Thuận, Thanh Liêm, Hà Nam",
+    "doiTuongSuyTon": "",
+    "desc": "Nhắc đến lễ hội ở Hà Nam độc đáo không thể không nhắc đến hội làng Gừa. Lễ hội diễn ra trong không khí vui tươi, nô nức dịp đầu xuân. Phần lễ gồm tế lễ và lễ rước xách được thực hiện bởi những người có chức sắc trong làng. Xong phần lễ là phần hội nhộn nhịp với nhiều trò chơi dân gian hấp dẫn, thể hiện tinh thần thượng võ như cướp cầu, đánh vật, đánh du, chém mía,...",
+    "holdTime": " mùng 4 tháng Giêng âm lịch",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-o-ha-nam-6_1639187774.jpg",
+    "name": "Hội làng Gừa - lễ hội ở Hà Nam đặc sắc",
+    "otherNames": []
+  },
+  {
+    "id": 41,
+    "location": "thôn Đọi Tín, xã Đọi Sơn, Duy Tiên, Hà Nam",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội Tịch điền Đọi Sơn là một trong những lễ hội ở Hà Nam quan trọng, đề cao vai trò của nền sản xuất nông nghiệp, thể hiện lòng biết ơn tổ tiên trong việc mở mang ruộng đất, phát triển nghề nông. Lễ Tịch điền có từ thời vua Lê Đại Hành và được lưu truyền cho đến ngày nay với nhiều nghi thức cổ truyền vẫn được giữ nguyên.",
+    "holdTime": " mùng 7 tháng Giêng âm lịch",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-o-ha-nam-7_1639187809.jpg",
+    "name": "Lễ hội Tịch điền Đọi Sơn",
+    "otherNames": []
+  },
+  {
+    "id": 42,
+    "location": "thôn Quyển Sơn, xã Thi Sơn, Kim Bảng, Hà Nam",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội ở Hà Nam đền Trúc còn được gọi là hội Quyển Sơn, là một trong những lễ hội lớn trong năm, thu hút đông đảo du khách khắp nơi về trẩy hội. Đền Trúc Hà Nam là nơi thờ tướng Lý Thường Kiệt, nằm trong khu du lịch đền Trúc - Ngũ Động Thi Sơn nổi tiếng. Lễ hội được tổ chức quy mô, rộng khắp từ đền Trúc tới ven núi Cấm, chùa Thi.",
+    "holdTime": " ngày 6 tháng 2 - 10 tháng 2 âm lịch",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-o-ha-nam-8_1639187846.png",
+    "name": "Lễ hội đền Trúc, Hà Nam",
+    "otherNames": []
+  },
+  {
+    "id": 43,
+    "location": "làng Đại Hoàng, xã Hòa Hậu, Lý Nhân, Hà Nam",
+    "doiTuongSuyTon": "",
+    "desc": "Nếu có dịp đến đất Hà Nam vào tháng 5 âm lịch, du khách nhớ đừng bỏ qua hội thi thả diều độc đáo, vui nhộn. Lễ hội ở Hà Nam này có ý nghĩa cầu mong cho một năm nhiều may mắn, mùa màng bội thu, đời sống no đủ. Hội thi thả diều thu hút đông đảo người làng, du khách đến xem, cổ vũ.",
+    "holdTime": " ngày 15 tháng 05 âm lịch",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-o-ha-nam-9_1639187868.jpg",
+    "name": "Hội thi thả diều",
+    "otherNames": []
+  },
+  {
+    "id": 44,
+    "location": "làng Liễu Đôi, xã Liêm Túc, Thanh Liêm, Hà Nam",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội ở Hà Nam vật võ Liễu Đôi diễn ra hằng năm vào dịp đầu xuân nhằm suy tôn vị thánh họ Đoàn, người có sức khỏe phi thường có công đánh đuổi quân xâm lược, bảo vệ đất nước. Lễ hội còn thể hiện tinh thần thượng võ, đoàn kết của dân tộc, nêu cao tinh thần chiến đấu chống ngoại xâm của cha ông ta.",
+    "holdTime": " ngày 5 - ngày 10 tháng Giêng âm lịch",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-o-ha-nam-10_1639187903.jpg",
+    "name": "Hội vật võ Liễu Đôi",
+    "otherNames": []
+  },
+  {
+    "id": 45,
+    "location": "làng Mỹ Đôi, xã An Mỹ, Bình Lục, Hà Nam",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội làng Dâu là một trong những lễ hội lớn bậc nhất của Hà Nam, thể hiện lòng biết ơn đối với ba vị anh hùng Ả Đào, Nguyễn Phương, Nguyễn Quế - những người có công trong cuộc kháng chiến đánh đuổi giặc Minh. Lễ hội còn là dịp để nhắc nhở về lịch sử oai hùng của dân tộc, đồng thời giáo dục thế hệ trẻ về lòng biết ơn đối với các vị anh hùng có công xây dựng, bảo vệ quê hương, đất nước.",
+    "holdTime": " 15 tháng 2 âm lịch",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-o-ha-nam-11_1639187938.jpg",
+    "name": "Lễ hội làng Dâu - Lễ hội ở Hà Nam đặc sắc",
+    "otherNames": []
+  },
+  {
+    "id": 46,
+    "location": "676 - 678 đường Nguyễn Trãi, Quận 5, TP. Hồ Chí Minh",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội chùa Ông là một trong các lễ hội ở thành phố Hồ Chí Minh gắn liền với sinh hoạt văn hóa tín ngưỡng của người Hoa gốc Triều Châu ở Sài Gòn. Lễ hội HCM diễn ra vào ngày 24/6 âm lịch hàng năm, bao gồm lễ thỉnh và cung nghinh các vị thần, thánh như: Nguyễn Hữu Cảnh, Lỗ Ban Tiên sư, Trần Thượng Xuyên, Thiên Hậu Thánh mẫu, Thành hoàng bổn cảnh…Du khách khi đến đây sẽ được chiêm ngưỡng các buổi biểu diễn tuồng cổ, đờn ca tài tử, múa lân - sư - rồng hoặc tham gia các trò chơi dân gian. Ngoài ra, trong dịp Tết Nguyên Tiêu và ngày vía Bạch Hổ, chùa Ông Quận 5 cũng thu hút rất nhiều du khách đến tham quan, chụp ảnh, chiêm bái.",
+    "holdTime": "Ngày 24/6 âm lịch hàng năm",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-hcm-2_1639189015.jpg",
+    "name": "Hội chùa Ông - Lễ hội truyền thống ở HCM",
+    "otherNames": []
+  },
+  {
+    "id": 47,
+    "location": "126 Đinh Tiên Hoàng, Phường 1, Quận Bình Thạnh, TP. Hồ Chí Minh",
+    "doiTuongSuyTon": "",
+    "desc": "Nếu có dịp du lịch Sài Gòn, du khách không nên bỏ qua các lễ hội văn hóa ở TP. HCM, nhất là lễ hội lăng Ông Bà Chiểu. Lăng Ông Bà Chiểu là công trình cổ xưa nhất, trải qua hơn 200 năm lịch sử và chứng kiến biết bao thăng trầm của Sài Gòn phồn hoa đô thị.Hàng năm, cứ đến dịp này là người dân địa phương và du khách xa gần cũng về dự hội, nhằm tưởng nhớ Tả quân Lê Văn Duyệt - vị tướng Tổng trấn thành Gia Định xưa. Ngoài ra, du khách đến đây để cầu bình an, sức khỏe cho gia đình cũng như mong đường tình duyên được thuận lợi, đường tài lộc được hanh thông.",
+    "holdTime": "Ngày 30/7 - 01/08 âm lịch hàng năm",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-hcm-3_1639189065.jpg",
+    "name": "Lễ hội lăng Ông Bà Chiểu",
+    "otherNames": []
+  },
+  {
+    "id": 48,
+    "location": "Xã Cần Thạnh, Huyện Cần Giờ, TP. Hồ Chí Minh",
+    "doiTuongSuyTon": "",
+    "desc": "Nhắc đến các lễ hội ở miền Nam thì không thể không nhắc đến lễ nghinh Ông (hay còn được gọi là lễ cúng Ông, lễ cầu ngư, lễ tế cá Ông, lễ rước cốt Ông, lễ nghinh Ông Thủy tướng…). Đây là một trong những lễ hội HCM đặc sắc và lớn nhất của ngư dân, phổ biến từ khu vực Quảng Bình trở vào Nam.Lễ hội diễn ra trong 3 ngày, thu hút đông đảo du khách đến du lịch Cần Giờ để tham quan, trẩy hội. Ngày 15/8 âm lịch có các hoạt động văn hóa sôi nổi, nhộn nhịp ở bên ngoài lăng. Ngày 16/8 âm lịch là ngày rước kiệu của Nam hải Tướng quân gồm lễ rước, lễ tế đúng với nghi thức cổ truyền, lễ cầu an, hát bội… Cuối cùng, ngày 17/8 âm lịch là lễ tôn vương ông Thủy tướng theo sắc phong.",
+    "holdTime": "Ngày 15 - 17/8 âm lịch hàng năm",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-hcm-4_1639189196.jpg",
+    "name": "Lễ nghinh Ông - Lễ hội HCM đặc sắc",
+    "otherNames": []
+  },
+  {
+    "id": 49,
+    "location": "710 Nguyễn Trãi, Quận 3, TP. Hồ Chí Minh",
+    "doiTuongSuyTon": "",
+    "desc": "Sài Gòn có lễ hội gì đặc sắc? Đó chính là lễ hội chùa Bà Thiên Hậu, diễn ra vào ngày 23/3 âm lịch hàng năm, hay còn được gọi là ngày vía Bà. Lễ hội HCM này sẽ bắt đầu từ đêm 22/3, diễn ra lễ tắm Bà và đến sáng ngày 23/3 là lễ rước Bà.Tượng Bà sẽ được đặt trong kiệu, sau đó sẽ được rước qua các đường phố quanh chùa. Theo sau kiệu có thuyền rồng, các đội biểu diễn lân - sư - rồng, các đội văn hóa văn nghệ vừa rước kiệu vừa múa hát… tạo nên bầu không khí náo nhiệt trong các khu phố người Hoa ở Sài Gòn.",
+    "holdTime": "Ngày 23/3 âm lịch hàng năm",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-hcm-5_1639189206.jpg",
+    "name": "Lễ hội chùa Bà Thiên Hậu - Lễ hội HCM đặc sắc",
+    "otherNames": []
+  },
+  {
+    "id": 50,
+    "location": "Phường 7, Quận 8, TP. Hồ Chí Minh",
+    "doiTuongSuyTon": "",
+    "desc": "Một trong các lễ hội ở Hồ Chí Minh thu hút đông đảo người dân địa phương và du khách tham gia, đó chính là lễ Kỳ Yên đình Bình Đông. Lễ hội HCM này sẽ diễn ra trong 5 ngày, từ ngày 10 đến ngày 14/2 âm lịch.Cụ thể, ngày đầu tiên là lễ cúng Tiên, nhằm tưởng nhớ các vị thần dạy nghề trong thôn. Ngày thứ hai và thứ 3 là lễ tụng kinh, lễ tế Thần và lễ cầu mưa. 2 ngày cuối là lễ tế Tiền hiền, Hậu hiền và nghi lễ hoàn sắc.",
+    "holdTime": "Ngày 10 - 14/2 âm lịch hàng năm",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-hcm-6_1639189169.jpg",
+    "name": "Lễ Kỳ Yên đình Bình Đông",
+    "otherNames": []
+  },
+  {
+    "id": 51,
+    "location": "18 Mai Văn Ngọc, Phường 10, Quận Phú Nhuận, TP. Hồ Chí Minh",
+    "doiTuongSuyTon": "",
+    "desc": "Nếu bạn đang tìm hiểu các lễ hội truyền thống ở Việt Nam nói chung hay các sự kiện ở thành phố Hồ Chí Minh, lễ hội HCM nói riêng thì có thể tham khảo thông tin về lễ Kỳ Yên đình Phú Nhuận. Đây là lễ hội lớn được tổ chức tại khu vực đình làng Phú Nhuận, thờ Phật và các vị thần.Tương tự như nhiều lễ hội ở TP.HCM, lễ hội cũng gồm các nghi thức tế lễ, tụng kinh cầu an, nghi thức tôn vương và hồi chầu. Đặc sắc nhất, trong khuôn khổ lễ hội còn có các màn biểu diễn võ thuật cổ truyền, biểu diễn múa lân - sư - rồng và nhiều hoạt động văn hóa văn nghệ khác.",
+    "holdTime": "Ngày 16 - 18/1 âm lịch hàng năm",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-hcm-7_1639189226.jpg",
+    "name": "Lễ Kỳ Yên đình Phú Nhuận",
+    "otherNames": []
+  },
+  {
+    "id": 52,
+    "location": "Phường Trường Thọ, Quận Thủ Đức, TP. Hồ Chí Minh",
+    "doiTuongSuyTon": "",
+    "desc": "Giống như nhiều ngôi đình khác, đình Trường Thọ là nơi sinh hoạt tín ngưỡng của người dân địa phương. Lễ Kỳ Yên đình Trường Thọ là một trong những lễ hội HCM nhằm suy tôn Thành Hoàng làng, các vị Tiền hiền, Hậu hiền và cầu mưa thuận gió hòa, mùa màng tươi tốt.Điểm đặc biệt của lễ hội này là bên cạnh các thức cúng như: hoa quả, trà bánh… thì luôn có một con heo sống. Ngoài ra, lễ Kỳ Yên đình Trường Thọ cũng không tổ chức hát bội do “kiêng kỵ với thần linh”, tuy nhiên vẫn có đầy đủ nghi thức tế lễ, dâng rượu, cúng thần…",
+    "holdTime": "Ngày 17/2 âm lịch hàng năm",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-hcm-8_1639189265.jpg",
+    "name": "Lễ Kỳ Yên đình Trường Thọ",
+    "otherNames": []
+  },
+  {
+    "id": 53,
+    "location": "Hội quán Lệ Châu, 586 Trần Hưng Đạo, Quận 5, TP. Hồ Chí Minh",
+    "doiTuongSuyTon": "",
+    "desc": "Đây là một trong những lễ hội HCM đặc sắc, quy tụ hàng ngàn người ở TP. Hồ Chí Minh và các tỉnh Nam Bộ đến tưởng nhớ công lao của những tổ sư trong ngành kim hoàn. Lễ hội gồm 2 nghi thức chính, bao gồm: lễ tế Tổ và lễ tế những vị Tiền hiền, Hậu hiền cũng như nhiều tiết mục cải lương hấp dẫn, tạo nên bầu không khí nhộn nhịp, náo nhiệt.9. Lễ hội chùa Phước Hải",
+    "holdTime": "Ngày 7 - 9/2 âm lịch hàng năm",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-hcm-9_1639189301.jpg",
+    "name": "Lễ giỗ tổ nghề kim hoàn - Lễ hội HCM truyền thống",
+    "otherNames": []
+  },
+  {
+    "id": 54,
+    "location": "73 Mai Thị Lựu, Phường Đa Kao, Quận 1, TP. Hồ Chí Minh",
+    "doiTuongSuyTon": "",
+    "desc": "Chùa Phước Hải hay còn được gọi là chùa Ngọc Hoàng, Ngọc Hoàng điện, chùa Đa Kao là một trong những ngôi chùa linh thiêng bậc nhất ở Sài Gòn. Du khách đến đây trong ngày mùng một, ngày rằm âm lịch. Tuy nhiên, dịp lễ hội HCM thu hút đông người nhất là dịp lễ vía Ngọc Hoàng diễn ra vào ngày 9/1 âm lịch hàng năm.Khi đến chùa Phước Hải, du khách có thể cầu con, cầu bình an cho gia đình. Bên cạnh đó, người trẻ còn có thể cầu tình duyên với tượng thờ Thánh Mẫu và tượng ông Tơ - bà Nguyệt.",
+    "holdTime": "Ngày 9/1 âm lịch hàng năm",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-hcm-10_1639189337.jpg",
+    "name": "Lễ hội chùa Phước Hải",
+    "otherNames": []
+  },
+  {
+    "id": 55,
+    "location": "264 Hải Thượng Lãn Ông, Quận 5, TP. Hồ Chí Minh",
+    "doiTuongSuyTon": "",
+    "desc": "Trong khi phần lớn các chùa, đền, miếu hay hội quán của người Hoa ở khu vực Chợ Lớn đều thờ Thiên Hậu Thánh Mẫu, Quan Đế thì chùa Ông Bổn (miếu Nhị Phủ) là nơi duy nhất thờ Bổn Đầu Công - vị thần bảo vệ đất đai và con người.Lễ hội chùa Ông Bổn được diễn ra vào ngày 15/8 âm lịch hàng năm. Đây là một trong những lễ hội HCM nổi tiếng của người Hoa gốc Phúc Kiến sinh sống ở Sài Gòn. Trong dịp này, mọi người thường mua những vòng hương thắp cúng, treo khắp vòm trần chùa và dâng mâm lễ vật gồm: heo quay, gà luộc, hoa trái, nhang đèn…",
+    "holdTime": "Ngày 15/8 âm lịch hàng năm",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-hcm-11_1639189368.jpg",
+    "name": "Lễ hội chùa Ông Bổn",
+    "otherNames": []
+  },
+  {
+    "id": 56,
+    "location": "Phường Thuỷ Biều - TP. Huế",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội Thanh Trà Huế thường tổ chức vào thời gian thu hoạch trái thanh trà (cuối tháng 8 đến đầu tháng 9). Khi đến với lễ hội, du khách có thể thăm quan, mua sắm những loại hoa quả nổi tiếng xứ Huế với tâm điểm là trái thanh trà. Song hành với đó, lễ hội Huế Thanh Trà còn có rất nhiều chương trình phục vụ du khách như: Hội thi sản phẩm trái ngon thanh trà Huế, lễ cáo giang sơn cung tiến thanh trà, các trò chơi dân gian…Đặc biệt hơn nữa, ngoài việc thường thức trái cây tươi ngon thì du khách cũng có cơ hội được thưởng thức các món ăn được chế biến từ chính trái thanh trà như: bánh canh thanh trà, thanh trà rim, chè thanh trà, súp thanh trà…",
+    "holdTime": "Tổ chức 2 năm một lần",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-hue-2_1639119304.jpg",
+    "name": "Lễ hội Thanh Trà",
+    "otherNames": []
+  },
+  {
+    "id": 57,
+    "location": "Điện Huệ Nam - Hương Trà - TP. Huế",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội ở Huế điện Hòn Chén là một trong những lễ hội truyền thống ở Huế nói riêng và của Việt Nam nói chung, được tổ chức ở điện Hòn Chén khi trời vừa chuyển năm mới. Lễ hội Huế điện Hòn Chén diễn ra rất long trọng với lễ rước Thiên Y Na thánh mẫu. Nghi lễ rước diễn ra trên sông Hương với nhiều chiếc thuyền được trang hoàng rực rỡ bằng màu vàng và cờ xí là chủ đạo. Lễ rước mang theo bàn thờ Thánh cùng long kiệu Thánh mẫu, hòm sắc vua phong và các khí tự như cờ, quạt, tàn… Sau khi kết thúc lễ rước là lễ Túc Yết, lên đồng hầu bóng diễn ra đến lúc kết thúc lễ hội.",
+    "holdTime": "2 - 3/3 và tháng 7 âm lịch hàng năm",
+    "imageLink": "",
+    "name": "Lễ hội điện Hòn Chén",
+    "otherNames": []
+  },
+  {
+    "id": 58,
+    "location": "TP. Huế",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội Festival Huế tiền thân là Festival Việt - Pháp được tổ chức năm 1992 và được đổi tên thành Festival Huế như hiện nay từ năm 2000. Từ đó, lễ hội như một sự kiện văn hoá lớn nhằm mục đích tưởng nhớ về những giá trị truyền thống của kinh đô Huế, cùng với đó là quảng bá những giá trị đó cho du khách thập phương. Một số lễ hội du khách có thể tham dự như: Lễ tế Nam Giao, lễ hội áo dài, đêm hoàng cung, thả diều, cờ người …",
+    "holdTime": "Năm chẵn",
+    "imageLink": "",
+    "name": "Festival Huế - Lễ hội ở Huế hấp dẫn bậc nhất",
+    "otherNames": []
+  },
+  {
+    "id": 59,
+    "location": "Đền thờ Bà Bún, làng Vân Cù, huyện Hương Trà, TP. Huế",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội ở Huế làng bún Phú Đô có 2 phần riêng biệt: Phần lễ và phần hội. Sáng sớm ngày 22/1 âm lịch, người dân sẽ chuẩn bị sản phẩm truyền thống của làng nghề mình cùng với các sản phẩm nông nghiệp khác dâng lên Bà Bún. Kết thúc phần lễ là phần hội với lễ rước kiệu Đức Thánh Cả, Đức Ông và Hai Bà (Đức tổ nghề bún Nguyên Thơ cùng hai bà: Bà An và Bà Phương ). Đây là một nét đẹp văn hoá truyền thống của làng Phú Đô mà du khách có thể đến và trải nghiệm.",
+    "holdTime": "22/01 âm lịch",
+    "imageLink": "",
+    "name": "Lễ hội làng bún Phú Đô",
+    "otherNames": []
+  },
+  {
+    "id": 60,
+    "location": "xã Phong Hiền, TP. Huế",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội Đu Tiên là lễ hội Tết ở Huế mang âm hưởng của cuộc thi tài nhiều hơn là biểu diễn và có chút mạo hiểm. Lễ hội chính là những cây đu được làm bằng tre và buộc thủ công bởi những người dân. “Thí sinh” tham gia đu sẽ buộc dây bảo hiểm chắc chắn rồi thỏa sức tung mình trên những cây đu đó. Vì lễ hội Huế Đu Tiên mang hơi hướng của cuộc thi nên sẽ có những giải thưởng cho ai giật được chiếc khăn hồng được buộc ở độ cao xấp xỉ với giá đu.",
+    "holdTime": "04/01 âm lịch",
+    "imageLink": "",
+    "name": "Lễ hội Đu Tiên - Lễ hội Tết ở Huế",
+    "otherNames": []
+  },
+  {
+    "id": 61,
+    "location": "Làng Lại Ân, xã Phú Mậu, huyện Phú Vang, Huế",
+    "doiTuongSuyTon": "",
+    "desc": "Hội vật làng Sình Huế về nguyên tắc cũng sử dụng luật thi đấu vật dân tộc làm luật lệ cuộc thi. Các đô vật muốn muốn đánh bại đối thủ của mình cần phải tìm cách vật ngửa được đối thủ không cho đối thủ đứng được dậy. Ngoài ra, các đô vật cũng không được sử dụng những đòn đánh mang tính “triệt hạ” gây nguy hiểm cho đối thủ như các đòn bẻ, vặn, khóa khớp …",
+    "holdTime": "10/01 âm lịch",
+    "imageLink": "",
+    "name": "Hội vật làng Sình",
+    "otherNames": []
+  },
+  {
+    "id": 62,
+    "location": "TP. Huế",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội đua thuyền ở Huế không sử dụng thể thức như những cuộc thi quốc tế trong và ngoài nước tổ chức. Mỗi đội sẽ phải qua 3 vòng 6 tráo với nam và 2 vòng 4 tráo với nữ. Các ghe đua 3 vè chính dọc sông Hương, lộn vè rốn lúc xuất phát và vòng cuối lúc vào đích.",
+    "holdTime": "02/9 hằng năm",
+    "imageLink": "",
+    "name": "Lễ hội đua ghe ở Huế",
+    "otherNames": []
+  },
+  {
+    "id": 63,
+    "location": "Cầu ngói Thanh Toàn, xã Thanh Thuỷ - H.Hương Thuỷ - Thừa Thiên Huế",
+    "doiTuongSuyTon": "",
+    "desc": "Bài chòi là trò chơi dân gian từ xa xưa của người dân vùng trung bộ. Ở Huế, lễ hội bài chòi hằng năm được tổ chức tại Cầu ngói Thanh Toàn – di tích văn hoá cấp quốc gia thuộc xã Thanh Thuỷ, huyện Thanh Thuỷ. Nét độc đáo của bài chòi không phải là việc chơi bài như tên của nó thể hiện mà là những câu vè, điều hò dí dỏm của người giao bài và người chơi.",
+    "holdTime": "Mùng 1 đến mùng 10 tháng giêng âm lịch hằng năm",
+    "imageLink": "",
+    "name": "Lễ hội Huế Bài Chòi",
+    "otherNames": []
+  },
+  {
+    "id": 64,
+    "location": "Làng Minh Hương, Xã Điền Hải, H. Phong Điền, tỉnh Thừa Thiên Huế",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội Huế Minh Hương mang đậm màu sắc tâm linh với mong muốn cho một năm bội thu, mưa thuận gió hoà với ngư dân. Giúp người dân có một mùa đi biển bình an, cuộc sống ấm no. Lễ hội nhằm suy tôn Thần Khai canh và được tổ chức tại đình làng Minh Hương, xã Điền Hải, huyện Phong Điền với nhiều hoạt động hội đặc sắc gắn liền với ngư dân như đua thuyền, bủa lưới, rước thuyền…",
+    "holdTime": "Ngày 14 đến ngày 16 tháng 7 âm lịch hằng năm",
+    "imageLink": "",
+    "name": "Hội Minh Hương Huế",
+    "otherNames": []
+  },
+  {
+    "id": 65,
+    "location": "Làng Thái Dương Hạ, xã Thuận An, H. Phú Vang, tỉnh Thừa Thiên Huế",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội cầu ngư là một lễ hội mang nét đặc sắc của người dân miền ven biển thuộc làng Thái Dương Hạ. Lễ hội chia ra làm 2 phần chính: Phần lễ và phần hội. Phần lễ người dân sẽ chuẩn bị lễ để dâng lên thành hoàng vào sáng sớm. Phần hội, người dân sẽ khoác lên mình trang phục ngư dân và tái hiện lại cảnh sinh hoạt trên biển. Ngoài ra, lễ hội còn có những buổi lễ cầu an long trọng mong cho một năm thuận buồm xuôi gió với những ngư dân ven biển.",
+    "holdTime": "Ngày 12 tháng 1 âm lịch hằng năm",
+    "imageLink": "",
+    "name": "Lễ hội Cầu Ngư ở Huế - Lễ hội Huế của người dân chài",
+    "otherNames": []
+  },
+  {
+    "id": 76,
+    "location": "xã Quỳnh Phương, Quỳnh Lưu, Nghệ An",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội đền Cờn Nghệ An là một trong những hoạt động nhằm tưởng nhớ đức Thánh Mẫu và tứ vị Thánh Nương – những người đã phù hộ, bảo vệ cho người dân vượt qua hiểm nguy, làm ăn thịnh vượng. Theo truyền thuyết, chính những vị thần này cũng đã nhiều lần giúp đỡ quân nhà Lê, nhà Trần vượt biển thành công. Trong khuôn khổ lễ hội sẽ tổ chức nhiều nghi lễ, tín ngưỡng văn hóa, kèm theo đó là nhiều hoạt động trò chơi dân gian như: đua thuyền, kéo co, chọi gà, đánh cờ người…\u003e\u003e\u003e Xem thêm: Đền Cờn Nghệ An thờ ai, địa chỉ ở đâu và lễ hội ở Đền Cờn có gì đặc sắc?",
+    "holdTime": " Từ 15 tháng Chạp đến hết tháng Giêng âm lịch",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-o-nghe-an-1_1638926731.jpg",
+    "name": "Lễ hội Nghệ An thu hút khách: Lễ hội đền Cờn",
+    "otherNames": []
+  },
+  {
+    "id": 77,
+    "location": "xã Diễn An, thuộc huyện Diễn Châu, Nghệ An",
+    "doiTuongSuyTon": "",
+    "desc": "Một trong những lễ hội ở Nghệ An thu hút đông đảo khách du lịch và người dân địa phương tham gia đó chính là lễ hội đền Cuông. Đây là dịp để người dân cầu tài lộc, đồng thời bày tỏ sự thành kính, ghi nhớ đến huyền thoại An Dương Vương đưa công chúa Mỵ Châu chạy trốn khỏi kẻ thù.Hoạt động của lễ hội này bao gồm phần lễ, rước kiệu và phần hội. Phần hội được kéo dài từ ngày 14 đến ngày 16 âm lịch, bao gồm nhiều hoạt động giải trí, văn hóa thể thao. Nếu có dịp ghé thăm xứ Nghệ vào dịp đầu năm, đừng bỏ lỡ tham gia lễ hội ở đền Cuông Nghệ An.",
+    "holdTime": " Từ ngày 12 – 16 tháng 2 âm lịch",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-o-nghe-an-2_1638926775.jpeg",
+    "name": "Lễ hội đền Cuông Nghệ An",
+    "otherNames": []
+  },
+  {
+    "id": 78,
+    "location": "bản Na Nhàng, xã Châu Tiến, thuộc địa phận huyện Quỳ Hợp, Nghệ An",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội Hang Bua là một trong các lễ hội truyền thống ở Nghệ An gắn liền với nhiều nét văn hóa tâm linh, đời sống sinh hoạt của người dân đồng bào Thái cổ. Phần lễ thương được tổ chức khá đơn giản, chỉ bao gồm diễn văn khai mạc và lễ cúng thần linh. Điểm đặc sắc của lễ hội này đó chính là phần hội được tổ chức rất sinh động, bao gồm nhiều loại hình nghệ thuật dân gian và hiện đại.Du khách đến đây sẽ vô cùng thích thú với âm thanh của tiếng cồng chiêng cũng như sự rộn ràng, đông vui từ những điệu múa, tiếng sáo,… Đây cũng là một trong những lễ hội ở Nghệ An thu hút khách du lịch vào dịp đầu xuân năm mới.",
+    "holdTime": " Từ ngày 17 đến ngày 19 tháng Giêng âm lịch hằng năm",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-o-nghe-an-3_1638926807.jpg",
+    "name": "Lệ hội Hang Bua",
+    "otherNames": []
+  },
+  {
+    "id": 79,
+    "location": "xã Bồi Sơn, thuộc địa phận huyện Đô Lương, Nghệ An",
+    "doiTuongSuyTon": "",
+    "desc": "Nếu bạn đang tìm hiểu về một trong các lễ hội ở Nghệ An lớn nhất thì có thể tham khảo thông tin về lễ hội đền Quả Sơn. Đây là lễ hội được tổ chức nhằm tưởng nhớ đến công đức của vị danh tướng Uy Minh Vương Lý Nhật Quang – người đã có nhiều công lao trong việc củng cố nền độc lập, bảo quốc an dân ở thế kỷ XI.Tương tự như nhiều lễ hội khác ở Nghệ An, lễ hội Quả Sơn sẽ được tổ chức với phần lễ và phần hội. Đặc sắc nhất trong khuôn khổ lễ hội này là hoạt động đua thuyền dọc sông Lam và nhiều hoạt động văn hóa, nghệ thuật mang đậm nét truyền thống của người dân xứ Nghệ.",
+    "holdTime": " Từ ngày 19 đến ngày 21 tháng Giêng âm lịch hằng năm",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-o-nghe-an-4_1638926840.jpg",
+    "name": "Lễ hội đền Quả Sơn",
+    "otherNames": []
+  },
+  {
+    "id": 80,
+    "location": "huyện Thanh Chương, tỉnh Nghệ An",
+    "doiTuongSuyTon": "",
+    "desc": "Đền Bạch Mã Nghệ An là một trong 4 ngôi đền linh thiêng bậc nhất. Nơi đây thờ vị anh hùng Phan Đà, người đã có nhiều đóng góp trong việc đánh đuổi giặc ngoại xâm cùng nghĩa quân Lê Lợi. Theo truyền thuyết, vị anh hùng này cũng đã nhiều lần giúp người dân tai qua nạn khỏi, thoát khỏi dịch bệnh, đánh thắng kẻ thù. Vì vậy, hằng năm, lễ hội đền Bạch Mã được tổ chức vừa ghi nhớ công ơn của vị anh hùng này, vừa tổ chức các hoạt động văn hóa văn nghệ, gắn kết tình cảm của người dân.6. Lễ hội nổi tiếng ở Nghệ An: Hội Vật Cù Thanh Chương",
+    "holdTime": " Từ ngày mồng 9 đến ngày 10 tháng 2 âm lịch",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-o-nghe-an-5_1638926886.jpg",
+    "name": "Nghệ An có lễ hội gì? Lễ hội đền Bạch Mã",
+    "otherNames": []
+  },
+  {
+    "id": 81,
+    "location": "huyện Thanh Chương, tỉnh Nghệ An",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội Vật Cù Thanh Chương là một trong các lễ hội truyền thống ở Nghệ An. Vào những ngày đầu xuân năm mới, khi nghe âm thanh của tiếng trống hội, người dân xứ Nghệ lại nô nức rủ nhau đi xem hội vật. Lễ hội này đã có từ rất lâu đời, ban đầu mục đích tuyển chọn những lực sĩ khỏe mạnh để đầu quân cho tướng Phan Đàn.Ngày nay, lễ hội được tổ chức nhằm giúp cho người dân tham gia rèn luyện sức khỏe, giữ gìn nét văn hóa truyền thống của địa phương. Trò vật cù thường được tổ chức trên một khoảng sân lớn, những thanh niên trai tráng sẽ được chia làm 2 bên, cởi trần, đóng khố. Có 3 hình thức chơi phổ biến đó là cù gôn, cù đẩy và cù nước.",
+    "holdTime": " Được tổ chức vào dịp Tết Nguyên Đán, thường bắt đầu từ mồng Hai, mồng Ba đến hết mồng Bảy tháng Giêng",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-o-nghe-an-6_1638927084.jpg",
+    "name": "Lễ hội nổi tiếng ở Nghệ An: Hội Vật Cù Thanh Chương",
+    "otherNames": []
+  },
+  {
+    "id": 82,
+    "location": "Thị xã Cửa Lò, Nghệ An",
+    "doiTuongSuyTon": "",
+    "desc": "Nếu có dịp du lịch Cửa Lò Nghệ An vào ngày 30/4 hoặc 1/5, du khách nhất định không thể bỏ lỡ lễ hội du lịch vô cùng độc đáo tại đây. Đây là hoạt động mở đầu cho mùa du lịch biển tại Cửa Lò nên thu hút rất đông khách du lịch và người dân địa phương tham gia. Phần lễ thường được tổ chức bao gồm lễ khai quang, lễ yết cáo… Phần hội sẽ bao gồm các hoạt động văn nghệ, thể thao.Đến với Cửa Lò, du khách có thể lựa chọn nghỉ dưỡng tại Melia Vinpearl Cua Hoi Beach Resort. Khu nghỉ dưỡng gần với khu vực diễn ra lễ hội, đồng thời sở hữu nhiều tiện ích, dịch vụ đạt chuẩn 5 sao, đáp ứng mọi nhu cầu nghỉ dưỡng của du khách.",
+    "holdTime": " Ngày 30/4 và 1/5 dương lịch hằng năm",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-o-nghe-an-7_1638927115.jpg",
+    "name": "Lễ hội ở Nghệ An hấp dẫn - Lễ hội du lịch Cửa Lò",
+    "otherNames": []
+  },
+  {
+    "id": 83,
+    "location": "xã Hưng Thịnh, thuộc huyện Hưng Nguyên, Nghệ An",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội đền Ông Hoàng Mười Nghệ An được hình thành từ thế kỷ XVII, đây là lễ hội ở Nghệ An nổi tiếng, được tổ chức nhằm tưởng nhớ đến công đức của quan Hoàng Mười. Quy mô của lễ hội rất lớn với các nghi lễ như: lễ rước, lễ yết cáo, lễ đại tế, lễ rước sắc. Lễ hội này thu hút đông đảo du khách, kèm theo đó là khoảng 400 – 500 nhóm đến hoạt động tín ngưỡng. Lễ hội không chỉ giúp người dân gắn kết mà còn là thời điểm để bày tỏ những ước muốn, khát vọng của mình với thần linh.9. Lễ hội đền Chín Gian",
+    "holdTime": " Mồng 9 – mồng 10 tháng 10 âm lịch hằng năm",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-o-nghe-an-8_1638927207.jpg",
+    "name": "Lễ hội đền Hoàng Mười - Lễ hội tại Nghệ An",
+    "otherNames": []
+  },
+  {
+    "id": 84,
+    "location": "Đền Chín Gian, thuộc địa phận xã Châu Kim, huyện Quế Phong, Nghệ An",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội đền Chín Gian là một trong những tín ngưỡng tâm linh độc đáo của đồng bào người Thái vùng Phủ Quỳ, Nghệ An. Điểm độc đáo của lễ hội này là hoạt động hiến trâu. Người dân sẽ đưa một con trâu cái trắng, được xem là vật lễ cúng tế linh thiêng nhất. Sau khi trâu được đưa xuống tắm ở bến Quan sẽ tiến hành nghi lễ chém trâu, sau đó thịt trâu sẽ được đặt ở bậc sạp cao nhất trong đền. Sau khi bà mo làm lễ nạp trâu 3 ngày 3 đêm thì phần thịt sẽ được đem chia ra, nấu lên cho dân làng cùng thưởng thức.\u003e\u003e\u003e Xem thêm: Chơi hội đền Chín Gian: Lễ hội người Thái lâu đời NHẤT Nghệ An",
+    "holdTime": " Từ ngày 13 – 15 tháng 2 âm lịch",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-o-nghe-an-9_1638927234.jpg",
+    "name": "Lễ hội đền Chín Gian",
+    "otherNames": []
+  },
+  {
+    "id": 85,
+    "location": "đền Vua Mai, huyện Nam Đàn, tỉnh Nghệ An",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội đền Vua Mai là một trong những lễ hội ở Nghệ An được tổ chức và dịp đầu năm, mở đầu cho các lễ hội khác tại Nghệ An. Tại đây, du khách sẽ được khám phá những bản sắc văn hóa độc đáo của người dân địa phương. Tham gia vào các hoạt động trong khuôn khổ lễ hội như: lễ rước nước, lễ yết cáo, lễ dâng hương… Bên cạnh đó, lễ hội đền Vua Mai còn có thêm nhiều hoạt động trò chơi hấp dẫn như: đu tiên, chọi gà, kéo co, hội vật…Tham gia các lễ hội ở Nghệ An, du khách không chỉ được khám phá nét văn hóa độc đáo của người dân địa phương, những phong tục, tập quán bản địa mà còn có cơ hội được biết đến nhiều sản phẩm, món ăn đặc sản của quê hương xứ Nghệ. Hy vọng những chia sẻ về các lễ hội Nghệ An nổi bật ở trên sẽ giúp bạn “bỏ túi” thêm nhiều thông tin và có cơ hội khám phá, trải nghiệm trong các chuyến xê dịch của mình!",
+    "holdTime": " Rằm tháng Giêng âm lịch",
+    "imageLink": "https://statics.vinpearl.com/le-hoi-o-nghe-an-010_1640521658.jpg",
+    "name": "Lễ hội đền Vua Mai - Lễ hội Nghệ An đặc sắc",
+    "otherNames": []
+  },
+  {
+    "id": 86,
+    "location": "Xã Đào Xá, huyện Thanh Thủy, tỉnh Phú Thọ.",
+    "doiTuongSuyTon": "Hùng Hải Công và Tam vị Đại vương - có công giúp dân trị thủy, Quế Hoa công chúa.",
+    "desc": "Lễ cầu nước, tế xong thì hạ trải, đua thuyền đêm.",
+    "holdTime": "9/7 âm lịch.",
+    "name": "1. Hội Đào Xá",
+    "otherNames": []
+  },
+  {
+    "id": 87,
+    "location": "Xã Võ Lao, huyện Thanh Ba, tỉnh Phú Thọ.",
+    "doiTuongSuyTon": "Thần Nông, thần Núi, thần Nước.",
+    "desc": "Rước kiệu, biểu diễn võ thuật, đánh đu, kéo co, cờ tướng, diễn chèo thâu đêm, mở đại tiệc. \u0026nbsp;",
+    "holdTime": "10 - 11/11 âm lịch.",
+    "name": "2. Hội đình Cả",
+    "otherNames": []
+  },
+  {
+    "id": 88,
+    "location": "Xã An Đạo, huyện Phù Ninh, tỉnh Phú Thọ.\u0026nbsp;",
+    "doiTuongSuyTon": "Long Xà Đại vương (Thủy thần) và út Soi Đại vương (Thần bãi sông).\u0026nbsp;",
+    "desc": "Lễ tế các thần, đua thuyền trên sông Lô. \u0026nbsp; \u0026nbsp;\u0026nbsp;",
+    "holdTime": "19 - 20/7 âm lịch.\u0026nbsp;",
+    "name": "4. Hội An Đạo",
+    "otherNames": []
+  },
+  {
+    "id": 89,
+    "location": "Phường Bạch Hạc, TP. Việt Trì, tỉnh Phú Thọ.",
+    "doiTuongSuyTon": "Thổ lệnh Đại Vương.",
+    "desc": "Lễ rước thánh qua sông Lô, trò chơi thi tung còn.",
+    "holdTime": "3 - 5/1 âm lịch.",
+    "name": "5. Hội Bạch Hạc",
+    "otherNames": []
+  },
+  {
+    "id": 90,
+    "location": "Xã Võ Lao, huyện Thanh Ba, tỉnh Phú Thọ.\u0026nbsp;",
+    "doiTuongSuyTon": "Đức Phật, Thần Núi, Thần Nước, Thần Nông.\u0026nbsp;",
+    "desc": "Lễ dâng cúng\" Bà Chúa mở cửa rừng\" có oản, bánh gùn (bánh tro).\u0026nbsp;",
+    "holdTime": "5/5 âm lịch.\u0026nbsp;",
+    "name": "6. Hội chùa Thắm",
+    "otherNames": []
+  },
+  {
+    "id": 91,
+    "location": "Xã Phù Ninh, huyện Phù Ninh, tỉnh Phú Thọ.",
+    "doiTuongSuyTon": "Vua Hùng và các tướng lĩnh, Thành hoàng làng.",
+    "desc": "Diễn trò chọi trâu để tưởng nhớ vua Hùng theo tích xưa vua Hùng đi săn qua đây diệt hai con hổ đang đánh nhau.",
+    "holdTime": "12/2 âm lịch.",
+    "name": "7. Hội chọi trâu Phù Ninh",
+    "otherNames": []
+  },
+  {
+    "id": 92,
+    "location": "Xã Hà Thạch, thị xã Phú Thọ, tỉnh Phú Thọ.\u0026nbsp;",
+    "doiTuongSuyTon": "Vua Hùng, Thánh Tản Viên, Chử Đồng Tử, Hai Bà Trưng, Thủy thần.\u0026nbsp;",
+    "desc": "Ba thôn Thượng, Hạ, Trung rước kiệu về đình Cả cùng làm lễ đại tế, múa rồng rắn, lễ hạ điền (cúng Thần Nông trước khi cấy), bơi trải. \u0026nbsp; \u0026nbsp;\u0026nbsp;",
+    "holdTime": "10/10 âm lịch.\u0026nbsp;",
+    "name": "8. Hội Hà Thạch",
+    "otherNames": []
+  },
+  {
+    "id": 93,
+    "location": "Xã Dị Nậu, huyện Tam Nông, tỉnh Phú Thọ.",
+    "doiTuongSuyTon": "Tản Viên, Cao Sơn, Quí Minh.",
+    "desc": "Trò đánh quân (đấu gậy), trình nghề, hát giao duyên nam nữ.",
+    "holdTime": "4 - 6/1 âm lịch.",
+    "name": "9. Hội làng Dị Nậu",
+    "otherNames": []
+  },
+  {
+    "id": 94,
+    "location": "Xã Thanh Đình, thành phố Việt Trì, tỉnh Phú Thọ.\u0026nbsp;",
+    "doiTuongSuyTon": "",
+    "desc": "Tục rước ông Giải và Thủy tộc (Giải là con rồng bằng nan tre, bồi giấy màu) cầu mưa thuận gió hòa. \u0026nbsp; \u0026nbsp;\u0026nbsp;",
+    "holdTime": "3/1 âm lịch.\u0026nbsp;",
+    "name": "10. Hội Mai Đình",
+    "otherNames": []
+  },
+  {
+    "id": 95,
+    "location": "Xã Hiền Quan, huyện Tam Nông, tỉnh Phú Thọ.",
+    "doiTuongSuyTon": "Bà Thiều Hoa (nữ tướng Hai Bà Trưng).",
+    "desc": "Trò chơi đánh phết (đánh cầu gỗ bằng gậy cong ở đầu). \u0026nbsp; \u0026nbsp;\u0026nbsp;",
+    "holdTime": "13/1 âm lịch.",
+    "name": "11. Hội phết Hiền Quan",
+    "otherNames": []
+  },
+  {
+    "id": 96,
+    "location": "Xã Tứ \u0026nbsp;Xã, huyện Lâm Thao, tỉnh Phú Thọ.",
+    "doiTuongSuyTon": "Thần bản thổ.",
+    "desc": "Lễ hội diễn trò trám (khoảng nửa đêm 11/1, nghi lễ cầu sinh thực khí), nam nữ hát giao duyên, rước lúa thần, đánh cá thờ đêm, đánh trận giả.|",
+    "holdTime": "11 - 12/1 âm lịch.",
+    "name": "12. Hội Trò Trám",
+    "otherNames": []
+  },
+  {
+    "id": 97,
+    "location": "Xã Võ Lao, huyện Thanh Ba, tỉnh Phú Thọ.\u0026nbsp;",
+    "doiTuongSuyTon": "Thần Nông, Thần Núi, Thần Nước và Phật.\u0026nbsp;",
+    "desc": "Cúng bánh dày, bánh nẳng tưởng niệm nơi vua Hùng ở và kén rể cho các Mỵ Nương. Các loại bánh do Mỵ Nương làm dâng vua cha, bánh dày to, tròn (tượng trưng bầu trời), bánh uốt hình tháp (tượng trưng sức lao động), bánh nẳng màu vàng (tượng trưng châu ngọc). \u0026nbsp; \u0026nbsp;\u0026nbsp;",
+    "holdTime": "10/1 âm lịch.\u0026nbsp;",
+    "name": "13. Hội Vũ Lao",
+    "otherNames": []
+  },
+  {
+    "id": 98,
+    "location": "Xã Cao Xá, huyện Lâm Thao, tỉnh Phú Thọ.",
+    "doiTuongSuyTon": "Nguyễn Khoan (Sứ quân thế kỷ 10).",
+    "desc": "",
+    "holdTime": "7 - 11/1 âm lịch.",
+    "name": "14. Hội Vĩnh Mỗ",
+    "otherNames": []
+  },
+  {
+    "id": 99,
+    "location": "Xã Hương Nha, huyện Tam Nông, tỉnh Phú Thọ. Xã Đào Xá, huyện Thanh Thủy, tỉnh Phú Thọ. Núi Nghĩa Lĩnh, Xã Hy Cương, thành phố Việt Trì, tỉnh Phú Thọ.",
+    "doiTuongSuyTon": "Xuân Nương (nữ tướng Hai Bà Trưng). Hùng Hải (tướng của vua Hùng), Trang phu nhân và Quế Hoa. Các Vua Hùng.\u0026nbsp;",
+    "desc": "Lễ cỗ chay với củ mài, mật ong, tế 10 vị thần bằng thịt trâu bày trên mâm đan lá chuối, diễn trò trình nghề. Rước kiệu, rước văn từ đình làng vào đền thờ, múa voi, thổi cơm thi. Ngày giỗ của toàn dân tộc. Cùng lúc với lễ hội dâng hương tại đền Hùng ở Phú Thọ còn có lễ dâng bái tại đền Hùng ở TP Hồ Chí Minh, đền Hùng ở Nha Trang và nhiều địa phương khác. \u0026nbsp;",
+    "holdTime": "7 - 10/1 âm lịch. 27/1 âm lịch. 8 - 11/3 âm lịch. Chính hội ngày 10/3 âm lịch\u0026nbsp;",
+    "name": "15. Hội Xoan",
+    "otherNames": []
+  },
+  {
+    "id": 100,
+    "location": "Xã Gia Thanh, huyện Phù Ninh, tỉnh Phú Thọ.",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ cầu đinh, tế thần, dâng cỗ 12 bánh chưng, 12 bánh giầy, xôi gấc.",
+    "holdTime": "2 - 3/1 âm lịch.",
+    "name": "18. Lễ hội Gia Thanh",
+    "otherNames": []
+  },
+  {
+    "id": 101,
+    "location": "núi Yên Tử - thuộc dãy núi Đông Triều vùng Đông Bắc Việt Nam",
+    "doiTuongSuyTon": "",
+    "desc": "Điểm danh 10 lễ hội ở Quảng Ninh đặc sắc không thể bỏ lỡ",
+    "holdTime": "bắt đầu từ mồng 9 tháng Giêng đến hết tháng 3 âm lịch",
+    "name": "Lễ hội tại Quảng Ninh - Lễ hội Yên Tử",
+    "otherNames": []
+  },
+  {
+    "id": 102,
+    "location": "đảo Hà Nam - thị xã Quảng Yên - tỉnh Quảng Ninh",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội Yên Tử là một trong những lễ hội truyền thống ở Quảng Ninh được tổ chức hằng năm với không khí vô cùng náo nhiệt",
+    "holdTime": "bắt đầu từ mồng 7 tháng 1 âm lịch hằng năm",
+    "name": "Lễ hội ở Quảng Ninh độc đáo - Lễ hội Tiên Công",
+    "otherNames": []
+  },
+  {
+    "id": 103,
+    "location": "đền Cửa Ông - phường Cửa Ông - Tp. Cẩm Phả - tỉnh Quảng Ninh",
+    "doiTuongSuyTon": "",
+    "desc": "Trong lễ hội ở Quảng Ninh này, các “Cụ Thượng” sẽ được rước đi quanh làng trong tiếng trống, chuông, đàn nhạc vô cùng náo nhiệt",
+    "holdTime": "bắt đầu từ ngày mồng 2 Tết đến hết tháng 3 âm lịch. Lễ hội chính là vào ngày 2/3 âm lịch hằng năm",
+    "name": "Lễ hội đền Cửa Ông ở Quảng Ninh",
+    "otherNames": []
+  },
+  {
+    "id": 104,
+    "location": "thành phố Hạ Long - Quảng Ninh",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội đền Cửa Ông được tổ chức để tưởng nhớ vị tướng Trần Quốc Tảng",
+    "holdTime": "tháng 3 \u0026 tháng 4 hằng năm",
+    "name": "Lễ hội hoa anh đào ở Quảng Ninh",
+    "otherNames": []
+  },
+  {
+    "id": 105,
+    "location": "đình Trà Cổ - khu Nam Thọ - phường Trà Cổ - Tp. Móng Cái - tỉnh Quảng Ninh",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ hội hoa anh đào Hạ Long tái hiện lại nét văn hóa đặc trưng của Nhật Bản",
+    "holdTime": "từ ngày 30/5 đến 3/6 âm lịch hằng năm",
+    "name": "Lễ hội Trà Cổ Quảng Ninh",
+    "otherNames": []
+  },
+  {
+    "id": 106,
+    "location": "thị xã Quảng Yên - Quảng Ninh",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ rước kiệu nghinh thần qua biển Trà Cổ",
+    "holdTime": "từ mồng 7 đến mồng 9 tháng 3 âm lịch hằng năm",
+    "name": "Lễ hội Bạch Đằng: Một trong những lễ hội ở Quảng Ninh hấp dẫn",
+    "otherNames": []
+  },
+  {
+    "id": 107,
+    "location": "đình Quan Lạn - thôn Tân Phong - xã Quan Lạn - tỉnh Quảng Ninh",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ rước Đức Thánh Trần Hưng đạo trong lễ hội Bạch Đằng",
+    "holdTime": "giữa tháng 6 âm lịch hằng năm",
+    "name": "Lễ hội Quan Lạn - Lễ hội đua thuyền ở Quảng Ninh",
+    "otherNames": []
+  }
+]
