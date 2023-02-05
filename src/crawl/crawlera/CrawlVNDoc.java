@@ -31,12 +31,12 @@ public class CrawlVNDoc extends Crawler<Era> implements Crawling {
 //		headers.remove(headers.size()-1);
 		for (Element header : headers) {
 			String[] context = header.text().replaceAll("[0-9]{0,2}[.]", " ").split("[(]");
-			String eraName = context[0];
+			String eraName = context[0].trim();
 			String fromYear = "";
 			String toYear = "";
 			if (context.length > 1) {
-				fromYear = context[1].split("[-–]")[0];
-				toYear = context[1].split("[-–]")[1].replace(")", "");
+				fromYear = context[1].split("[-–]")[0].trim();
+				toYear = context[1].split("[-–]")[1].replace(")", "").trim();
 
 			}
 //			int id = this.listDataCrawl.size() + 1;

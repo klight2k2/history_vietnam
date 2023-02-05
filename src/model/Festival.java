@@ -7,6 +7,7 @@ public class Festival extends Historical {
 	protected String doiTuongSuyTon;
 	protected String desc;
 	protected String holdTime;
+	protected String imageLink;
 
 	public Festival(String name, String holdTime, String location, String doiTuongSuyTon, String desc) {
 		super(name);
@@ -15,6 +16,17 @@ public class Festival extends Historical {
 		this.location = location;
 		this.desc = desc;
 		this.doiTuongSuyTon = doiTuongSuyTon;
+	}
+
+	public Festival(String name, String holdTime, String location, String doiTuongSuyTon, String desc,
+			String imageLink) {
+		super(name);
+		this.id = idCounter++;
+		this.holdTime = holdTime;
+		this.location = location;
+		this.desc = desc;
+		this.doiTuongSuyTon = doiTuongSuyTon;
+		this.imageLink = imageLink;
 	}
 
 	public int getId() {
@@ -65,5 +77,4 @@ public class Festival extends Historical {
 		this.holdTime = holdTime;
 	}
 
-	
 }

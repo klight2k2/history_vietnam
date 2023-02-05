@@ -61,5 +61,365 @@
     "holdTime": "từ đêm 23/4 đến 27/4 âm lịch",
     "name": "Lễ hội miếu Bà Chúa Xứ",
     "otherNames": []
+  },
+  {
+    "id": 8,
+    "location": "Đình làng Đình Bảng, xã Đình Bảng, thị xã Từ Sơn, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Thờ núi, thần nước, thần đất và 6 nhân thần có công dựng lại làng sau cuộc tàn phá của quân Minh.",
+    "desc": "Tế thần, đấu vật, chọi gà.",
+    "holdTime": "14 – 15/2 âm lịch.",
+    "name": "Lễ hội làng Đình Bảng",
+    "otherNames": []
+  },
+  {
+    "id": 9,
+    "location": "Xã Đình Tổ, huyện Thuận Thành, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Đức Phật",
+    "desc": "Lễ cúng Phật; lễ dâng hương; lễ cúng đàn trần tế cầu phúc; lễ cúng Tổ; hát quan họ trên thuyền; hội thi thả chim bồ câu.",
+    "holdTime": "23-24/3 âm lịch",
+    "name": "Hội chùa Bút Tháp",
+    "otherNames": []
+  },
+  {
+    "id": 10,
+    "location": "Xã Phật Tích, huyện Tiên Du, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Phật Bà Quan Âm và Lý Thánh Tông.",
+    "desc": "Lễ Phật, nghe giảng kinh, cầu yên, cầu phúc, thăm di tích.",
+    "holdTime": "4/1 âm lịch.",
+    "name": "Hội chùa Phật Tích",
+    "otherNames": []
+  },
+  {
+    "id": 11,
+    "location": "Huyện Yên Phong, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "",
+    "desc": "Đây là một lễ hội ở Bắc Ninh rất độc đáo. Bốn làng từng chung sức đuổi cướp giữ làng, giúp nhau sản xuất. Trước hội bốn làng đã giúp nhau cấy lúa. Ngày 8/1, bốn làng cùng mở hội tế thần và cùng dự tiệc. Lễ hội có trò kéo co, đấu vật, đánh cờ, hát chèo.",
+    "holdTime": "8/1 âm lịch.",
+    "name": "Hội Du xuân",
+    "otherNames": []
+  },
+  {
+    "id": 12,
+    "location": "Làng Đông Hồ, xã Song Hồ, huyện Thuận Thành, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Thành hoàng làng, tổ nghề.",
+    "desc": "Trưng bày và bán tranh dân gian Đông Hồ trong sân đình. Dựng một cầu bằng tranh trong đình tượng trưng cho sự giao lưu, hòa hợp.",
+    "holdTime": "15/3 âm lịch.",
+    "name": "Hội làng Đông Hồ",
+    "otherNames": []
+  },
+  {
+    "id": 13,
+    "location": "Làng Cổ Mễ, phường Vũ Ninh, thành phố Bắc Ninh, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Là một trong những lễ hội ở Bắc Ninh thờ Bà Chúa Kho, Tứ phủ công đồng.",
+    "desc": "Lễ hội có tục dâng hương, khấn vay tiền Bà Chúa (tượng trưng) “cầu tài phát lộc”.",
+    "holdTime": "14/1 âm lịch.",
+    "name": "Lễ đền Bà Chúa Kho",
+    "otherNames": []
+  },
+  {
+    "id": 14,
+    "location": "Xã Tam Sơn, thị xã Từ Sơn, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Đức Phật, trạng nguyên Nguyễn Phan Quang, tiết nghĩa Đại Vương Nguyễn Tự Cường, các tiến sĩ của làng, công chúa Thuần Dương, Thổ địa, Quan Công.",
+    "desc": "Múa rối nước, cờ bỏi, chọi gà, đập nồi niêu (đựng trấu, nước), thi hát quan họ.",
+    "holdTime": "8 – 12/1 âm lịch.",
+    "name": "Hội chùa Tam Sơn",
+    "otherNames": []
+  },
+  {
+    "id": 15,
+    "location": "Xã Đại Bái, huyện Gia Bình, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Nguyễn Công Truyền.",
+    "desc": "Các trưởng họ mang sản phẩm đồng, bạc chạm dâng lên bàn thờ, dâng hương tổ sư, thắp hương của người đồng niên (49 tuổi), hát ả đào, ném cướp cây bông.",
+    "holdTime": "29/9 âm lịch.",
+    "name": "Hội Đại Bái",
+    "otherNames": []
+  },
+  {
+    "id": 16,
+    "location": "Xã Mộ Đạo, huyện Quế Võ, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Ông Bính, một vị tướng thời Hùng Vương thứ 18.",
+    "desc": "Rước lớn, thi thả diều, bơi chải.",
+    "holdTime": "18/3 âm lịch.",
+    "name": "Hội Đậu",
+    "otherNames": []
+  },
+  {
+    "id": 17,
+    "location": "Làng Đại Than, xã Cao Đức, huyện Gia Bình, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Cao Lỗ, tướng giỏi của An Dương Vương.",
+    "desc": "Lễ rước thần của 7 làng cùng thờ Cao Lỗ và tổ chức đua thuyền trên sông Lục Đầu.",
+    "holdTime": "10/3 âm lịch.",
+    "name": "Hội đền Cao Lỗ Vương (Hội làng Đại Than)",
+    "otherNames": []
+  },
+  {
+    "id": 18,
+    "location": "Xã Thanh Khương, huyện Thuận Thành, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Phật Mẫu Man Nương và bốn con gái bà là Pháp Vân (Mây – Bà Dâu – thờ ở chùa Dâu), Pháp Vũ (Mưa – Bà Đậu – thờ ở chùa Thành Đạo), Pháp Lôi (Sấm, Sét – Bà Tương – thờ ở chùa Phi Tương), Pháp Điện (Chớp – Bà Dàn – thờ ở chùa Phương Quan).",
+    "desc": "Lễ rước lớn, múa rồng.",
+    "holdTime": "8/4 âm lịch.",
+    "name": "Hội chùa Dâu",
+    "otherNames": []
+  },
+  {
+    "id": 19,
+    "location": "Làng Vạn Ty, xã Thái Bảo, huyện Gia Bình, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Phật Mẫu Man Nương.",
+    "desc": "Đọc kinh, rước oản, dâng hương lễ Phật, thi oản, thi vật, thi dệt, đua thuyền và diễn xướng dân gian.",
+    "holdTime": "18 – 23/1 âm lịch.",
+    "name": "Hội chùa Tổ (chùa Phúc Nghiêm)",
+    "otherNames": []
+  },
+  {
+    "id": 20,
+    "location": "Làng Ngọc Khám, xã Gia Đông, huyện Thuận Thành, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Ba thành hoàng Lạc Long Quân, Tri Sơn (Sơn thần), Tri Thủy (Thủy thần).",
+    "desc": "Lễ rước Lạc Long Quân về đình, hội đồng Thành hoàng, tế lễ cầu mùa, đón trận mưa đầu mùa.",
+    "holdTime": "7/4 âm lịch.",
+    "name": "Hội Khám",
+    "otherNames": []
+  },
+  {
+    "id": 21,
+    "location": "Làng Viêm Xá (làng Diềm), xã Hòa Long, huyện Yên Phong, tỉnh Bắc Ninh.",
+    "doiTuongSuyTon": "Đức Vua Bà (bà tổ của dân ca quan họ).",
+    "desc": "Lễ giỗ tổ quan họ có hát quan cầu đảo, quan họ trùm đầu, và trò chơi cướp quả cầu nước.",
+    "holdTime": "7/2 âm lịch.",
+    "name": "Hội làng Đức Vua Bà",
+    "otherNames": []
+  },
+  {
+    "id": 22,
+    "location": "Làng Diềm là tên gọi nôm của thôn Viêm Xá, xã Hòa Long, Bắc Ninh.",
+    "doiTuongSuyTon": "Lễ hội là dịp để thể hiện sự tôn kính và lòng nhớ ơn của dân làng đối với Thủy tổ Quan họ và cũng là thời điểm để bà con cầu cho mưa thuận, gió hòa, một năm làm ăn phát đạt.",
+    "desc": "Rước kiệu và hát quan họ",
+    "holdTime": "Lễ hội diễn ra trong 3 ngày, trong đó ngày 25/3 (mùng 6/2 âm lịch) là chính hội.",
+    "name": "Hội làng Diềm",
+    "otherNames": []
+  },
+  {
+    "id": 23,
+    "location": "Đồi Lim, thuộc thị trấn Lim, huyện Tiên Du, tỉnh Bắc Ninh, cách Hà Nội 18km.",
+    "doiTuongSuyTon": "Đây là một lễ hội ở Bắc Ninh thờ Vua Bà và ông Hiếu Trung Hầu, tương truyền là hai vị tổ của các làn điệu dân ca Quan họ",
+    "desc": "Hát Quan họ trên đồi, trên thuyền, tại nhà.",
+    "holdTime": "tổ chức vào ngày 13/1 Âm lịch",
+    "name": "Hội Lim",
+    "otherNames": []
+  },
+  {
+    "id": 24,
+    "location": "Xã Đào Xá, huyện Thanh Thủy, tỉnh Phú Thọ.",
+    "doiTuongSuyTon": "Hùng Hải Công và Tam vị Đại vương - có công giúp dân trị thủy, Quế Hoa công chúa.",
+    "desc": "Lễ cầu nước, tế xong thì hạ trải, đua thuyền đêm.",
+    "holdTime": "9/7 âm lịch.",
+    "name": "1. Hội Đào Xá",
+    "otherNames": []
+  },
+  {
+    "id": 25,
+    "location": "Xã Võ Lao, huyện Thanh Ba, tỉnh Phú Thọ.",
+    "doiTuongSuyTon": "Thần Nông, thần Núi, thần Nước.",
+    "desc": "Rước kiệu, biểu diễn võ thuật, đánh đu, kéo co, cờ tướng, diễn chèo thâu đêm, mở đại tiệc. \u0026nbsp;",
+    "holdTime": "10 - 11/11 âm lịch.",
+    "name": "2. Hội đình Cả",
+    "otherNames": []
+  },
+  {
+    "id": 26,
+    "location": "Xã An Đạo, huyện Phù Ninh, tỉnh Phú Thọ.\u0026nbsp;",
+    "doiTuongSuyTon": "Long Xà Đại vương (Thủy thần) và út Soi Đại vương (Thần bãi sông).\u0026nbsp;",
+    "desc": "Lễ tế các thần, đua thuyền trên sông Lô. \u0026nbsp; \u0026nbsp;\u0026nbsp;",
+    "holdTime": "19 - 20/7 âm lịch.\u0026nbsp;",
+    "name": "4. Hội An Đạo",
+    "otherNames": []
+  },
+  {
+    "id": 27,
+    "location": "Phường Bạch Hạc, TP. Việt Trì, tỉnh Phú Thọ.",
+    "doiTuongSuyTon": "Thổ lệnh Đại Vương.",
+    "desc": "Lễ rước thánh qua sông Lô, trò chơi thi tung còn.",
+    "holdTime": "3 - 5/1 âm lịch.",
+    "name": "5. Hội Bạch Hạc",
+    "otherNames": []
+  },
+  {
+    "id": 28,
+    "location": "Xã Võ Lao, huyện Thanh Ba, tỉnh Phú Thọ.\u0026nbsp;",
+    "doiTuongSuyTon": "Đức Phật, Thần Núi, Thần Nước, Thần Nông.\u0026nbsp;",
+    "desc": "Lễ dâng cúng\" Bà Chúa mở cửa rừng\" có oản, bánh gùn (bánh tro).\u0026nbsp;",
+    "holdTime": "5/5 âm lịch.\u0026nbsp;",
+    "name": "6. Hội chùa Thắm",
+    "otherNames": []
+  },
+  {
+    "id": 29,
+    "location": "Xã Phù Ninh, huyện Phù Ninh, tỉnh Phú Thọ.",
+    "doiTuongSuyTon": "Vua Hùng và các tướng lĩnh, Thành hoàng làng.",
+    "desc": "Diễn trò chọi trâu để tưởng nhớ vua Hùng theo tích xưa vua Hùng đi săn qua đây diệt hai con hổ đang đánh nhau.",
+    "holdTime": "12/2 âm lịch.",
+    "name": "7. Hội chọi trâu Phù Ninh",
+    "otherNames": []
+  },
+  {
+    "id": 30,
+    "location": "Xã Hà Thạch, thị xã Phú Thọ, tỉnh Phú Thọ.\u0026nbsp;",
+    "doiTuongSuyTon": "Vua Hùng, Thánh Tản Viên, Chử Đồng Tử, Hai Bà Trưng, Thủy thần.\u0026nbsp;",
+    "desc": "Ba thôn Thượng, Hạ, Trung rước kiệu về đình Cả cùng làm lễ đại tế, múa rồng rắn, lễ hạ điền (cúng Thần Nông trước khi cấy), bơi trải. \u0026nbsp; \u0026nbsp;\u0026nbsp;",
+    "holdTime": "10/10 âm lịch.\u0026nbsp;",
+    "name": "8. Hội Hà Thạch",
+    "otherNames": []
+  },
+  {
+    "id": 31,
+    "location": "Xã Dị Nậu, huyện Tam Nông, tỉnh Phú Thọ.",
+    "doiTuongSuyTon": "Tản Viên, Cao Sơn, Quí Minh.",
+    "desc": "Trò đánh quân (đấu gậy), trình nghề, hát giao duyên nam nữ.",
+    "holdTime": "4 - 6/1 âm lịch.",
+    "name": "9. Hội làng Dị Nậu",
+    "otherNames": []
+  },
+  {
+    "id": 32,
+    "location": "Xã Thanh Đình, thành phố Việt Trì, tỉnh Phú Thọ.\u0026nbsp;",
+    "doiTuongSuyTon": "",
+    "desc": "Tục rước ông Giải và Thủy tộc (Giải là con rồng bằng nan tre, bồi giấy màu) cầu mưa thuận gió hòa. \u0026nbsp; \u0026nbsp;\u0026nbsp;",
+    "holdTime": "3/1 âm lịch.\u0026nbsp;",
+    "name": "10. Hội Mai Đình",
+    "otherNames": []
+  },
+  {
+    "id": 33,
+    "location": "Xã Hiền Quan, huyện Tam Nông, tỉnh Phú Thọ.",
+    "doiTuongSuyTon": "Bà Thiều Hoa (nữ tướng Hai Bà Trưng).",
+    "desc": "Trò chơi đánh phết (đánh cầu gỗ bằng gậy cong ở đầu). \u0026nbsp; \u0026nbsp;\u0026nbsp;",
+    "holdTime": "13/1 âm lịch.",
+    "name": "11. Hội phết Hiền Quan",
+    "otherNames": []
+  },
+  {
+    "id": 34,
+    "location": "Xã Tứ \u0026nbsp;Xã, huyện Lâm Thao, tỉnh Phú Thọ.",
+    "doiTuongSuyTon": "Thần bản thổ.",
+    "desc": "Lễ hội diễn trò trám (khoảng nửa đêm 11/1, nghi lễ cầu sinh thực khí), nam nữ hát giao duyên, rước lúa thần, đánh cá thờ đêm, đánh trận giả.|",
+    "holdTime": "11 - 12/1 âm lịch.",
+    "name": "12. Hội Trò Trám",
+    "otherNames": []
+  },
+  {
+    "id": 35,
+    "location": "Xã Võ Lao, huyện Thanh Ba, tỉnh Phú Thọ.\u0026nbsp;",
+    "doiTuongSuyTon": "Thần Nông, Thần Núi, Thần Nước và Phật.\u0026nbsp;",
+    "desc": "Cúng bánh dày, bánh nẳng tưởng niệm nơi vua Hùng ở và kén rể cho các Mỵ Nương. Các loại bánh do Mỵ Nương làm dâng vua cha, bánh dày to, tròn (tượng trưng bầu trời), bánh uốt hình tháp (tượng trưng sức lao động), bánh nẳng màu vàng (tượng trưng châu ngọc). \u0026nbsp; \u0026nbsp;\u0026nbsp;",
+    "holdTime": "10/1 âm lịch.\u0026nbsp;",
+    "name": "13. Hội Vũ Lao",
+    "otherNames": []
+  },
+  {
+    "id": 36,
+    "location": "Xã Cao Xá, huyện Lâm Thao, tỉnh Phú Thọ.",
+    "doiTuongSuyTon": "Nguyễn Khoan (Sứ quân thế kỷ 10).",
+    "desc": "",
+    "holdTime": "7 - 11/1 âm lịch.",
+    "name": "14. Hội Vĩnh Mỗ",
+    "otherNames": []
+  },
+  {
+    "id": 37,
+    "location": "Xã Hương Nha, huyện Tam Nông, tỉnh Phú Thọ. Xã Đào Xá, huyện Thanh Thủy, tỉnh Phú Thọ. Núi Nghĩa Lĩnh, Xã Hy Cương, thành phố Việt Trì, tỉnh Phú Thọ.",
+    "doiTuongSuyTon": "Xuân Nương (nữ tướng Hai Bà Trưng). Hùng Hải (tướng của vua Hùng), Trang phu nhân và Quế Hoa. Các Vua Hùng.\u0026nbsp;",
+    "desc": "Lễ cỗ chay với củ mài, mật ong, tế 10 vị thần bằng thịt trâu bày trên mâm đan lá chuối, diễn trò trình nghề. Rước kiệu, rước văn từ đình làng vào đền thờ, múa voi, thổi cơm thi. Ngày giỗ của toàn dân tộc. Cùng lúc với lễ hội dâng hương tại đền Hùng ở Phú Thọ còn có lễ dâng bái tại đền Hùng ở TP Hồ Chí Minh, đền Hùng ở Nha Trang và nhiều địa phương khác. \u0026nbsp;",
+    "holdTime": "7 - 10/1 âm lịch. 27/1 âm lịch. 8 - 11/3 âm lịch. Chính hội ngày 10/3 âm lịch\u0026nbsp;",
+    "name": "15. Hội Xoan",
+    "otherNames": []
+  },
+  {
+    "id": 38,
+    "location": "Xã Gia Thanh, huyện Phù Ninh, tỉnh Phú Thọ.",
+    "doiTuongSuyTon": "",
+    "desc": "Lễ cầu đinh, tế thần, dâng cỗ 12 bánh chưng, 12 bánh giầy, xôi gấc.",
+    "holdTime": "2 - 3/1 âm lịch.",
+    "name": "18. Lễ hội Gia Thanh",
+    "otherNames": []
+  },
+  {
+    "id": 39,
+    "location": "sân vận động thị trấn Vĩnh Lộc",
+    "doiTuongSuyTon": "trời đất, các vị thần linh,",
+    "desc": "Lễ hội có hai phần Phần lễ cúng trời đất, các vị thần linh, lễ tịch điền đầu năm mới, phát lộc cho nhân dân; phần hội gồm tung còn, các trò chơi dân gian như Đẩy gậy, kéo co, vật, bắn nỏ, đánh đu, đi cà kheo, chọi gà, chơi cờ tướng… Quan trọng nhất là hội tung còn. Cây còn biểu tượng cho văn hoá phồn thực (âm – dương), tung còn thể hiện ước muốn cầu cho mưa thuận, gió hoà, mùa màng tốt tươi, nhà nhà no đủ, người người khoẻ mạnh.",
+    "holdTime": "đầu năm mới vào ngày mồng 8 tháng Giêng hàng năm",
+    "name": "Lễ hội Lồng Tồng, lễ hội ở Tuyên Quang đặc sắc",
+    "otherNames": []
+  },
+  {
+    "id": 40,
+    "location": "Hàm Yên",
+    "doiTuongSuyTon": "các vị thần Thành hoàng làng có công khai canh lập địa, giúp cho nhân dân sinh cơ lập nghiệp bình yên, hạnh phúc",
+    "desc": "Lễ hội diễn ra với mong ước một năm mưa thuận gió hòa, mùa màng bội thu và quảng bán hững sản phẩm nông sản truyền thống. Phần hội có nhiều trò chơi dân gian truyền thống như Cày bừa, khai địa, kéo co, tung còn…",
+    "holdTime": "mùng 9 tháng Giêng (Âm lịch) hàng năm",
+    "name": "Lễ hội Động Tiên",
+    "otherNames": []
+  },
+  {
+    "id": 41,
+    "location": "Nơi sinh sống của dân tộc Pà Thẻn",
+    "doiTuongSuyTon": "Thần Lửa",
+    "desc": "Lửa được coi là vị thần thiêng liêng mang lại sự ấm áp, mang lại cho bà con cuộc sống ấm no, hạnh phúc, cũng như có sức mạnh xua đuổi tà ma, bệnh tật. Để bắt đầu lễ hội, thầy mo sẽ làm lễ cầu thần linh. Khi một đống lửa lớn được đốt lên ở giữa bãi để thành than nóng cho những người nhảy lửa biểu diễn cũng là lúc thầy mo bắt đầu làm lễ. Thanh niên sẽ nhảy trong than nóng tầm 3 đến 4 phút.",
+    "holdTime": "Thường được tổ chức vào đầu năm",
+    "name": "Lễ hội nhảy lửa dân tộc Pà Thẻn",
+    "otherNames": []
+  },
+  {
+    "id": 42,
+    "location": "Tại xã Kim Phú, huyện Yên Sơn",
+    "doiTuongSuyTon": "Thờ 2 vị tướng của vua Hùng là ” Đức vua Ngọc Sơn quân linh ứng đại vương” và ” Đức vua Cả Nghiêm Sơn trung chính lệnh ứng đại vương” những người được vua Hùng cắt cử đến vùng Yên Sơn bảo hộ dân làng Giếng Tanh làm ăn yên ổn, mùa màng bội thu. Ngoài ra đình còn thờ Quốc Mẫu Thiên Hoa công chúa, các vị thần phụ trợ cho nghề nông phát triển như thần Nông, thần Thổ địa, Long Vương và bà Lương Thị Hai, tương truyền là người đã cung cấp nước cho nghĩa quân đánh giặc.",
+    "desc": "Đây là lễ hội lớn nhất trong năm của đồng bào dân tộc Cao Lan. Lễ hội bao gồm phần lễ và phần hội Phần lễ được tổ chức cúng tế trong đình theo nghi thức truyền thống mang ý nghĩa tâm linh, cầu cho mưa thuận gió hòa, mùa màng tươi tốt, vạn vật phát triển… Phần hội với nhiều trò chơi tung còn, kéo co…",
+    "holdTime": "Tổ chức vào ngày mùng 10 tháng Giêng (Âm lịch)",
+    "name": "Lễ hội đình làng Giếng Tanh",
+    "otherNames": []
+  },
+  {
+    "id": 43,
+    "location": "Đình Tân Trào, xã Tân Trào, huyện Sơn Dương.",
+    "doiTuongSuyTon": "Các vị thần Thành hoàng làng có công khai canh lập địa, giúp cho nhân dân sinh cơ lập nghiệp bình yên, hạnh phúc.",
+    "desc": "Đây là lễ hội truyền thống của đồng bào dân tộc Tày gắn với di tích lịch sử văn hóa đình Hồng Thái và đình Tân Trào mang ý nghĩa tâm linh và giáo dục truyền thống cách mạng cho nhân dân. Lễ hội Cầu may và Cầu mùa gồm 2 phần Phần lễ được tổ chức cúng tế trong đình với ước muốn của người dân cầu cho mưa thuận gió hòa, mùa màng tốt tươi, mọi nhà ấm no, hạnh phúc và tỏ lòng thành kính với các vị thần Thành hoàng làng có công khai canh lập địa, giúp cho nhân dân sinh cơ lập nghiệp bình yên, hạnh phúc. Phần hội có nhiều trò chơi dân gian truyền thống như Cày bừa, khai địa, kéo co, tung còn…",
+    "holdTime": "ngày mùng 2 và mùng 4 tháng Giêng hàng năm",
+    "name": "Lễ hội cầu may và cầu mùa",
+    "otherNames": []
+  },
+  {
+    "id": 44,
+    "location": "tại đền Mẫu, phường Ỷ La và đền Thượng, xã Tràng Đà để cùng tham gia rước Mẫu về đền Hạ, phường Tân Quang.",
+    "doiTuongSuyTon": "thờ Mẫu",
+    "desc": "Lễ rước nước và thả Đèn Hoa Đăng trên Sông Lô; Lễ tế tại Đền Ỷ La, phường Ỷ La và tổ chức rước Mẫu từ Đền Ỷ La về Đền Hạ; Lễ tế tại Đền Thượng và tổ chức rước Mẫu từ Đền Thượng về Đền Hạ; Khai mạc Lễ hội rước Mẫu Đền Hạ; Bế mạc Lễ hội rước Mẫu Đền Hạ và rước Mẫu hoàn cung. Về phần hội có Liên hoan văn hoá tín ngưỡng thờ Mẫu; Hội thi Ẩm thực; Triển lãm ảnh chủ đề “Đất và người Thành Tuyên”; Biểu diễn nghệ thuật chuyên nghiệp; Tổ chức thi đấu thể thao và các trò chơi dân gian.",
+    "holdTime": "Từ ngày mùng 2 đến ngày 16 tháng Hai (Âm lịch) hàng năm",
+    "name": "Lễ hội rước Mẫu (lễ hội đền Hạ)",
+    "otherNames": []
+  },
+  {
+    "id": 45,
+    "location": "Thành phố Tuyên Quang",
+    "doiTuongSuyTon": "Lễ hội trung thu dành cho thiếu nhi",
+    "desc": "Đèn Lồng được làm với nhiều hình ảnh động vật ngỗ ngĩnh to lớn. Lễ hội thu hút du khách về tham quan và chiêm ngưỡng đèn lồng.",
+    "holdTime": "Đêm chính hội diễn ra vào 15/8 âm lịch.",
+    "name": "Lễ hội thành Tuyên",
+    "otherNames": []
+  },
+  {
+    "id": 46,
+    "location": "Lễ hội chùa Hang (hay còn gọi là chùa Hương Nghiêm), xã An Khang (thành phố Tuyên Quang)",
+    "doiTuongSuyTon": "Cá vị Phật",
+    "desc": "Tại buổi chính lễ diễn ra lễ cầu an, cầu cho quốc thái, dân an và lễ rước nước. Phần hội có các trò chơi dân gian, các môn thể thao, dân ca, dân vũ.",
+    "holdTime": "ngày 8 tháng Giêng hàng năm",
+    "name": "Lễ hội chùa Hang",
+    "otherNames": []
+  },
+  {
+    "id": 47,
+    "location": "Thành phố Tuyên Quang",
+    "doiTuongSuyTon": "Lễ hội mang tính chất vui chơi đầu năm",
+    "desc": "Năm 2007, thành phố đã khôi phục lại lễ hội, đến nay có đủ 13 xã, phường tham gia. Các đội thi đấu bằng thuyền sắt với 26 vận động viên mỗi đội, với cự ly thi đấu 2,5 km. Lễ hội đua thuyền trên sông Lô thu hút rất đông du khách thập phương đến xem, cỗ vũ.",
+    "holdTime": "Vào mồng 4 tết Nguyên đán hàng năm",
+    "name": "Lễ hội đia thuyền trên sông Lô",
+    "otherNames": []
   }
 ]
