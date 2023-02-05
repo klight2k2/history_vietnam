@@ -62,15 +62,13 @@ public class CrawlController {
 		}
 	}
 
-	public static void main(String[] args) {
-		CrawlController controller = new CrawlController();
-
+	public void crawl() {
 		// Crawl data________________________________________________________________
-		CrawlEra crawlEra = new CrawlEra(controller.listEraDataRaw);
-		CrawlFestival crawlFestival = new CrawlFestival(controller.listFestivalDataRaw);
-		CrawlFigure crawlFigure = new CrawlFigure(controller.listFigureDataRaw);
-		CrawlSite crawlSite = new CrawlSite(controller.listSiteDataRaw);
-		CrawlEvent crawlEvent = new CrawlEvent(controller.listEventDataRaw);
+		CrawlEra crawlEra = new CrawlEra(this.listEraDataRaw);
+		CrawlFestival crawlFestival = new CrawlFestival(this.listFestivalDataRaw);
+		CrawlFigure crawlFigure = new CrawlFigure(this.listFigureDataRaw);
+		CrawlSite crawlSite = new CrawlSite(this.listSiteDataRaw);
+		CrawlEvent crawlEvent = new CrawlEvent(this.listEventDataRaw);
 
 		ExecutorService executorCrawl = Executors.newCachedThreadPool();
 		executorCrawl.execute(crawlEra);
@@ -81,15 +79,16 @@ public class CrawlController {
 
 		executorCrawl.shutdown();
 
-		controller.waitForThread(executorCrawl);
+		this.waitForThread(executorCrawl);
 		System.out.println("Crawl completed...");
+	}
 
+	public void link() {
 		// Link data________________________________________________________________
-		LinkEra linkEra = new LinkEra(controller.listEraDataRaw, controller.listEraData);
-		LinkEvent linkEvent = new LinkEvent(controller.listEventDataRaw, controller.listEraDataRaw,
-				controller.listEventData);
-		LinkFigure linkFigure = new LinkFigure(controller.listFigureDataRaw, controller.listEraDataRaw,
-				controller.listEventDataRaw, controller.listFigureData);
+		LinkEra linkEra = new LinkEra(this.listEraDataRaw, this.listEraData);
+		LinkEvent linkEvent = new LinkEvent(this.listEventDataRaw, this.listEraDataRaw, this.listEventData);
+		LinkFigure linkFigure = new LinkFigure(this.listFigureDataRaw, this.listEraDataRaw, this.listEventDataRaw,
+				this.listFigureData);
 
 		ExecutorService executorLink = Executors.newCachedThreadPool();
 		executorLink.execute(linkEra);
@@ -98,16 +97,29 @@ public class CrawlController {
 
 		executorLink.shutdown();
 
-		controller.waitForThread(executorLink);
+		this.waitForThread(executorLink);
 		System.out.println("Link completed...");
+	}
 
+	public void saveToJson() {
 		// Write data to JSON_______________________________________________________
 		String filePath = "src\\data\\";
-		controller.saveFile(filePath + "era.json", controller.listEraData);
-		controller.saveFile(filePath + "festival.json", controller.listFestivalDataRaw);
-		controller.saveFile(filePath + "figure.json", controller.listFigureData);
-		controller.saveFile(filePath + "site.json", controller.listSiteDataRaw);
-		controller.saveFile(filePath + "event.json", controller.listEventData);
+		this.saveFile(filePath + "era.json", this.listEraData);
+		this.saveFile(filePath + "festival.json", this.listFestivalDataRaw);
+		this.saveFile(filePath + "figure.json", this.listFigureData);
+		this.saveFile(filePath + "site.json", this.listSiteDataRaw);
+		this.saveFile(filePath + "event.json", this.listEventData);
 		System.out.println("Write file completed...");
+	}
+
+	public void start() {
+		crawl();
+		link();
+		saveToJson();
+	}
+
+	public static void main(String[] args) {
+		CrawlController controller = new CrawlController();
+		controller.start();
 	}
 }
