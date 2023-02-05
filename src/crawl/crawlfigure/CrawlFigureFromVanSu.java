@@ -25,7 +25,7 @@ public class CrawlFigureFromVanSu  extends Crawler<HistoricalFigure> implements 
 	public void start() throws IOException {
 		// TODO Auto-generated method stub
 		String url="https://vansu.vn/viet-nam/viet-nam-nhan-vat?page=";
-		for (int i = 1; i <=119; i++) {
+		for (int i = 1; i <=2; i++) {
 			this.getHTML(url+i);
 			Elements figureUrls= this.doc.select("tbody > tr > td > a:has(i)");
 			for(Element figureUrl:figureUrls) {
@@ -48,8 +48,8 @@ public class CrawlFigureFromVanSu  extends Crawler<HistoricalFigure> implements 
 			for(Element data:listData) {
 				if(data.text().contains("Tỉnh thành")) bornIn=data.select("td").get(1).text();
 				if(data.text().contains("Năm sinh")) {
-					born=data.select("td").get(1).text().split("-")[0];
-					died=data.select("td").get(1).text().split("-")[1];
+					born=data.select("td").get(1).text().split("-")[0].replaceAll("\\D", "");
+					died=data.select("td").get(1).text().split("-")[1].replaceAll("\\D", "");
 				}
 				if(data.text().contains("Thời kì")){
 					era=data.select("td").get(1).text();
@@ -67,15 +67,15 @@ public class CrawlFigureFromVanSu  extends Crawler<HistoricalFigure> implements 
 			System.out.println("Crawl Figure: " + figure.getName());
 			this.addDataCrawl(figure);
 		}
-		// String filePath = "D:\\history_vietnam\\src\\data\\tes.json";
-		// Gson gson = new GsonBuilder().setPrettyPrinting().create();
-		// try {
-		// 	FileWriter writer = new FileWriter(new File(filePath));
-		// 	gson.toJson(this.listDataCrawl, writer);
-		// 	writer.close();
-		// } catch (IOException e) {
-		// 	e.printStackTrace();
-		// }
+		//  String filePath = "D:\\history_vietnam\\src\\data\\tes.json";
+		//  Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		//  try {
+		//  	FileWriter writer = new FileWriter(new File(filePath));
+		//  	gson.toJson(this.listDataCrawl, writer);
+		//  	writer.close();
+		//  } catch (IOException e) {
+		//  	e.printStackTrace();
+		//  }
 		
 	}
 
