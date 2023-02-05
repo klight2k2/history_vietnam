@@ -21,13 +21,11 @@ public class CrawlFromDitich extends Crawler<HistoricalSite> implements Crawling
 	@Override
 	public void start() throws IOException {
 		String baseUrl = "http://ditich.vn";
-		for (int i = 1; i < 64; i++) {
-			this.getHTML(baseUrl + "/FrontEnd/DiTich?cpage=" + i + "&rpage=64");
-			Elements listSite = this.doc.getElementsByClass("ih-item square colored effect4");
-			for (Element site : listSite) {
-				listDetailUrl.add(site.getElementsByTag("a").attr("href"));
-
-			}
+		this.getHTML(baseUrl + "/FrontEnd/DiTich?cpage=1&rpage=4024");
+		Elements listSite = this.doc.getElementsByClass("ih-item square colored effect4");
+		for (Element site : listSite) {
+			listDetailUrl.add(site.getElementsByTag("a").attr("href"));
+			
 		}
 //		listDetailUrl.add("/FrontEnd/DiTich/Form?do=&ItemId=2022");
 		for (int i = 0; i < listDetailUrl.size(); i++) {

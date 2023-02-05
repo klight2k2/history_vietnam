@@ -46,6 +46,7 @@ public class CrawlController {
 		try {
 			FileWriter writer = new FileWriter(new File(path));
 			gson.toJson(data, writer);
+			writer.flush();
 			writer.close();
 		} catch (Exception e) {
 			e.printStackTrace();

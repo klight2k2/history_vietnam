@@ -1,5 +1,4 @@
 module vietnamHistory {
-	exports controller;
 	exports view;
 	exports crawl.crawlfestival;
 	exports main;

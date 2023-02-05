@@ -3,7 +3,6 @@ package view;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Field;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -13,12 +12,10 @@ import javax.swing.JOptionPane;
 import crawl.CrawlController;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.collections.ObservableListBase;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -166,8 +163,11 @@ public class ViewController{
 	
 	// crawl button
 	public void Crawl(ActionEvent event) {
-//		new CrawlController();
-		JOptionPane.showMessageDialog(null, "Tải dữ liệu thành công", "Success", JOptionPane.INFORMATION_MESSAGE);
+		new Thread(() -> {
+			CrawlController.main(null);
+			JOptionPane.showMessageDialog(null, "Tải dữ liệu thành công", "Success", JOptionPane.INFORMATION_MESSAGE);
+		}).start();
+		JOptionPane.showMessageDialog(null, "Đang tải dữ liệu...", "Running", JOptionPane.INFORMATION_MESSAGE);
 	}
 
 	// search controller
@@ -341,7 +341,7 @@ public class ViewController{
 	private <T> void popupData(T data, List<String> fieldName, List<String> property, List<String> linkField, List<String> linkProperty, String title) throws IOException{
 		BorderPane root = FXMLLoader.load(getClass().getResource("Profile.fxml"));
 		Stage stage = new Stage();
-		stage.setTitle("Thong tin chi tiet");
+		stage.setTitle("Thông tin chi tiết");
 		
 		// set title
 		VBox vBoxTop = (VBox) root.getTop();
@@ -373,10 +373,10 @@ public class ViewController{
 		}
 		if(data instanceof Festival) {
 			String url = ((Festival) data).getImageLink();
-			if(url.equals("")) {
+			if(url == null || url.equals("")) {
 				File file = new File("src/resource/lehoi.png");
 				avatar.setImage(new Image(file.toURI().toString()));
-			}else {
+			}else if(url != null){
 				Image i = new Image(url);
 				avatar.setImage(i);				
 			}
@@ -394,8 +394,6 @@ public class ViewController{
 		
 		// get field element
 		VBox vBoxCenter = (VBox) root.getCenter();
-		VBox vBoxField = (VBox) vBoxCenter.getChildren().get(0);
-		VBox vBoxLink = (VBox) vBoxCenter.getChildren().get(1);
 		
 		vBoxCenter.getChildren().clear();
 		// set field element
