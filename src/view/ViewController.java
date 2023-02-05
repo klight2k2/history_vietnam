@@ -78,7 +78,7 @@ public class ViewController{
 	private List<String> historicalFigureTableFieldProperty = Arrays.asList("id", "name", "born", "died", "bornIn");
 	private List<String> historicalFigureLinkFieldName = Arrays.asList("Triều đại", "Sự kiện liên quan");
 	private List<String> historicalFigureLinkFieldProperty = Arrays.asList("relatedEraId", "relatedEventId");
-	private List<String> historicSiteTableFieldName = Arrays.asList("STT", "Tên", "Địa điểm", "Đối tượng thờ", "Loại hình xếp hạng", "Loại xếp hạng");
+	private List<String> historicSiteTableFieldName = Arrays.asList("STT", "Tên", "Địa điểm", "Đối tượng thờ", "Loại hình", "Loại xếp hạng");
 	private List<String> historicSiteTableFieldProperty = Arrays.asList("id", "name", "location", "objectWorship", "loaiHinhXepHang", "loaiXepHang");
 	private List<String> historicSiteLinkFieldName = Arrays.asList();
 	private List<String> historicSiteLinkFieldProperty = Arrays.asList();
@@ -401,6 +401,7 @@ public class ViewController{
 		// set field element
 		vBoxCenter.getChildren().add(createPopupElement("Tên", Arrays.asList(((Historical) data).getName()), "ProfileItemField"));
 		for(int i = 0; i < fieldName.size(); ++i) {
+			if(property.get(i).equals("name")) continue;
 			try {
 				Class<T> clazz = (Class<T>) data.getClass();
 				Field field = clazz.getDeclaredField(property.get(i));
@@ -472,7 +473,7 @@ public class ViewController{
 			File file = new File("src/resource/time.png");
 			image.setImage(new Image(file.toURI().toString()));
 		}
-		if(Arrays.asList("Loại hình xếp hạng", "Loại xếp hạng").contains(field)) {
+		if(Arrays.asList("Loại hình", "Loại xếp hạng").contains(field)) {
 			File file = new File("src/resource/trophy.png");
 			image.setImage(new Image(file.toURI().toString()));
 		}
