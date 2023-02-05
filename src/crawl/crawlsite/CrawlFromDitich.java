@@ -95,15 +95,5 @@ public class CrawlFromDitich extends Crawler<HistoricalSite> implements Crawling
 			this.addDataCrawl(site);
 			System.out.println(this.listDataCrawl.size());
 		}
-
-		Gson gson = new GsonBuilder().setPrettyPrinting().create();
-		try {
-			String filePath = "src\\data\\";
-			FileWriter writer = new FileWriter(new File(filePath + "testSite.json"));
-			gson.toJson(this.listDataCrawl, writer);
-			writer.close();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 	}
 }
