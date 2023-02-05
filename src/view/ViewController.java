@@ -342,9 +342,48 @@ public class ViewController{
 		titleEle.setText(title);
 		
 		// set avatar
-		if(data instanceof HistoricalFigure || data instanceof HistoricalSite || data instanceof Festival ) {
-			
+		ImageView avatar = (ImageView) vBoxTop.getChildren().get(0);
+		if(data instanceof HistoricalFigure) {
+			String url = ((HistoricalFigure) data).getImageLink();
+			if(url.equals("")) {
+				File file = new File("src/resource/nhanvatlichsu.png");
+				avatar.setImage(new Image(file.toURI().toString()));
+				System.out.println("hehe");
+			}else {
+				Image i = new Image(url);
+				avatar.setImage(i);				
+			}
 		}
+		if(data instanceof HistoricalSite) {
+			String url = ((HistoricalSite) data).getImageLink();
+			if(url.equals("")) {
+				File file = new File("src/resource/ditich.png");
+				avatar.setImage(new Image(file.toURI().toString()));
+			}else {
+				Image i = new Image(url);
+				avatar.setImage(i);				
+			}
+		}
+		if(data instanceof Festival) {
+			String url = ((Festival) data).getImageLink();
+			if(url.equals("")) {
+				File file = new File("src/resource/lehoi.png");
+				avatar.setImage(new Image(file.toURI().toString()));
+			}else {
+				Image i = new Image(url);
+				avatar.setImage(i);				
+			}
+		}
+		if(data instanceof Era) {
+			File file = new File("src/resource/trieudai.png");
+			avatar.setImage(new Image(file.toURI().toString()));
+		}
+		if(data instanceof HistoricalEvent) {
+			File file = new File("src/resource/sukien.png");
+			avatar.setImage(new Image(file.toURI().toString()));
+		}
+		
+		
 		
 		// get field element
 		VBox vBoxCenter = (VBox) root.getCenter();
